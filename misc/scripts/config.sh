@@ -163,8 +163,9 @@ download_programs() {
     curl -o "${SYSTEM_DIR}/${FILE_10}" "${UNZIP_URL}"
     curl -L -o "${TOP_DIR}/${FILE_8}" "${EX_URL}"
     
-    if [ -f "${TOP_DIR}/msys2-x86_64-latest.exe" ]; then
-        rm -rf "${TOP_DIR}/msys2-x86_64-latest.exe"
+    if [ -f "${TOP_DIR}/${FILE_4}" ]; then
+        rm -rf "${TOP_DIR}/${FILE_4}"
+        rm -rf "${TOP_DIR}/${FILE_5}"
     fi
 }
 
@@ -289,7 +290,7 @@ create_AIS() {
     cp "${TOP_DIR}/AIS/dist/ASAP.exe" "${OUT_DIR}/"
     rm -rf "${TOP_DIR}/AIS/build"
     rm -rf "${TOP_DIR}/AIS/dist"
-    rm -rf "${TOP_DIR}/ASAP.spec"
+    rm -rf "${TOP_DIR}/AIS/ASAP.spec"
 }
 
 
@@ -560,14 +561,18 @@ pack_asap() {
     
     # zip the ASAP folder
     cd "${TEMP_DIR}"
-    zip -r "${TEMP_DIR}/ASAP-normal.zip" "./"*
-    mv "${TEMP_DIR}/ASAP-normal.zip" "${OUT_DIR}/"
+    zip -r "${TEMP_DIR}/ASAP.zip" "./"*
+    mv "${TEMP_DIR}/ASAP.zip" "${OUT_DIR}/"
+
+    echo "ASAP.zip complete"
+    echo ""
 }
 
 
 # info: Ultrahand+.zip
 pack_ultrahand() {
     mkdir -p "${TEMP_DIR}/atmosphere"
+    mkdir -p "${TEMP_DIR}/config"
     cp -r "${OVL_DIR}/Ultrahand-Overlay/Packages/KO/Packages/package.ini" "${TEMP_DIR}/ASAP/ASAP-assist/Packages/"
     mv "${TEMP_DIR}/ASAP/ASAP-assist" "${TEMP_DIR}/config/"
     mv "${TEMP_DIR}/ASAP/atmosphere/contents" "${TEMP_DIR}/atmosphere/"
@@ -591,19 +596,23 @@ pack_ultrahand() {
     rm -rf "${TEMP_DIR}/switch/Reboot2payload"
     rm -rf "${TEMP_DIR}/switch/Tinfoil"
     rm -rf "${TEMP_DIR}/warmboot_mariko"
+
     cd "${TEMP_DIR}"
     zip -r "${TEMP_DIR}/Ultrahand+.zip" "./"*
     mv "${TEMP_DIR}/Ultrahand+.zip" "${OUT_DIR}/"
 
-    rm -rf "${TEMP_DIR}/ASAP/ASAP-assist/Packages"
-    cp -r "${OVL_DIR}/Ultrahand-Overlay/Packages/EN/Packages" "${TEMP_DIR}/ASAP/ASAP-assist/"
+    rm -rf "${TEMP_DIR}/config/ASAP-assist/Packages"
+    cp -r "${OVL_DIR}/Ultrahand-Overlay/Packages/EN/Packages" "${TEMP_DIR}/config/ASAP-assist/"
     zip -r "${TEMP_DIR}/Ultrahand+EN.zip" "./"*
     mv "${TEMP_DIR}/Ultrahand+EN.zip" "${OUT_DIR}/"
 
-    rm -rf "${TEMP_DIR}/ASAP/ASAP-assist/Packages"
-    cp -r "${OVL_DIR}/Ultrahand-Overlay/Packages/JP/Packages" "${TEMP_DIR}/ASAP/ASAP-assist/"
+    rm -rf "${TEMP_DIR}/config/ASAP-assist/Packages"
+    cp -r "${OVL_DIR}/Ultrahand-Overlay/Packages/JP/Packages" "${TEMP_DIR}/config/ASAP-assist/"
     zip -r "${TEMP_DIR}/Ultrahand+JP.zip" "./"*
     mv "${TEMP_DIR}/Ultrahand+JP.zip" "${OUT_DIR}/"
+
+    echo "Ultrahand+.zip complete"
+    echo ""
 }
 
 
@@ -622,6 +631,9 @@ pack_tester() {
     cd "${TEMP_DIR}/TESTER"
     zip -r "${TEMP_DIR}/Tester+.zip" "./"*
     mv "${TEMP_DIR}/Tester+.zip" "${OUT_DIR}/"
+
+    echo "Tester+.zip complete"
+    echo ""
 }
 
 
@@ -637,7 +649,11 @@ pack_updater() {
     cd "${TEMP_DIR}/APP"
     zip -r "${TEMP_DIR}/APP+.zip" "./"*
     mv "${TEMP_DIR}/APP+.zip" "${OUT_DIR}/"
+
     rm -rf "${TEMP_DIR}"
+
+    echo "APP+.zip complete"
+    echo ""
 }
 
 
@@ -659,7 +675,7 @@ download_migrate() {
     curl -L -o "${TOP_DIR}/migrate/DeepSea/${FILE_14}" "${SIGMA_URL}"
     curl -L -o "${TOP_DIR}/migrate/HATS/${FILE_15}" "${HATS_URL}"
     curl -L -o "${TOP_DIR}/migrate/Kefir/${FILE_16}" "${KEFIR_URL}"
-    curl -L -o "${TOP_DIR}/migrate/NXVenom/${FILE_18}" "${NXVENOM_URL}"
+    curl -L -o "${TOP_DIR}/migrate/NX-Venom/${FILE_18}" "${NXVENOM_URL}"
     
     unzip "${TOP_DIR}/migrate/Origin/${FILE_11}" -d "${TEMP_DIR}/Origin/"
     unzip "${TOP_DIR}/migrate/Origin/${FILE_13}" -d "${TEMP_DIR}/Origin/"
@@ -667,7 +683,7 @@ download_migrate() {
     unzip "${TOP_DIR}/migrate/DeepSea/${FILE_14}" -d "${TEMP_DIR}/DeepSea/"
     unzip "${TOP_DIR}/migrate/HATS/${FILE_15}" -d "${TEMP_DIR}/HATS/"
     unzip "${TOP_DIR}/migrate/Kefir/${FILE_16}" -d "${TEMP_DIR}/Kefir/"
-    unzip "${TOP_DIR}/migrate/NXVenom/${FILE_18}" -d "${TEMP_DIR}/NX-Venom/"
+    unzip "${TOP_DIR}/migrate/NX-Venom/${FILE_18}" -d "${TEMP_DIR}/NX-Venom/"
     
     cp -r "${TEMP_DIR}/HATS/exosphere.ini" "${TEMP_DIR}/Origin/"
     cp -r "${TEMP_DIR}/HATS/atmosphere/config/system_settings.ini" "${TEMP_DIR}/Origin/atmosphere/config/"
@@ -681,13 +697,16 @@ download_migrate() {
     mv "${TOP_DIR}/migrate/DeepSea/${FILE_17}" "${OUT_DIR}/AIOS/"
     mv "${TOP_DIR}/migrate/HATS/${FILE_15}" "${OUT_DIR}/AIOS/"
     mv "${TOP_DIR}/migrate/Kefir/${FILE_16}" "${OUT_DIR}/AIOS/"
-    mv "${TOP_DIR}/migrate/NXVenom/${FILE_18}" "${OUT_DIR}/AIOS/"
+    mv "${TOP_DIR}/migrate/NX-Venom/${FILE_18}" "${OUT_DIR}/AIOS/"
 
     rm -rf "${TEMP_DIR}/Kefir/install.bat"
     rm -rf "${TOP_DIR}/migrate/DeepSea/${FILE_14}"
     rm -rf "${TOP_DIR}/migrate/Origin/${FILE_11}"
     rm -rf "${TOP_DIR}/migrate/Origin/${FILE_12}"
     rm -rf "${TOP_DIR}/migrate/Origin/${FILE_13}"
+
+    echo "Other AIO packages download complete"
+    echo ""    
 }
 
 
@@ -713,6 +732,9 @@ pack_migrate() {
     mv "${TEMP_DIR}/${AIO}/ASAP/payload.bin" "${TEMP_DIR}/${AIO}/"
     
     zip -r "${OUT_DIR}/AIOS/${AIO}.zip" "./"*
+
+    echo "${AIO}.zip complete"
+    echo ""    
 }    
 
 

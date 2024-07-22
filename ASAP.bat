@@ -36,15 +36,15 @@ echo           - Commands -
 echo.
 echo            Download : 'DOWN' - Download Msys2.exe, python.exe
 echo            Prepare  : 'KEYS' - Get the cypher key, keyring ^& prod.keys
-echo                       'PREP' - Install DevkitPro ^& Pacman packages
+echo                       'PREP' - Install extra.7z, DevkitPro ^& Pacman packages
 echo            Build    : 'MAKE' - Build all repositories that make up ASAP ^& ASAP.exe
-echo            Hiden    : 'UPDATE', 'MIGRATE'	
+echo            Hiden    : 'SDMC', 'UPDATE', 'MIGRATE'	
 echo.
 echo =====================================================================================================
 echo -----------------------------------------------------------------------------------------------------
 echo.
 
-set /p TITLE="     - Press Enter key to install SD Card or enter command: "
+set /p TITLE="     - Press enter the commands: "
 if "%TITLE%"=="" GOTO NOTICE
 if /i "%TITLE%"=="EXIT" exit
 if /i "%TITLE%"=="DOWN" GOTO DOWN
@@ -52,6 +52,7 @@ if /i "%TITLE%"=="KEYS" GOTO KEYS
 if /i "%TITLE%"=="PREP" GOTO PREP
 if /i "%TITLE%"=="MAKE" GOTO MAKE
 
+if /i "%TITLE%"=="SDMC" GOTO NOTICE
 if /i "%TITLE%"=="UPDATE" GOTO UPDATE
 if /i "%TITLE%"=="MIGRATE" GOTO MIGRATE
 
@@ -135,8 +136,11 @@ xcopy /I /Y "%sd%:\savedata\*" "%AB%\savedata\" >nul 2>&1
 if exist "%sd%:\savedata\DBI" (
 xcopy /I /Y "%sd%:\savedata\DBI" "%AB%\savedata\" >nul 2>&1
 )
-if exist "%sd%:\JKSV\*" (
-xcopy /I /Y "%sd%:\JKSV\*" "%AB%\savedata\" >nul 2>&1
+if exist "%sd%:\DBI" (
+xcopy /I /Y "%sd%:\DBI" "%AB%\savedata\DBI" >nul 2>&1
+)
+if exist "%sd%:\JKSV" (
+xcopy /I /Y "%sd%:\JKSV" "%AB%\savedata\JKSV" >nul 2>&1
 )
 if exist "%sd%:\config\JKSV\webdav.json" (
 xcopy /I /Y "%sd%:\config\JKSV\webdav.json" "%AB%\" >nul 2>&1
@@ -238,6 +242,7 @@ if exist "%sd%:\atmosphere\contents\43000000000000FF" (RD /S /Q "%sd%:\atmospher
 if exist "%sd%:\atmosphere\contents\4300000000000909" (RD /S /Q "%sd%:\atmosphere\contents\4300000000000909")
 if exist "%sd%:\atmosphere\contents\5600000000000000" (RD /S /Q "%sd%:\atmosphere\contents\5600000000000000")
 if exist "%sd%:\atmosphere\contents\690000000000000D" (RD /S /Q "%sd%:\atmosphere\contents\690000000000000D")
+if exist "%sd%:\atmosphere\contents\010B6ECF3B30D000" (RD /S /Q "%sd%:\atmosphere\contents\010B6ECF3B30D000")
 
 if exist "%sd%:\atmosphere\exefs_patches" (RD /S /Q "%sd%:\atmosphere\exefs_patches")
 if exist "%sd%:\atmosphere\fatal_errors" (RD /S /Q "%sd%:\atmosphere\fatal_errors")
@@ -273,6 +278,9 @@ if exist "%sd%:\atmosphere\*.zip" (DEL /F "%sd%:\atmosphere\*.zip")
 if exist "%sd%:\atmosphere\package3" (DEL /F "%sd%:\atmosphere\package3")
 
 if exist "%sd%:\bootloader" (RD /S /Q "%sd%:\bootloader")
+if exist "%sd%:\emuiibo" (RD /S /Q "%sd%:\emuiibo")
+if exist "%sd%:\JKSV" (RD /S /Q "%sd%:\JKSV")
+if exist "%sd%:\SaltySD" (RD /S /Q "%sd%:\SaltySD")
 if exist "%sd%:\config" (RD /S /Q "%sd%:\config")
 if exist "%sd%:\nsp" (RD /S /Q "%sd%:\nsp")
 if exist "%sd%:\PlusPack" (RD /S /Q "%sd%:\PlusPack")
@@ -380,13 +388,7 @@ REM ============================================================
 
 @echo off
 cd /d "%~dp0misc\scripts\"
-
-set "MINGW_EXE=%~dp0msys64\mingw64.exe"
-
-echo Set UAC = CreateObject^("Shell.Application"^) > "%temp%\admin.vbs"
-echo UAC.ShellExecute "%MINGW_EXE%", "%~dp0misc\scripts\keys.sh", "", "runas", 1 >> "%temp%\admin.vbs"
-"%temp%\admin.vbs"
-del "%temp%\admin.vbs"
+%~dp0msys64\mingw64.exe %~dp0misc\scripts\keys.sh
 
 GOTO TITLE
 
@@ -395,7 +397,13 @@ REM ============================================================
 
 @echo off
 cd /d "%~dp0misc\scripts\"
-%~dp0msys64\mingw64.exe %~dp0misc\scripts\prepare.sh
+
+set "MINGW_EXE=%~dp0msys64\mingw64.exe"
+
+echo Set UAC = CreateObject^("Shell.Application"^) > "%temp%\admin.vbs"
+echo UAC.ShellExecute "%MINGW_EXE%", "%~dp0misc\scripts\prepare.sh", "", "runas", 1 >> "%temp%\admin.vbs"
+"%temp%\admin.vbs"
+del "%temp%\admin.vbs"
 
 GOTO TITLE
 
@@ -406,7 +414,7 @@ REM ============================================================
 cd /d "%~dp0misc\scripts\"
 %~dp0msys64\mingw64.exe %~dp0misc\scripts\build.sh
 
-GOTO TITLE
+exit
 
 REM ============================================================
 :UPDATE
@@ -435,8 +443,10 @@ echo                                            Installing...
 echo.
 echo =====================================================================================================
 
-cd /d "%~dp0dp0output\"
-unzip -o "%~dp0output\ASAP.zip" -d "%sd%:\"
+cd output\
+unzip -o ASAP.zip -d %sd%:\
+xcopy "%sd%:\atmosphere" "%sd%:\ASAP\atmosphere" /H /Y /C /R /S /E /I >nul 2>nul
+if exist "%sd%:\atmosphere" (RD /S /Q "%sd%:\atmosphere")
 
 GOTO HEKATEUSB
 
