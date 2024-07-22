@@ -9,13 +9,13 @@
 - extra.7z is encrypted, please contact blog channel talk.
 
 ## How to build on Windows
-- Run `ASAP.bat` and input command `DOWN`.
+- Run `ASAP.bat` and enter command `DOWN`.
 - Install **[MSYS2.exe](https://github.com/msys2/msys2-installer/releases/latest)** in `./msys64` & **[Python.exe](https://www.python.org/downloads)** by checking the items.
 ```
 ✅ Use admin privileges when installing py.exe
 ✅ Add python.exe to PATH
 ```
-- Input commands `KEYS` > `PREP` > `MAKE` > extra.7z password
+- Enter commands `KEYS` > `PREP` > `MAKE` > extra.7z password
 
 ## How to build on Linux
 <details><summary>It may vary depending on PC environment.</summary>
