@@ -101,7 +101,7 @@ UNZIP_URL="http://stahlworks.com/dev/${FILE_10}"
 PRODKEYS_URL="https://sigmapatches.su/${FILE_2}"
 SIGMA_URL="https://sigmapatches.su/${FILE_14}"
 ASA_URL="${BASE_URL}${USER_1}"
-EX_URL="${BASE_URL}${USER_1}/archive_aio/${RELEASE}${FILE_8}/${FILE_8}"
+EX_URL="${BASE_URL}${USER_1}/archive_aio/${RELEASE}Extra+/${FILE_8}"
 SOURCE_URL="${BASE_URL}${USER_1}/archive_aio/archive/refs/heads/${UPDATE_FILE}"
 LIBNX_URL="${BASE_URL}${TEAM_2}/libnx"
 ATMO_URL="${BASE_URL}${TEAM_3}/Atmosphere/${LATEST}${FILE_11}"
@@ -270,6 +270,8 @@ unzip_extra() {
 
 # info: create output dir
 create_outdir() {
+    mkdir -p "${OUT_DIR}/REPO"
+    mkdir -p "${OUT_DIR}/SERVER"
     mkdir -p "${OUT_DIR}/AIOS"
 }
 
@@ -599,17 +601,17 @@ pack_ultrahand() {
 
     cd "${TEMP_DIR}"
     zip -r "${TEMP_DIR}/Ultrahand+.zip" "./"*
-    mv "${TEMP_DIR}/Ultrahand+.zip" "${OUT_DIR}/"
+    mv "${TEMP_DIR}/Ultrahand+.zip" "${OUT_DIR}/REPO/"
 
     rm -rf "${TEMP_DIR}/config/ASAP-assist/Packages"
     cp -r "${OVL_DIR}/Ultrahand-Overlay/Packages/EN/Packages" "${TEMP_DIR}/config/ASAP-assist/"
     zip -r "${TEMP_DIR}/Ultrahand+EN.zip" "./"*
-    mv "${TEMP_DIR}/Ultrahand+EN.zip" "${OUT_DIR}/"
+    mv "${TEMP_DIR}/Ultrahand+EN.zip" "${OUT_DIR}/REPO/"
 
     rm -rf "${TEMP_DIR}/config/ASAP-assist/Packages"
     cp -r "${OVL_DIR}/Ultrahand-Overlay/Packages/JP/Packages" "${TEMP_DIR}/config/ASAP-assist/"
     zip -r "${TEMP_DIR}/Ultrahand+JP.zip" "./"*
-    mv "${TEMP_DIR}/Ultrahand+JP.zip" "${OUT_DIR}/"
+    mv "${TEMP_DIR}/Ultrahand+JP.zip" "${OUT_DIR}/REPO/"
 
     echo "Ultrahand+.zip complete"
     echo ""
@@ -630,7 +632,7 @@ pack_tester() {
     echo "${TEST_VER}" > "${TEMP_DIR}/TESTER/atmosphere/contents/010B6ECF3B30D000/03/0100B0E8EB470000"
     cd "${TEMP_DIR}/TESTER"
     zip -r "${TEMP_DIR}/Tester+.zip" "./"*
-    mv "${TEMP_DIR}/Tester+.zip" "${OUT_DIR}/"
+    mv "${TEMP_DIR}/Tester+.zip" "${OUT_DIR}/REPO/"
 
     echo "Tester+.zip complete"
     echo ""
@@ -648,12 +650,21 @@ pack_updater() {
     echo "${APP_VER}" > "${TEMP_DIR}/APP/atmosphere/contents/010B6ECF3B30D000/03/0100B0E8EB470000"
     cd "${TEMP_DIR}/APP"
     zip -r "${TEMP_DIR}/APP+.zip" "./"*
-    mv "${TEMP_DIR}/APP+.zip" "${OUT_DIR}/"
+    mv "${TEMP_DIR}/APP+.zip" "${OUT_DIR}/REPO/"
 
     rm -rf "${TEMP_DIR}"
 
     echo "APP+.zip complete"
     echo ""
+}
+
+
+# info: ASAP PACKAGING
+packaging_all() {  
+    pack_asap
+    pack_ultrahand
+    pack_tester
+    pack_updater
 }
 
 
@@ -731,7 +742,7 @@ pack_migrate() {
     mv "${TEMP_DIR}/${AIO}/ASAP/hbmenu.nro" "${TEMP_DIR}/${AIO}/"
     mv "${TEMP_DIR}/${AIO}/ASAP/payload.bin" "${TEMP_DIR}/${AIO}/"
     
-    zip -r "${OUT_DIR}/AIOS/${AIO}.zip" "./"*
+    zip -r "${OUT_DIR}/SERVER/${AIO}.zip" "./"*
 
     echo "${AIO}.zip complete"
     echo ""    

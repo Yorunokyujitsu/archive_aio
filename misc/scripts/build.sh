@@ -2,9 +2,9 @@
 
 # info: directory/file path & settings
 source config.sh
-HEADER="build ASAP"
+HEADER="build ASAP & packaging"
 MESSAGE_0=""
-MESSAGE_1="ASAP build successfully"
+MESSAGE_1="Build & packaging ASAP successfully"
 MESSAGE_2=""
 
 # info: work flow
@@ -20,5 +20,5 @@ ASAP_workflow() {
 logging
 ASAP_workflow
 build_ASAP
+packaging_all
 print_message
-./packaging.sh

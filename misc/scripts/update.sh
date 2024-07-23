@@ -4,7 +4,7 @@
 source config.sh
 HEADER="Update repositories"
 MESSAGE_0=""
-MESSAGE_1="All update & build completed"
+MESSAGE_1="All update, build & packaging completed"
 MESSAGE_2=""
 
 # info: work flow
@@ -17,4 +17,4 @@ ASAP_workflow() {
 logging
 ASAP_workflow
 build_ASAP
-./packaging.sh
+packaging_all
