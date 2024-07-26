@@ -366,8 +366,8 @@ cleanup_repo() {
     build "${OVL_DIR}/ReverseNX-RT" "clean" "y"
     build "${OVL_DIR}/Status-Monitor-Overlay" "clean" "y"
     build "${OVL_DIR}/Status-Monitor-Overlay_NOC" "clean" "y"
-    build "${SMD_DIR}/sys-con" "clean" "y"
     build "${SMD_DIR}/MissionControl" "clean" "y"
+    build "${SMD_DIR}/sys-con" "clean" "y"
 }
 
 
@@ -392,8 +392,8 @@ make_repo() {
     build "${OVL_DIR}/Status-Monitor-Overlay" "make" "y"
     build "${OVL_DIR}/Status-Monitor-Overlay_NOC" "make" "y"
     # build "${CLK_DIR}/sys-clk" "make" "y" > 'change sys-clk-oc'
-    build "${SMD_DIR}/sys-con" "make" "y"
     build "${SMD_DIR}/MissionControl" "make dist" "y"
+    build "${SMD_DIR}/sys-con" "make" "y"
 }
 
 
