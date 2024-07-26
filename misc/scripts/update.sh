@@ -11,10 +11,10 @@ MESSAGE_2=""
 ASAP_workflow() {
     print_header
     update_repo
+    build_ASAP
+    packaging_all
     print_message
 }
 
 logging
 ASAP_workflow
-build_ASAP
-packaging_all

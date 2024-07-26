@@ -437,6 +437,7 @@ build_ASAP(){
 
 # info: update archive_aio repo
 update_repo() {
+    rm -rf "${TOP_DIR}/build.log"
     rm -rf "${TOP_DIR}/atmo_logo_creator"
     rm -rf "${TOP_DIR}/AIS"
     rm -rf "${TOP_DIR}/ASAP-Updater"
@@ -468,6 +469,8 @@ update_repo() {
     create_outdir
     create_AIS
     create_logos
+
+    cd "${TOP_DIR}/misc/scripts"
 }
 
 
