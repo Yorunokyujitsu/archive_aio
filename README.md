@@ -15,7 +15,12 @@
 ✅ Use admin privileges when installing py.exe
 ✅ Add python.exe to PATH
 ```
-- Enter commands `KEYS` > `PREP` > `MAKE` > extra.7z password
+- Enter commands `KEYS` > `PREP` > `MAKE` > extra.7z password.
+
+## Rebuild with latest repos
+- This runs *Updating old repos* > *Building* > *Packaging*.
+- **[archive_aio](https://github.com/Yorunokyujitsu/archive_aio)** must have been built at least once.
+- Run `ASAP.bat` and enter command `UPDATE`.
 
 ## How to build on Linux
 <details><summary>It may vary depending on PC environment.</summary>
