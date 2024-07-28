@@ -1,27 +1,31 @@
 {
   "AIS": {
-    "version": "1.0.3.3-TESTER",
-    "download_link": "https://www.dropbox.com/scl/fi/lzyyqh3v2ec7m9mbga63q/ASAP.exe?rlkey=47f63c92ndaxs0otjswbhnfoh&dl=1"
+    "version": "1.0.3.4",
+    "download_link": "https://www.dropbox.com/scl/fi/ykq372xw7zjnlc2mbudai/ASAP.exe?rlkey=m63quc1oc7zjfoiltjpxtnu8e&dl=1"
   },
   "ASAP": {
-    "version": "0704",
-    "download_link": "https://www.dropbox.com/scl/fi/3dfs2efjsay8c2jwob52t/AIS_normal.zip?rlkey=ubfb81vt9vebymd0gt659gceo&dl=1"
+    "version": "0728",
+    "download_link": "https://www.dropbox.com/scl/fi/anra3x6dz41dlbhcl7uw2/ASAP.zip?rlkey=b31q03n6zv7lluxwlbigslle4&dl=1"
   },
   "Origin": {
     "version": "6.2.1/1.7.1",
-    "download_link": "https://www.dropbox.com/scl/fi/rcs0wue6egpi9tcuahvbm/atmosphere_1.7.1_hekate_6.2.1.zip?rlkey=v12fboqbr8h6qbv1y0vh4dlzq&dl=1"
-  }, 
+    "download_link": "https://www.dropbox.com/scl/fi/jk5x5ba44qiormyp46xko/Hekate_6.2.1_Atmosphere_1.7.1.zip?rlkey=4zma4xs1ibvlj4moil24rq0f5&dl=1"
+  },
+  "NX-Venom": {
+    "version": "4.6.6",
+    "download_link": "https://www.dropbox.com/scl/fi/7sehpjkwi5qy8f5r9mkdo/NXVenom.zip?rlkey=bu5b3vsrgec64x43ryt1snv3l&dl=1"
+  },
   "HATS": {
-    "version": "1.7.1-3",
-    "download_link": "https://www.dropbox.com/scl/fi/o4yd48gvrveqbzpgwvsz4/HATS-1.71-3.zip?rlkey=bulfgfah26c8oa8k9y8e2rqyy&dl=1"
+    "version": "1.7.1-4",
+    "download_link": "https://www.dropbox.com/scl/fi/51q9rjlcw11ftnrlegswx/HATS-1.71-4.zip?rlkey=iux21jhc88ah6js4fkaz7i9os&dl=1"
   },
   "Kefir": {
-    "version": "741",
-    "download_link": "https://www.dropbox.com/scl/fi/283lk4c4zm91n4aziqkpt/kefir741.zip?rlkey=w8kfkudg009f7b0h0fzj3pcwf&dl=1"
+    "version": "744",
+    "download_link": "https://www.dropbox.com/scl/fi/p1rn6zdvmxfsktmyq7zle/kefir744.zip?rlkey=5e3jkxds5zjaqecefzjnnsklj&dl=1"
   },
   "DeepSea": {
     "version": "4.10.0",
-    "download_link": "https://www.dropbox.com/scl/fi/zd3ht6ahg9hin0l2oth22/deepsea-advanced_v4.10.0.zip?rlkey=hvj7hqhlyldt544e0b22amoip&dl=1"
+    "download_link": "https://www.dropbox.com/scl/fi/vwh5tl7vw4u58ia5yohto/deepsea-advanced_v4.10.0.zip?rlkey=vewh5vwoi2x18gllmlagclosa&dl=1"
   },
   "Horizon": {
     "version": "18.1.0",
@@ -40,7 +44,7 @@
     "download_link": "https://www.dropbox.com/scl/fi/4ryz27tqjymywuubhup9j/Lakka.zip?rlkey=2gy7w4c2slu6horyplka8k2fy&dl=1"
   },
   "Linux": {
-    "version": "24.04 LTS",
-    "download_link": "https://www.dropbox.com/scl/fi/ma4y46yawtpq35b16b5qr/ubuntu-noble.zip?rlkey=dn02n2j09y6nmp3hf6awgawcx&dl=1"
+    "version": "22.04 LTS",
+    "download_link": "https://www.dropbox.com/scl/fi/l37t5d4e263a56b8dft39/ubuntu-jammy.zip?rlkey=mkul2xdi4gi74bna91no9k0ck&dl=1"
   }
 }

@@ -1,12 +1,12 @@
 {
     "cfws": {
         "ASAP": {
-            "ver.0704 : 안정": "https://www.dropbox.com/scl/fi/dtjnulywsug7fvtn5pdkk/AIS_normal.zip?rlkey=zf1iba15jm7kadr8r490wa9vk&dl=1"
+            "ver.0728 : ALL Devices": "https://www.dropbox.com/scl/fi/anra3x6dz41dlbhcl7uw2/ASAP.zip?rlkey=b31q03n6zv7lluxwlbigslle4&dl=1"
         },
         "AIO": {
-            "[ Kefir : 741 ] 18.1.0｜1.7.1｜6.2.0": "https://www.dropbox.com/scl/fi/a2spu5s7cscv5ra9hxhzd/KEFIR.zip?rlkey=bjvet26zztw6yurykc6k4nqaz&dl=1",
-            "[ HATS : 1.7.1-3 ] 18.1.0｜1.7.1｜6.2.1": "https://www.dropbox.com/scl/fi/360jvkb7txldze2q51prc/HATS.zip?rlkey=wkczurm805w8qewn9si47lcex&dl=1",
-            "[ DeepSea : 4.10.0 ] 18.0.1｜1.7.0｜6.1.1": "https://www.dropbox.com/scl/fi/e2u2wsyyisw2cdiqrf0gg/DEEPSEA.zip?rlkey=e5ajdm9xdha8giesqxnsunrw4&dl=1"
+            "[ NX-Venom : 4.6.6 ] 18.1.0｜1.7.1｜6.2.1": "https://www.dropbox.com/scl/fi/s5fr5ocehtw9n25okq1po/NX-Venom.zip?rlkey=vzv5jf6y5g8utolp4mw993czc&dl=1",
+            "[ Kefir : 744 ] 18.1.0｜1.7.1｜6.2.1": "https://www.dropbox.com/scl/fi/z9oszjpb6kmlgr5xen6ct/Kefir.zip?rlkey=uyv5who08ey5oddfu8lik6seu&dl=1",
+            "[ HATS : 1.7.1-4 ] 18.1.0｜1.7.1｜6.2.1": "https://www.dropbox.com/scl/fi/n8j73wy67phus5tc617j2/HATS.zip?rlkey=rroehklcouv9cka5b98edjo3n&dl=1"
         }
     },
     "hekate": {
@@ -78,7 +78,7 @@
         "[ HOS ]  1.0.0": "https://www.dropbox.com/scl/fi/1pouwx4eoo9vvzjia3zmv/1.0.0_Firmware.zip?rlkey=tdixh705hh4csvixcpwcf97e6&dl=1"
     },
     "etc": {
-        "[ Ultrahand ] - ASAP 전용 Ultrahand 패키지": "https://www.dropbox.com/scl/fi/qaloyjyg7u75zta9f6x3t/Ultrahand.zip?rlkey=3ygvhm99sdizhsgaeocnct1za&dl=1"
+        "[ Ultrahand ] - ASAP 전용 Ultrahand 패키지": "https://github.com/Yorunokyujitsu/archive_aio/releases/download/Extra%2B/Ultrahand+.zip"
     },   
     "custom": {  
         "sys": {
