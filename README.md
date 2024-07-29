@@ -6,7 +6,7 @@
 - If don't have Git, just download the **[Source Code](https://github.com/Yorunokyujitsu/archive_aio/archive/refs/heads/main.zip)**.
 
 ## extra.7z
-- extra.7z is encrypted, please contact blog channel talk.
+- extra.7z is encrypted, password is `ASAP` + last build date.
 
 ## How to build on Windows
 - Run `ASAP.bat` and enter command `DOWN`.
