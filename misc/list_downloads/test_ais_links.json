@@ -1,6 +1,6 @@
 {
   "AIS": {
-    "version": "1.0.3.4",
+    "version": "1.0.3.5",
     "download_link": "https://www.dropbox.com/scl/fi/ykq372xw7zjnlc2mbudai/ASAP.exe?rlkey=m63quc1oc7zjfoiltjpxtnu8e&dl=1"
   },
   "ASAP": {
@@ -11,7 +11,7 @@
     "version": "6.2.1/1.7.1",
     "download_link": "https://www.dropbox.com/scl/fi/jk5x5ba44qiormyp46xko/Hekate_6.2.1_Atmosphere_1.7.1.zip?rlkey=4zma4xs1ibvlj4moil24rq0f5&dl=1"
   },
-  "NX-Venom": {
+  "NXVenom": {
     "version": "4.6.6",
     "download_link": "https://www.dropbox.com/scl/fi/7sehpjkwi5qy8f5r9mkdo/NXVenom.zip?rlkey=bu5b3vsrgec64x43ryt1snv3l&dl=1"
   },
