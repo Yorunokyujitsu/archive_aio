@@ -478,6 +478,7 @@ update_repo() {
 pack_asap() {
     # output dir
     cd "${TOP_DIR}"
+    rm -rf "${OUT_DIR}/REPO/"*
     
     # ASAP folder
     mkdir -p "${TEMP_DIR}/ASAP/ASAP-assist/Controller/MissionControl" && mkdir -p "${TEMP_DIR}/ASAP/ASAP-assist/Controller/sys-con"
@@ -675,6 +676,8 @@ packaging_all() {
 download_migrate() {  
     cd "${TOP_DIR}/"
     rm -rf "${TEMP_DIR}"
+    rm -rf "${OUT_DIR}/AIOS/"*
+    rm -rf "${OUT_DIR}/SERVER/"*
 
     mkdir -p "${TEMP_DIR}/Origin/config"
     mkdir -p "${TEMP_DIR}/DeepSea"
@@ -699,15 +702,26 @@ download_migrate() {
     unzip "${TOP_DIR}/migrate/Kefir/${FILE_16}" -d "${TEMP_DIR}/Kefir/"
     unzip "${TOP_DIR}/migrate/NX-Venom/${FILE_18}" -d "${TEMP_DIR}/NX-Venom/"
     
-    cp -r "${TEMP_DIR}/HATS/exosphere.ini" "${TEMP_DIR}/Origin/"
-    cp -r "${TEMP_DIR}/HATS/atmosphere/config/system_settings.ini" "${TEMP_DIR}/Origin/atmosphere/config/"
-    cp -r "${TEMP_DIR}/HATS/exosphere.ini" "${TEMP_DIR}/DeepSea/"
-    
+    mkdir "${TEMP_DIR}/Origin/atmosphere/hosts"
     cp -r "${TOP_DIR}/migrate/Origin/${FILE_12}" "${TEMP_DIR}/Origin/bootloader/payloads/"
+    cp -r "${TEMP_DIR}/NX-Venom/atmosphere/hosts/emummc.txt" "${TEMP_DIR}/Origin/atmosphere/hosts/"
+
+    echo "[exosphere]" > "${TEMP_DIR}/Origin/exosphere.ini"
+    echo "debugmode=1" >> "${TEMP_DIR}/Origin/exosphere.ini"
+    echo "debugmode_user=0" >> "${TEMP_DIR}/Origin/exosphere.ini"
+    echo "disable_user_exception_handlers=0" >> "${TEMP_DIR}/Origin/exosphere.ini"
+    echo "enable_user_pmu_access=0" >> "${TEMP_DIR}/Origin/exosphere.ini"
+    echo "blank_prodinfo_sysmmc=0" >> "${TEMP_DIR}/Origin/exosphere.ini"
+    echo "blank_prodinfo_emummc=1" >> "${TEMP_DIR}/Origin/exosphere.ini"
+    echo "allow_writing_to_cal_sysmmc=0" >> "${TEMP_DIR}/Origin/exosphere.ini"
+    echo "log_port=0" >> "${TEMP_DIR}/Origin/exosphere.ini"
+    echo "log_baud_rate=115200" >> "${TEMP_DIR}/Origin/exosphere.ini"
+    echo "log_inverted=0" >> "${TEMP_DIR}/Origin/exosphere.ini"
+
     echo "[config]" > "${TEMP_DIR}/Origin/bootloader/hekate_ipl.ini"
     echo "autoboot=0" >> "${TEMP_DIR}/Origin/bootloader/hekate_ipl.ini"
     echo "autoboot_list=0" >> "${TEMP_DIR}/Origin/bootloader/hekate_ipl.ini"
-    echo "bootwait=0" >> "${TEMP_DIR}/Origin/bootloader/hekate_ipl.ini"
+    echo "bootwait=1" >> "${TEMP_DIR}/Origin/bootloader/hekate_ipl.ini"
     echo "noticker=0" >> "${TEMP_DIR}/Origin/bootloader/hekate_ipl.ini"
     echo "autohosoff=2" >> "${TEMP_DIR}/Origin/bootloader/hekate_ipl.ini"
     echo "autonogc=0" >> "${TEMP_DIR}/Origin/bootloader/hekate_ipl.ini"
@@ -715,16 +729,25 @@ download_migrate() {
     echo "updater2p=0" >> "${TEMP_DIR}/Origin/bootloader/hekate_ipl.ini"
     echo "backlight=100" >> "${TEMP_DIR}/Origin/bootloader/hekate_ipl.ini"
     echo "" >> "${TEMP_DIR}/Origin/bootloader/hekate_ipl.ini"
-    echo "[CFW (eMMC/SD Card)]" >> "${TEMP_DIR}/Origin/bootloader/hekate_ipl.ini"
-    echo "payload=bootloader/payloads/fusee.bin" >> "${TEMP_DIR}/Origin/bootloader/hekate_ipl.ini"
+    echo "[CFW (SD Card)]" >> "${TEMP_DIR}/Origin/bootloader/hekate_ipl.ini"
+    echo "fss0=atmosphere/package3" >> "${TEMP_DIR}/Origin/bootloader/hekate_ipl.ini"
+    echo "emummcforce=1" >> "${TEMP_DIR}/Origin/bootloader/hekate_ipl.ini"     
+    echo "kip1patch=nosigchk" >> "${TEMP_DIR}/Origin/bootloader/hekate_ipl.ini"     
+    echo "" >> "${TEMP_DIR}/Origin/bootloader/hekate_ipl.ini"
+    echo "[CFW (eMMC)]" >> "${TEMP_DIR}/Origin/bootloader/hekate_ipl.ini"     
+    echo "fss0=atmosphere/package3" >> "${TEMP_DIR}/Origin/bootloader/hekate_ipl.ini"     
+    echo "emummc_force_disable=1" >> "${TEMP_DIR}/Origin/bootloader/hekate_ipl.ini"     
+    echo "kip1patch=nosigchk" >> "${TEMP_DIR}/Origin/bootloader/hekate_ipl.ini"     
+    echo "" >> "${TEMP_DIR}/Origin/bootloader/hekate_ipl.ini"
+    echo "[CFW (fusee.bin)]" >> "${TEMP_DIR}/Origin/bootloader/hekate_ipl.ini"     
+    echo "payload=bootloader/payloads/fusee.bin" >> "${TEMP_DIR}/Origin/bootloader/hekate_ipl.ini"     
     echo "" >> "${TEMP_DIR}/Origin/bootloader/hekate_ipl.ini"
     echo "[Warmboot Error Fix (eMMC)]" >> "${TEMP_DIR}/Origin/bootloader/hekate_ipl.ini"
     echo "fss0=atmosphere/package3" >> "${TEMP_DIR}/Origin/bootloader/hekate_ipl.ini"
     echo "stock=1" >> "${TEMP_DIR}/Origin/bootloader/hekate_ipl.ini"
     echo "emummc_force_disable=1" >> "${TEMP_DIR}/Origin/bootloader/hekate_ipl.ini"
 
-    cd "${TEMP_DIR}/Origin/" && mv hekate_ctcaer_*.bin "${TEMP_DIR}/Origin/payload.bin"
-    zip -r "${OUT_DIR}/AIOS/Hekate_${HEKATE_VER}_Atmosphere_${ATMO_VER}.zip" "./"*
+    cd "${TEMP_DIR}/Origin/" && zip -r "${OUT_DIR}/AIOS/Hekate_${HEKATE_VER}_Atmosphere_${ATMO_VER}.zip" "./"*
     cd "${TEMP_DIR}/DeepSea/" && mv hekate_ctcaer_*.bin "${TEMP_DIR}/DeepSea/payload.bin"
     cd "${TOP_DIR}/"
     
