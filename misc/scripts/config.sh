@@ -109,7 +109,7 @@ FUSEE_URL="${BASE_URL}${TEAM_3}/Atmosphere/${LATEST}${FILE_12}"
 HEKATE_URL="${BASE_URL}${USER_2}/hekate/${LATEST}${FILE_13}"
 HATS_URL="https://www.mediafire.com/file_premium/${HATS_HASH}/${FILE_15}/file"
 KEFIR_URL="${BASE_URL}${USER_3}/kefir/${LATEST}${FILE_16}"
-DEEPSEA_URL="${BASE_URL}${TEAM_4}/DeepSea/${LATEST}${FILE_17}"
+DEEPSEA_URL="${BASE_URL}${TEAM_4}/DeepSea/${RELEASE}/v${DEEPSEA_VER}/${FILE_17}"
 NXVENOM_URL="${BASE_URL}${USER_4}/NX-Venom/${LATEST}${FILE_18}"
 
 EEVEE_URL='{"url":"https://tiny.cc/eeveesaveproject","title":"Eevee Save Project","enabled":1}'
