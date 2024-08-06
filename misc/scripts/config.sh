@@ -718,6 +718,8 @@ download_migrate() {
     echo "log_baud_rate=115200" >> "${TEMP_DIR}/Origin/exosphere.ini"
     echo "log_inverted=0" >> "${TEMP_DIR}/Origin/exosphere.ini"
 
+    cp -r "${TEMP_DIR}/Origin/exosphere.ini" "${TEMP_DIR}/DeepSea/"
+
     echo "[config]" > "${TEMP_DIR}/Origin/bootloader/hekate_ipl.ini"
     echo "autoboot=0" >> "${TEMP_DIR}/Origin/bootloader/hekate_ipl.ini"
     echo "autoboot_list=0" >> "${TEMP_DIR}/Origin/bootloader/hekate_ipl.ini"
