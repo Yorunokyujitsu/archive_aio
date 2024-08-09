@@ -14,6 +14,8 @@ ASAP_workflow() {
     build_ASAP
     packaging_all
     print_message
+    sleep 5
+    exit
 }
 
 logging

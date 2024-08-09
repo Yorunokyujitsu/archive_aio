@@ -71,7 +71,7 @@ FILE_11="atmosphere-${ATMO_VER}-master-${ATMO_HASH}+hbl-${HBL_VER}+hbmenu-${HBME
 FILE_12="fusee.bin"
 FILE_13="hekate_ctcaer_${HEKATE_VER}_Nyx_${NYX_VER}.zip"
 FILE_14="sigpatches.zip"
-FILE_15="HATS-1.71-4.zip"
+FILE_15="HATS-${HATS_VER}.zip"
 FILE_16="kefir${KEFIR_VER}.zip"
 FILE_17="deepsea-advanced_v${DEEPSEA_VER}.zip"
 FILE_18="NXVenom.zip"
@@ -134,6 +134,7 @@ PIP_P="install certifi pyinstaller py lz4 pillow pycryptodome requests"
 
 # info: logging
 logging() {
+    rm -rf "${TOP_DIR}/build.log"
     exec > >(tee -a "${TOP_DIR}/${LOG_FILE}") 2>&1
 }
 
@@ -437,7 +438,6 @@ build_ASAP(){
 
 # info: update archive_aio repo
 update_repo() {
-    rm -rf "${TOP_DIR}/build.log"
     rm -rf "${TOP_DIR}/atmo_logo_creator"
     rm -rf "${TOP_DIR}/AIS"
     rm -rf "${TOP_DIR}/ASAP-Updater"
