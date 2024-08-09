@@ -15,5 +15,5 @@ NYX_VER="1.6.3"
 
 DEEPSEA_VER="4.11.0"
 KEFIR_VER="745"
-HATS_VER="1.71-4"
-HATS_HASH="ctzjfaofhajtdqu"
+HATS_VER="1.71-5"
+HATS_HASH="p6vnazz54xwl31n"
