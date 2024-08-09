@@ -1,10 +1,10 @@
 {
   "AIS": {
-    "version": "1.0.3.5",
+    "version": "1.0.3.6",
     "download_link": "https://www.dropbox.com/scl/fi/ykq372xw7zjnlc2mbudai/ASAP.exe?rlkey=m63quc1oc7zjfoiltjpxtnu8e&dl=1"
   },
   "ASAP": {
-    "version": "0807",
+    "version": "0810",
     "download_link": "https://www.dropbox.com/scl/fi/anra3x6dz41dlbhcl7uw2/ASAP.zip?rlkey=b31q03n6zv7lluxwlbigslle4&dl=1"
   },
   "Origin": {
@@ -12,12 +12,12 @@
     "download_link": "https://www.dropbox.com/scl/fi/jk5x5ba44qiormyp46xko/Hekate_6.2.1_Atmosphere_1.7.1.zip?rlkey=4zma4xs1ibvlj4moil24rq0f5&dl=1"
   },
   "NXVenom": {
-    "version": "4.6.6",
+    "version": "4.7.2",
     "download_link": "https://www.dropbox.com/scl/fi/7sehpjkwi5qy8f5r9mkdo/NXVenom.zip?rlkey=bu5b3vsrgec64x43ryt1snv3l&dl=1"
   },
   "HATS": {
-    "version": "1.7.1-4",
-    "download_link": "https://www.dropbox.com/scl/fi/51q9rjlcw11ftnrlegswx/HATS-1.71-4.zip?rlkey=iux21jhc88ah6js4fkaz7i9os&dl=1"
+    "version": "1.7.1-5",
+    "download_link": "https://www.dropbox.com/scl/fi/z8829r15c3cscvikj5ro7/HATS-1.71-5.zip?rlkey=ah07pf58d76wc9tuozie6nuus&dl=1"
   },
   "Kefir": {
     "version": "745",
@@ -35,8 +35,12 @@
     "version": "1.19.1",
     "download_link": "https://www.dropbox.com/scl/fi/xmfxtzrzka4beqqgdhw4a/RetroArch.zip?rlkey=3pg9hch3pm4d99sxotojxdxw7&dl=1"
   },
-  "Android": {
-    "version": "21.0-Tab",
+  "Android_TV": {
+    "version": "21.0-TV",
+    "download_link": "https://www.dropbox.com/scl/fi/ogjpzpcnxjytzjytjt4b1/Android14_tv.zip?rlkey=qcucj973htt7z1o5njqdhzetv&dl=1"
+  },
+  "Android_Tablet": {
+    "version": "21.0-Tablet",
     "download_link": "https://www.dropbox.com/scl/fi/ypyd3qj12b8rowkxihjgk/Android14_tab.zip?rlkey=8ouu7td9sy6gwmle6iva7pjqm&dl=1"
   },
   "Emulator": {
