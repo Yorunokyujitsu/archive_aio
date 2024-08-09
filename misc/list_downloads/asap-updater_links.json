@@ -1,12 +1,12 @@
 {
     "cfws": {
         "ASAP": {
-            "ver.0807 : 안정": "https://www.dropbox.com/scl/fi/anra3x6dz41dlbhcl7uw2/ASAP.zip?rlkey=b31q03n6zv7lluxwlbigslle4&dl=1"
+            "ver.0810 : 안정": "https://www.dropbox.com/scl/fi/anra3x6dz41dlbhcl7uw2/ASAP.zip?rlkey=b31q03n6zv7lluxwlbigslle4&dl=1"
         },
         "AIO": {
-            "[ NX-Venom : 4.6.6 ] 18.1.0｜1.7.1｜6.2.1": "https://www.dropbox.com/scl/fi/s5fr5ocehtw9n25okq1po/NX-Venom.zip?rlkey=vzv5jf6y5g8utolp4mw993czc&dl=1",
+            "[ NX-Venom : 4.7.2 ] 18.1.0｜1.7.1｜6.2.1": "https://www.dropbox.com/scl/fi/s5fr5ocehtw9n25okq1po/NX-Venom.zip?rlkey=vzv5jf6y5g8utolp4mw993czc&dl=1",
             "[ Kefir : 745 ] 18.1.0｜1.7.1｜6.2.1": "https://www.dropbox.com/scl/fi/z9oszjpb6kmlgr5xen6ct/Kefir.zip?rlkey=uyv5who08ey5oddfu8lik6seu&dl=1",
-            "[ HATS : 1.7.1-4 ] 18.1.0｜1.7.1｜6.2.1": "https://www.dropbox.com/scl/fi/n8j73wy67phus5tc617j2/HATS.zip?rlkey=rroehklcouv9cka5b98edjo3n&dl=1"
+            "[ HATS : 1.7.1-5 ] 18.1.0｜1.7.1｜6.2.1": "https://www.dropbox.com/scl/fi/n8j73wy67phus5tc617j2/HATS.zip?rlkey=rroehklcouv9cka5b98edjo3n&dl=1"
         }
     },
     "hekate": {
@@ -89,7 +89,7 @@
             "[ Mission Control : 0.11.1 ] - 타사 컨트롤러 무선 지원": "https://www.dropbox.com/scl/fi/i6wnp634lzwhqtt0vlq9q/MissionControl.zip?rlkey=umqq41lv0ofohjm6faz8vjs25&dl=1",
             "[ QuickNTP : 1.2.8 ] - NTP서버 시간 동기화 오버레이": "https://www.dropbox.com/scl/fi/w616fmqc8dcou5q41xwbe/QuickNTP.zip?rlkey=gsi42mta89lp4ybwbppv2z2ne&dl=1",
             "[ SaltyNX : 0.9.2 ] - FPSLockr, Status-monitor, ReverseNX-RT 모듈": "https://www.dropbox.com/scl/fi/4n35qrps3sb178ns9y0mu/SaltyNX.zip?rlkey=gqlguhmx21vcbrxogzp0f7zbo&dl=1",
-            "[ Status-Monitor : 1.1.1 ] - 시스템 상태 모니터 오버레이": "https://www.dropbox.com/scl/fi/2kzahof4yenqnojzppeib/Status-Monitor.zip?rlkey=xosjoabrck0k7oza8bubxusgj&dl=1",
+            "[ Status-Monitor : 1.1.2 ] - 시스템 상태 모니터 오버레이": "https://www.dropbox.com/scl/fi/2kzahof4yenqnojzppeib/Status-Monitor.zip?rlkey=xosjoabrck0k7oza8bubxusgj&dl=1",
             "[ studious-pancake : 1.0.0 ] - 리부트 런처 오버레이": "https://www.dropbox.com/scl/fi/bdn54bhhtphc13jq299sg/studious-pancake.zip?rlkey=njb1g78bm5pyphxkzsq7jqwoz&dl=1",
             "[ Sys-Con : 0.6.4 ] - 타사 컨트롤러 유선 지원": "https://www.dropbox.com/scl/fi/5mtnk5a21y3au5mh3iolt/Sys-Con.zip?rlkey=avmop8jh8y3zp0asgd21xz5sd&dl=1",
             "[ sys-ftpd-light : 1.0.4b ] - FTP 서버 관리 오버레이": "https://www.dropbox.com/scl/fi/zuvw2efpww52zg697bot2/sys-ftpd-light.zip?rlkey=16g2eutwqx7voylzutci84ddx&dl=1",
@@ -107,7 +107,7 @@
             "[ Haze : 1.0.0 ] - MTP/PTP 파일 전송": "https://www.dropbox.com/scl/fi/b8ujwpnys2s525lez59pb/Haze.zip?rlkey=f29bqg910a8uvejcqjzhojosb&dl=1",
             "[ HB-appstore : 2.3.2 ] - 홈브류/시스모듈/오버레이 앱 스토어": "https://www.dropbox.com/scl/fi/ln9f6qgce3z648tz7n0rw/appstore.zip?rlkey=46h1rnodv0utzmm5zidu0fqxa&dl=1",
             "[ Hekate-Toolbox : 4.0.4 ] - 시스템 모듈 관리/부팅 설정": "https://www.dropbox.com/scl/fi/064znecgwp02oktchr8q5/Hekate-Toolbox.zip?rlkey=ofzz7i0c9ouwye5z451jr3maj&dl=1",
-            "[ JKSV : 2024.05.29 ] - 세이브 데이터 관리": "https://www.dropbox.com/scl/fi/zkkep3ys5oia4rcy90mf1/JKSV.zip?rlkey=2q5biefgkzuo5abyho4ax4o9a&dl=1",
+            "[ JKSV : 2024.08.07 ] - 세이브 데이터 관리": "https://www.dropbox.com/scl/fi/zkkep3ys5oia4rcy90mf1/JKSV.zip?rlkey=2q5biefgkzuo5abyho4ax4o9a&dl=1",
             "[ Joy-Con Utility : 1.0.1 ] - 조이콘 정보/펌웨어 관리": "https://www.dropbox.com/scl/fi/ue3z8kwojk8hkt0nqbafe/Joy-Con_Utility.zip?rlkey=xcezt4zugl9tdsfmq9dmi4xle&dl=1",
             "[ ldnmitm : 1.1.1/1.17.0 ] - LAN 플레이 홈브류/오버레이" : "https://www.dropbox.com/scl/fi/avmqr2cg00rxy6v9h3b75/ldnmitm_config.zip?rlkey=3hhu2s3thmrty3zppvc0ydidi&dl=1",
             "[ Linkalho : 2.0.1 ] - 어카운트 연동/해제 관리": "https://www.dropbox.com/scl/fi/pdu3bo2wl3w2b6gwjz4d0/Linkalho.zip?rlkey=x42ed9h072j1ulznufl7jl0qj&dl=1",
