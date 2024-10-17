@@ -47,6 +47,7 @@ MASTER_BRANCH="Master"
 PRE_BRANCH="prerelease"
 MAIN_BRANCH="main"
 TEST_BRANCH="test"
+TEMP_BRANCH="1900_support"
 
 # info: version
 source "${TOP_DIR}/version.inc"
@@ -334,7 +335,7 @@ git_clone_repo() {
     clone "${ASA_URL}/nx-hbmenu" "${TOP_DIR}/hb/hbmenu"
     clone "${ASA_URL}/nx-hbloader" "${TOP_DIR}/hb/nx-hbloader"
     clone "${ASA_URL}/hekate" "${TOP_DIR}/hekate"
-    clone "${LIBNX_URL}" "${TOP_DIR}/libnx" "1900_support"
+    clone "${LIBNX_URL}" "${TOP_DIR}/libnx" "${TEMP_BRANCH}"
     clone "${ASA_URL}/JKSV" "${APP_DIR}/JKSV"
     clone "${ASA_URL}/EdiZon-Overlay" "${OVL_DIR}/EdiZon-Overlay"
     clone "${ASA_URL}/emuiibo" "${OVL_DIR}/emuiibo" 
