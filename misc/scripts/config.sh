@@ -433,7 +433,7 @@ make_ultrahand_linux() {
 build_ASAP(){
     make_repo
     make_splash
-    make_ultrahand
+    make_ultrahand_linux
     cd "${TOP_DIR}/misc/scripts"
 }
 
