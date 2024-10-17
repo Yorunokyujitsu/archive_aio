@@ -44,6 +44,7 @@ TEAM_4="Team-Neptune"
 
 # info: branch
 MASTER_BRANCH="Master"
+PRE_BRANCH="prerelease"
 MAIN_BRANCH="main"
 TEST_BRANCH="test"
 
@@ -67,7 +68,7 @@ FILE_8="extra.7z"
 FILE_9="zip.exe"
 FILE_10="unzip.exe"
 
-FILE_11="atmosphere-${ATMO_VER}-master-${ATMO_HASH}+hbl-${HBL_VER}+hbmenu-${HBMENU_VER}.zip"
+FILE_11="atmosphere-${ATMO_VER}-${PRE_BRANCH}-${ATMO_HASH}+hbl-${HBL_VER}+hbmenu-${HBMENU_VER}.zip"
 FILE_12="fusee.bin"
 FILE_13="hekate_ctcaer_${HEKATE_VER}_Nyx_${NYX_VER}.zip"
 FILE_14="sigpatches.zip"
@@ -91,6 +92,7 @@ BASE_URL="https://github.com/"
 RELEASE="releases/download/"
 LATEST="releases/latest/download/"
 
+
 MSYS2_URL="${BASE_URL}${TEAM_1}/msys2-installer/${LATEST}${FILE_4}"
 PYTHON_URL="https://www.python.org/ftp/python/${PYTHON_VER}/${FILE_5}"
 DEVKITPRO_URL="https://pkg.devkitpro.org"
@@ -103,8 +105,8 @@ SIGMA_URL="https://sigmapatches.su/${FILE_14}"
 ASA_URL="${BASE_URL}${USER_1}"
 EX_URL="${BASE_URL}${USER_1}/archive_aio/${RELEASE}Extra+/${FILE_8}"
 SOURCE_URL="${BASE_URL}${USER_1}/archive_aio/archive/refs/heads/${UPDATE_FILE}"
-LIBNX_URL="${BASE_URL}${TEAM_2}/libnx"
-ATMO_URL="${BASE_URL}${TEAM_3}/Atmosphere/${LATEST}${FILE_11}"
+LIBNX_URL="${BASE_URL}${TEAM_3}/libnx"
+ATMO_URL="${BASE_URL}${TEAM_3}/Atmosphere/${RELEASE}1.8.0-prerelease/${FILE_11}"
 FUSEE_URL="${BASE_URL}${TEAM_3}/Atmosphere/${LATEST}${FILE_12}"
 HEKATE_URL="${BASE_URL}${USER_2}/hekate/${LATEST}${FILE_13}"
 HATS_URL="https://www.mediafire.com/file_premium/${HATS_HASH}/${FILE_15}/file"
@@ -328,11 +330,11 @@ build() {
 git_clone_repo() {
     clone "${ASA_URL}/aio-switch-updater" "${TOP_DIR}/ASAP-Updater"
     clone "${ASA_URL}/TegraExplorer" "${TOP_DIR}/ATLAS"
-    clone "${ASA_URL}/Atmosphere" "${TOP_DIR}/Atmosphere" "${TEST_BRANCH}"
+    clone "${ASA_URL}/Atmosphere" "${TOP_DIR}/Atmosphere"
     clone "${ASA_URL}/nx-hbmenu" "${TOP_DIR}/hb/hbmenu"
     clone "${ASA_URL}/nx-hbloader" "${TOP_DIR}/hb/nx-hbloader"
     clone "${ASA_URL}/hekate" "${TOP_DIR}/hekate"
-    clone "${LIBNX_URL}" "${TOP_DIR}/libnx"
+    clone "${LIBNX_URL}" "${TOP_DIR}/libnx" "1900_support"
     clone "${ASA_URL}/JKSV" "${APP_DIR}/JKSV"
     clone "${ASA_URL}/EdiZon-Overlay" "${OVL_DIR}/EdiZon-Overlay"
     clone "${ASA_URL}/emuiibo" "${OVL_DIR}/emuiibo" 
@@ -491,8 +493,8 @@ pack_asap() {
     mkdir -p "${TEMP_DIR}/switch/.overlays/.offload"
     cp -r "${OVL_DIR}/Ultrahand-Overlay/Packages/KO/Packages/" "${TEMP_DIR}/ASAP/ASAP-assist/"
     cp -r "${OVL_DIR}/Ultrahand-Overlay/Packages/ultrahand" "${TEMP_DIR}/ASAP/ASAP-assist/"
-    cp -r "${OVL_DIR}/Ultrahand-Overlay/lang" "${TEMP_DIR}/ASAP/ASAP-assist/ultrahand/"
-    rm -rf "${TEMP_DIR}/ASAP/ASAP-assist/ultrahand/lang/template.json"
+    #cp -r "${OVL_DIR}/Ultrahand-Overlay/lang" "${TEMP_DIR}/ASAP/ASAP-assist/ultrahand/"
+    #rm -rf "${TEMP_DIR}/ASAP/ASAP-assist/ultrahand/lang/template.json"
     cp -r "${OVL_DIR}/Ultrahand-Overlay/themes" "${TEMP_DIR}/ASAP/ASAP-assist/ultrahand/"
     cp -r "${SMD_DIR}/MissionControl/dist/MissionControl" "${TEMP_DIR}/ASAP/ASAP-assist/Controller/"
     cp -r "${SMD_DIR}/sys-con/out/atmosphere/contents/690000000000000D" "${TEMP_DIR}/ASAP/ASAP-assist/Controller/sys-con/"
@@ -607,15 +609,15 @@ pack_ultrahand() {
     zip -r "${TEMP_DIR}/Ultrahand+.zip" "./"*
     mv "${TEMP_DIR}/Ultrahand+.zip" "${OUT_DIR}/REPO/"
 
-    rm -rf "${TEMP_DIR}/config/ASAP-assist/Packages"
-    cp -r "${OVL_DIR}/Ultrahand-Overlay/Packages/EN/Packages" "${TEMP_DIR}/config/ASAP-assist/"
-    zip -r "${TEMP_DIR}/Ultrahand+EN.zip" "./"*
-    mv "${TEMP_DIR}/Ultrahand+EN.zip" "${OUT_DIR}/REPO/"
+    #rm -rf "${TEMP_DIR}/config/ASAP-assist/Packages"
+    #cp -r "${OVL_DIR}/Ultrahand-Overlay/Packages/EN/Packages" "${TEMP_DIR}/config/ASAP-assist/"
+    #zip -r "${TEMP_DIR}/Ultrahand+EN.zip" "./"*
+    #mv "${TEMP_DIR}/Ultrahand+EN.zip" "${OUT_DIR}/REPO/"
 
-    rm -rf "${TEMP_DIR}/config/ASAP-assist/Packages"
-    cp -r "${OVL_DIR}/Ultrahand-Overlay/Packages/JP/Packages" "${TEMP_DIR}/config/ASAP-assist/"
-    zip -r "${TEMP_DIR}/Ultrahand+JP.zip" "./"*
-    mv "${TEMP_DIR}/Ultrahand+JP.zip" "${OUT_DIR}/REPO/"
+    #rm -rf "${TEMP_DIR}/config/ASAP-assist/Packages"
+    #cp -r "${OVL_DIR}/Ultrahand-Overlay/Packages/JP/Packages" "${TEMP_DIR}/config/ASAP-assist/"
+    #zip -r "${TEMP_DIR}/Ultrahand+JP.zip" "./"*
+    #mv "${TEMP_DIR}/Ultrahand+JP.zip" "${OUT_DIR}/REPO/"
 
     echo "Ultrahand+.zip complete"
     echo ""
