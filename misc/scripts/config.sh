@@ -495,7 +495,7 @@ pack_asap() {
     cp -r "${OVL_DIR}/Ultrahand-Overlay/Packages/ultrahand" "${TEMP_DIR}/ASAP/ASAP-assist/"
     #cp -r "${OVL_DIR}/Ultrahand-Overlay/lang" "${TEMP_DIR}/ASAP/ASAP-assist/ultrahand/"
     #rm -rf "${TEMP_DIR}/ASAP/ASAP-assist/ultrahand/lang/template.json"
-    cp -r "${OVL_DIR}/Ultrahand-Overlay/themes" "${TEMP_DIR}/ASAP/ASAP-assist/ultrahand/"
+    cp -r "${OVL_DIR}/Ultrahand-Overlay/themes" "${TEMP_DIR}/ASAP/ultrahand/"
     cp -r "${SMD_DIR}/MissionControl/dist/MissionControl" "${TEMP_DIR}/ASAP/ASAP-assist/Controller/"
     cp -r "${SMD_DIR}/sys-con/out/atmosphere/contents/690000000000000D" "${TEMP_DIR}/ASAP/ASAP-assist/Controller/sys-con/"
     cp -r "${SMD_DIR}/sys-con/out/config/sys-con" "${TEMP_DIR}/ASAP/ASAP-assist/Controller/sys-con/"
