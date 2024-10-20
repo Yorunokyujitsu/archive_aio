@@ -17,7 +17,7 @@ ASAP_workflow() {
     create_outdir
     make_repo
     make_splash
-    make_ultrahand_linux
+    make_ultrahand
     pack_asap
 }
 
