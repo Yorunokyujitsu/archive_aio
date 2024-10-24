@@ -12,6 +12,7 @@ ASAP_workflow() {
     print_header
     git_clone_repo
     unzip_extra
+    sak_keys
     create_outdir
     create_AIS
     create_logos
