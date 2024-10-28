@@ -487,42 +487,27 @@ pack_asap() {
     # output dir
     cd "${TOP_DIR}"
     rm -rf "${OUT_DIR}/REPO/"*
-    
+            
+    # atmosphere folder
+    mkdir -p "${TEMP_DIR}/atmosphere/contents/010B6ECF3B30D000/02" && mkdir -p "${TEMP_DIR}/atmosphere/contents/010B6ECF3B30D000/03"
+    cp -r "${CLK_DIR}/sys-clk-oc/atmosphere" "${TEMP_DIR}/"
+    cp -r "${TOP_DIR}/Atmosphere/out/nintendo_nx_arm64_armv8a/release/atmosphere-out/atmosphere" "${TEMP_DIR}/"
+    cp -r "${PCH_DIR}/sys-patch/out/atmosphere/contents/420000000000000B" "${TEMP_DIR}/atmosphere/contents/010B6ECF3B30D000/02/SP"
+    cp -r "${SMD_DIR}/SaltySD/0000000000534C56" "${TEMP_DIR}/atmosphere/contents/"
+    cp -r "${OVL_DIR}/420000000007E51A" "${TEMP_DIR}/atmosphere/contents/"
+    cp -r "${OVL_DIR}/emuiibo/emuiibo/0100000000000352" "${TEMP_DIR}/atmosphere/contents/"
+    cp "${TOP_DIR}/hb/hbmenu/hbmenu.nro" "${TEMP_DIR}/atmosphere/hb/"
+    cp "${TOP_DIR}/hb/nx-hbloader/hbl.nsp" "${TEMP_DIR}/atmosphere/hb/"
+    echo "${ASAP_VER}" > "${TEMP_DIR}/atmosphere/contents/010B6ECF3B30D000/03/0100B0E8EB470000"
+
     # ASAP folder
-    mkdir -p "${TEMP_DIR}/ASAP/ASAP-assist/Controller/MissionControl" && mkdir -p "${TEMP_DIR}/ASAP/ASAP-assist/Controller/sys-con"
-    mkdir -p "${TEMP_DIR}/ASAP/ASAP-assist/Homebrews/JKSV" && mkdir -p "${TEMP_DIR}/ASAP/ASAP-assist/Homebrews/Linkalho"
-    mkdir -p "${TEMP_DIR}/ASAP/atmosphere/contents/010B6ECF3B30D000/02"
-    mkdir -p "${TEMP_DIR}/ASAP/atmosphere/contents/010B6ECF3B30D000/03"
-    mkdir -p "${TEMP_DIR}/ASAP/JKSV" && cp "${APP_DIR}/JKSV/webdav.json" "${TEMP_DIR}/ASAP/JKSV/"
-    mkdir -p "${TEMP_DIR}/switch/.overlays/.offload"
-    cp -r "${OVL_DIR}/Ultrahand-Overlay/Packages/KO/Packages/" "${TEMP_DIR}/ASAP/ASAP-assist/"
-    cp -r "${OVL_DIR}/Ultrahand-Overlay/Packages/ultrahand" "${TEMP_DIR}/ASAP/"
-    #cp -r "${OVL_DIR}/Ultrahand-Overlay/lang" "${TEMP_DIR}/ASAP/ASAP-assist/ultrahand/"
-    #rm -rf "${TEMP_DIR}/ASAP/ASAP-assist/ultrahand/lang/template.json"
-    #cp -r "${OVL_DIR}/Ultrahand-Overlay/themes" "${TEMP_DIR}/ASAP/ultrahand/"
-    cp -r "${SMD_DIR}/MissionControl/dist/MissionControl" "${TEMP_DIR}/ASAP/ASAP-assist/Controller/"
-    cp -r "${SMD_DIR}/sys-con/out/atmosphere/contents/690000000000000D" "${TEMP_DIR}/ASAP/ASAP-assist/Controller/sys-con/"
-    cp -r "${SMD_DIR}/sys-con/out/config/sys-con" "${TEMP_DIR}/ASAP/ASAP-assist/Controller/sys-con/"
-    cp -r "${SMD_DIR}/sys-con/out/switch" "${TEMP_DIR}/ASAP/ASAP-assist/Controller/sys-con/"
-    cp -r "${CLK_DIR}/sys-clk-oc/atmosphere" "${TEMP_DIR}/ASAP/"
-    cp -r "${TOP_DIR}/Atmosphere/out/nintendo_nx_arm64_armv8a/release/atmosphere-out/atmosphere" "${TEMP_DIR}/ASAP/"
-    cp -r "${TOP_DIR}/ATLAS/output/atmosphere" "${TEMP_DIR}/ASAP/"
-    cp -r "${PCH_DIR}/sys-patch/out/atmosphere/contents/420000000000000B" "${TEMP_DIR}/ASAP/atmosphere/contents/010B6ECF3B30D000/02/SP"
-    cp -r "${PCH_DIR}/sys-patch/out/switch/.overlays/sys-patch-overlay.ovl" "${TEMP_DIR}/ASAP/"
-    cp -r "${SMD_DIR}/SaltySD/0000000000534C56" "${TEMP_DIR}/ASAP/atmosphere/contents/"
-    cp -r "${OVL_DIR}/420000000007E51A" "${TEMP_DIR}/ASAP/atmosphere/contents/"
-    cp -r "${OVL_DIR}/emuiibo/emuiibo/0100000000000352" "${TEMP_DIR}/ASAP/atmosphere/contents/"
-    cp -r "${OVL_DIR}/emuiibo/emuiibo/emuiibo" "${TEMP_DIR}/ASAP/"
-    cp -r "${SMD_DIR}/SaltySD/SaltySD" "${TEMP_DIR}/ASAP/"
-    cp -r "${APP_DIR}/AmiiboGenerator" "${TEMP_DIR}/ASAP/ASAP-assist/Homebrews/"
-    cp "${APP_DIR}/JKSV/JKSV.nro" "${TEMP_DIR}/ASAP/ASAP-assist/Homebrews/JKSV/"
-    cp "${APP_DIR}/Linkalho/linkalho.nro" "${TEMP_DIR}/ASAP/ASAP-assist/Homebrews/Linkalho/"
-    cp "${TOP_DIR}/hb/hbmenu/hbmenu.nro" "${TEMP_DIR}/ASAP/atmosphere/hb/"
-    cp "${TOP_DIR}/hb/nx-hbloader/hbl.nsp" "${TEMP_DIR}/ASAP/atmosphere/hb/"
+    mkdir -p "${TEMP_DIR}/ASAP/" && cp -r "${TOP_DIR}/ATLAS/output/atmosphere" "${TEMP_DIR}/ASAP/"
     cp "${TOP_DIR}/ASAP-Updater/ASAP-Updater.nro" "${TEMP_DIR}/ASAP/"
+    cp "${APP_DIR}/JKSV/webdav.json" "${TEMP_DIR}/ASAP/"
     cp "${CLK_DIR}/sys-clk-oc/config/sys-clk/config.ini" "${TEMP_DIR}/ASAP/"
-    rm -rf "${TEMP_DIR}/ASAP/ASAP-assist/Packages/package.ini"
-    echo "${ASAP_VER}" > "${TEMP_DIR}/ASAP/atmosphere/contents/010B6ECF3B30D000/03/0100B0E8EB470000"
+    mv "${TEMP_DIR}/atmosphere/package3" "${TEMP_DIR}/ASAP/atmosphere/"
+    mv "${TEMP_DIR}/atmosphere/reboot_payload.bin" "${TEMP_DIR}/ASAP/atmosphere/"
+    mv "${TEMP_DIR}/atmosphere/stratosphere.romfs" "${TEMP_DIR}/ASAP/atmosphere/"
 
     # backup folder
     mkdir -p "${TEMP_DIR}/backup/kips/.OC" && cp "${CLK_DIR}/loader.kip" "${TEMP_DIR}/backup/kips/.OC/"
@@ -532,30 +517,49 @@ pack_asap() {
     cp -r "${TOP_DIR}/Atmosphere/out/nintendo_nx_arm64_armv8a/release/atmosphere-out/bootloader" "${TEMP_DIR}/"
     cp -r "${TOP_DIR}/ATLAS/output/bootloader" "${TEMP_DIR}/"
     cp -r "${TOP_DIR}/hekate/CTCaer/." "${TEMP_DIR}/bootloader"
+    # cp -r "${TOP_DIR}/Atmosphere/fs_enabled/fusee.bin" "${TEMP_DIR}/bootloader/payloads/" #fs enabled fusee.bin
     cp "${TOP_DIR}/ASAP-Updater/ATLAS/output/ATLAS.bin" "${TEMP_DIR}/bootloader/payloads/"
     cp "${TOP_DIR}/hekate/output/libsys_lp0.bso" "${TEMP_DIR}/bootloader/sys/"
     cp "${TOP_DIR}/hekate/output/libsys_minerva.bso" "${TEMP_DIR}/bootloader/sys/"
     cp "${TOP_DIR}/hekate/output/nyx.bin" "${TEMP_DIR}/bootloader/sys/"
     cp "${TEMP_DIR}/bootloader/hekate.bin" "${TEMP_DIR}/bootloader/update.bin"
+    
+    # cofig folder
+    mkdir -p "${TEMP_DIR}/config/ASAP-assist/Controller/MissionControl" && mkdir -p "${TEMP_DIR}/config/ASAP-assist/Controller/sys-con"
+    mkdir -p "${TEMP_DIR}/config/ASAP-assist/Homebrews/JKSV" && mkdir -p "${TEMP_DIR}/config/ASAP-assist/Homebrews/Linkalho"
+    cp -r "${OVL_DIR}/Ultrahand-Overlay/Packages/KO/Packages/" "${TEMP_DIR}/config/ASAP-assist/"
+    cp -r "${OVL_DIR}/Ultrahand-Overlay/Packages/ultrahand" "${TEMP_DIR}/config/"
+    cp -r "${SMD_DIR}/MissionControl/dist/MissionControl" "${TEMP_DIR}/config/ASAP-assist/Controller/"
+    cp -r "${SMD_DIR}/sys-con/out/atmosphere/contents/690000000000000D" "${TEMP_DIR}/config/ASAP-assist/Controller/sys-con/"
+    cp -r "${SMD_DIR}/sys-con/out/config/sys-con" "${TEMP_DIR}/config/ASAP-assist/Controller/sys-con/"
+    cp -r "${SMD_DIR}/sys-con/out/switch" "${TEMP_DIR}/config/ASAP-assist/Controller/sys-con/"
+    cp -r "${APP_DIR}/AmiiboGenerator" "${TEMP_DIR}/config/ASAP-assist/Homebrews/"
+    cp "${APP_DIR}/JKSV/JKSV.nro" "${TEMP_DIR}/config/ASAP-assist/Homebrews/JKSV/"
+    cp "${APP_DIR}/Linkalho/linkalho.nro" "${TEMP_DIR}/config/ASAP-assist/Homebrews/Linkalho/"
+
+    # emuiibo, saltysd folder
+    cp -r "${OVL_DIR}/emuiibo/emuiibo/emuiibo" "${TEMP_DIR}/"
+    cp -r "${SMD_DIR}/SaltySD/SaltySD" "${TEMP_DIR}/"
 
     # nsp folder
     cp -r "${TOP_DIR}/SAK/output/nsp" "${TEMP_DIR}/"
 
     # Switch folder
+    mkdir -p "${TEMP_DIR}/switch/.overlays/.offload"
     mkdir -p "${TEMP_DIR}/switch/ASAP-Updater/" && cp "${TOP_DIR}/ASAP-Updater/.ASAP-Updater.nro.star" "${TEMP_DIR}/switch/ASAP-Updater/"
     cp -r "${TOP_DIR}/Atmosphere/out/nintendo_nx_arm64_armv8a/release/atmosphere-out/switch" "${TEMP_DIR}/"
     cp -r "${APP_DIR}/DBI" "${TEMP_DIR}/switch/"
     cp -r "${APP_DIR}/DBI-ru" "${TEMP_DIR}/switch/"
     cp -r "${APP_DIR}/Tinfoil" "${TEMP_DIR}/switch/"
     cp -r "${CLK_DIR}/sys-clk-oc/switch" "${TEMP_DIR}/"
+    cp -r "${OVL_DIR}/ReverseNX-RT/Out/switch/.overlays/ReverseNX-RT-ovl.ovl" "${TEMP_DIR}/switch/.overlays/.offload/"
+    cp -r "${PCH_DIR}/sys-patch/out/switch/.overlays/sys-patch-overlay.ovl" "${TEMP_DIR}/switch/.overlays/"
     cp "${OVL_DIR}/emuiibo/emuiibo/emuiibo.ovl" "${TEMP_DIR}/switch/.overlays/"
     cp "${OVL_DIR}/FPSLocker/FPSLocker.ovl" "${TEMP_DIR}/switch/.overlays/"
     cp "${OVL_DIR}/EdiZon-Overlay/out/ovlEdiZon.ovl" "${TEMP_DIR}/switch/.overlays/"
     cp "${OVL_DIR}/Ultrahand-Overlay/ovlmenu.ovl" "${TEMP_DIR}/switch/.overlays/"
     cp "${OVL_DIR}/ovl-sysmodules/ovlSysmodules.ovl" "${TEMP_DIR}/switch/.overlays/"
-    cp "${OVL_DIR}/ReverseNX-RT/Out/switch/.overlays/ReverseNX-RT-ovl.ovl" "${TEMP_DIR}/switch/.overlays/"
     cp "${OVL_DIR}/Status-Monitor-Overlay/Status-Monitor-Overlay.ovl" "${TEMP_DIR}/switch/.overlays/"
-    
     
     # warmboot_mariko folder
     cp -r "${TOP_DIR}/Atmosphere/out/nintendo_nx_arm64_armv8a/release/atmosphere-out/warmboot_mariko" "${TEMP_DIR}/"
@@ -582,15 +586,9 @@ pack_asap() {
 
 # info: Ultrahand+.zip
 pack_ultrahand() {
-    mkdir -p "${TEMP_DIR}"
-    mkdir -p "${TEMP_DIR}/atmosphere"
-    mkdir -p "${TEMP_DIR}/config"
-    #cp -r "${OVL_DIR}/Ultrahand-Overlay/Packages/KO/Packages/package.ini" "${TEMP_DIR}/ASAP/ASAP-assist/Packages/"
+    mkdir -p "${TEMP_DIR}/config/sys-clk"
+    mkdir -p "${TEMP_DIR}/config/JKSV"
     mv "${TEMP_DIR}/ASAP/atmosphere/contents" "${TEMP_DIR}/atmosphere/"
-    mv "${TEMP_DIR}/ASAP/ASAP-assist" "${TEMP_DIR}/config/"
-    mv "${TEMP_DIR}/ASAP/ultrahand" "${TEMP_DIR}/config/"
-    mv "${TEMP_DIR}/ASAP/emuiibo" "${TEMP_DIR}/"
-    mv "${TEMP_DIR}/ASAP/SaltySD" "${TEMP_DIR}/"
     mv "${TEMP_DIR}/bootloader/hekate_ipl_.ini" "${TEMP_DIR}/bootloader/hekate_ipl.ini"
     rm -rf "${TEMP_DIR}/ASAP"
     rm -rf "${TEMP_DIR}/atmosphere/contents/010B6ECF3B30D000/01"
@@ -616,16 +614,6 @@ pack_ultrahand() {
     cd "${TEMP_DIR}"
     zip -r "${TEMP_DIR}/Ultrahand+.zip" "./"*
     mv "${TEMP_DIR}/Ultrahand+.zip" "${OUT_DIR}/REPO/"
-
-    #rm -rf "${TEMP_DIR}/config/ASAP-assist/Packages"
-    #cp -r "${OVL_DIR}/Ultrahand-Overlay/Packages/EN/Packages" "${TEMP_DIR}/config/ASAP-assist/"
-    #zip -r "${TEMP_DIR}/Ultrahand+EN.zip" "./"*
-    #mv "${TEMP_DIR}/Ultrahand+EN.zip" "${OUT_DIR}/REPO/"
-
-    #rm -rf "${TEMP_DIR}/config/ASAP-assist/Packages"
-    #cp -r "${OVL_DIR}/Ultrahand-Overlay/Packages/JP/Packages" "${TEMP_DIR}/config/ASAP-assist/"
-    #zip -r "${TEMP_DIR}/Ultrahand+JP.zip" "./"*
-    #mv "${TEMP_DIR}/Ultrahand+JP.zip" "${OUT_DIR}/REPO/"
 
     echo "Ultrahand+.zip complete"
     echo ""
@@ -692,6 +680,19 @@ pack_tester() {
 }
 
 
+# info: OC.Toolkit.zip
+oc_toolkit() {
+    mkdir -p "${TEMP_DIR}/OC/"
+    cp -r "${OVL_DIR}/Ultrahand-Overlay/Packages/KO/Packages/.offload/OC Toolkit/"* "${TEMP_DIR}/OC/"
+    cd "${TEMP_DIR}/OC"
+    zip -r "${TEMP_DIR}/OC.Toolkit.zip" "./"*
+    mv "${TEMP_DIR}/OC.Toolkit.zip" "${OUT_DIR}/REPO/"
+
+    echo "OC.Toolkit.zip complete"
+    echo ""
+}
+
+
 # info: App+.zip
 pack_updater() {
     mkdir -p "${TEMP_DIR}/APP/atmosphere/contents/010B6ECF3B30D000/03"
@@ -717,6 +718,7 @@ packaging_all() {
     pack_asap
     pack_ultrahand
     pack_tester
+    oc_toolkit
     pack_updater
 }
 
