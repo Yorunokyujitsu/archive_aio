@@ -508,6 +508,7 @@ pack_asap() {
     mv "${TEMP_DIR}/atmosphere/package3" "${TEMP_DIR}/ASAP/atmosphere/"
     mv "${TEMP_DIR}/atmosphere/reboot_payload.bin" "${TEMP_DIR}/ASAP/atmosphere/"
     mv "${TEMP_DIR}/atmosphere/stratosphere.romfs" "${TEMP_DIR}/ASAP/atmosphere/"
+    rm -rf "${TEMP_DIR}/ASAP/atmosphere/contents/010B6ECF3B30D000/01/01001FF3CDEC5000_T"
 
     # backup folder
     mkdir -p "${TEMP_DIR}/backup/kips/.OC" && cp "${CLK_DIR}/loader.kip" "${TEMP_DIR}/backup/kips/.OC/"
