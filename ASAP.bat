@@ -420,6 +420,8 @@ REM ============================================================
 :UPDATE
 
 @echo off
+curl -o "%~dp0misc\scripts\config.sh" https://raw.githubusercontent.com/Yorunokyujitsu/archive_aio/main/misc/scripts/config.sh
+curl -o "%~dp0ASAP.bat" https://raw.githubusercontent.com/Yorunokyujitsu/archive_aio/main/ASAP.bat
 cd /d "%~dp0misc\scripts\"
 %~dp0msys64\mingw64.exe %~dp0misc\scripts\update.sh
 

@@ -35,8 +35,9 @@ SCRIPT_DIR="${TOP_DIR}/misc/scripts"
 # info: user/team
 USER_1="Yorunokyujitsu"
 USER_2="CTCaer"
-USER_3="rashevskyv"
-USER_4="CatcherITGF"
+USER_3="CatcherITGF"
+USER_4="borntohonk"
+USER_5="rashevskyv"
 
 TEAM_1="msys2"
 TEAM_2="switchbrew"
@@ -108,21 +109,26 @@ SIGMA_URL="https://sigmapatches.su/${FILE_14}"
 ASA_URL="${BASE_URL}${USER_1}"
 EX_URL="${BASE_URL}${USER_1}/archive_aio/${RELEASE}Extra+/${FILE_6}"
 SOURCE_URL="${BASE_URL}${USER_1}/archive_aio/archive/refs/heads/${UPDATE_FILE}"
+BB_URL="${BASE_URL}${USER_4}"
 LIBNX_URL="${BASE_URL}${TEAM_3}/libnx"
 ATMO_URL="${BASE_URL}${TEAM_3}/Atmosphere/${RELEASE}1.8.0-${PRE_BRANCH}/${FILE_11}"
 FUSEE_URL="${BASE_URL}${TEAM_3}/Atmosphere/${RELEASE}1.8.0-${PRE_BRANCH}/${FILE_12}"
 HEKATE_URL="${BASE_URL}${USER_2}/hekate/${LATEST}${FILE_13}"
 HATS_URL="https://www.mediafire.com/file_premium/${HATS_HASH}/${FILE_15}/file"
-KEFIR_URL="${BASE_URL}${USER_3}/kefir/${LATEST}${FILE_16}"
+KEFIR_URL="${BASE_URL}${USER_5}/kefir/${LATEST}${FILE_16}"
+NXVENOM_URL="${BASE_URL}${USER_3}/NX-Venom/${LATEST}${FILE_18}"
 DEEPSEA_URL="${BASE_URL}${TEAM_4}/DeepSea/${LATEST}${FILE_17}"
-NXVENOM_URL="${BASE_URL}${USER_4}/NX-Venom/${LATEST}${FILE_18}"
 
-EEVEE_URL='{"url":"https://tiny.cc/eeveesaveproject","title":"Eevee Save Project","enabled":1}'
+EEVEE_URL='{"url":"https://tiny.cc/eeveesaveproject","title":"Eevee Save Project","enabled":0}'
 ECCHI_URL='{"url":"https://e.cchi.me/","title":"Ecchi Save Project","enabled":1}'
-LIBERA1_URL='{"url":"https://liberashop.rs/roms","title":"LiberaShop Retro ROMs","enabled":1}'
-LIBERA2_URL='{"url":"https://liberashop.rs/","title":"LiberaShop","enabled":1}'
-GHOST_URL='{"url":"https://nx.ghostland.at/","title":"Ghost eShop","enabled":1}'
-
+NXSAVE_URL='{"url":"https://nx-saves.ghostland.at/","title":"NX Saves","enabled":1}'
+ATHEME_URL='{"url":"https://a-theme.ca/","title":"The A-Theme","enabled":0}'
+LIBERA1_URL='{"url":"https://liberashop.rs/","title":"LiberaShop","enabled":0}'
+LIBERA2_URL='{"url":"https://liberashop.rs/roms","title":"LiberaShop Retro ROMs","enabled":0}'
+GHOST1_URL='{"url":"https://nx-meta.nlib.cc/","title":"Custom NX DB","enabled":1}'
+GHOST2_URL='{"url":"https://nx.ghostland.at/","title":"Ghost eShop","enabled":1}'
+GHOST3_URL='{"url":"https://nx-retro.ghostland.at/","title":"Ghost eShop RETRO","enabled":1}'
+WD_URL='{"url":"http://world:digital@free.worldigital-brasil.com:8080/","title":"WorldDigital","enabled":1}'
 
 # info: utilitys
 PACMAN="pacman -Syuu --needed --noconfirm"
@@ -277,6 +283,10 @@ unzip_extra() {
     rm -rf "${TOP_DIR}/${FILE_6}"
 }
 
+atmo_builtin_patch() {
+    cp -r "${TOP_DIR}/Atmosphere/patches/${USER_4}/"* "${TOP_DIR}/Atmosphere/"
+}
+
 
 # info: create output dir
 create_outdir() {
@@ -352,6 +362,7 @@ git_clone_repo() {
     clone "${ASA_URL}/Ultrahand-Overlay" "${OVL_DIR}/Ultrahand-Overlay"
     clone "${ASA_URL}/MissionControl" "${SMD_DIR}/MissionControl"
     clone "${ASA_URL}/sys-con" "${SMD_DIR}/sys-con"
+    clone "${BB_URL}/Switch-Ghidra-Guides" "${TOP_DIR}/Switch-Ghidra-Guides"
 }
 
 
@@ -455,6 +466,7 @@ update_repo() {
     rm -rf "${TOP_DIR}/output"
     rm -rf "${TOP_DIR}/programs"
     rm -rf "${TOP_DIR}/SAK"
+    rm -rf "${TOP_DIR}/Switch-Ghidra-Guides"
     rm -rf "${SCRIPT_DIR}/.state_keys"
     rm -rf "${SCRIPT_DIR}/.state_prep"
     
@@ -472,6 +484,7 @@ update_repo() {
     rm -rf "${TOP_DIR}/archive_aio-${UPDATE_FILE}"
 
     unzip_extra
+    atmo_builtin_patch
     sak_keys
 
     create_outdir
@@ -573,7 +586,7 @@ pack_asap() {
     mv "${TEMP_DIR}/bootloader/hekate.bin" "${TEMP_DIR}/payload.bin"
 
     # Create locations.conf file
-    echo '["usb:/","usbfs:/","sdmc:/","sdmc:/roms/","system:/","user:/","safe:/",'$EEVEE_URL','$ECCHI_URL','$LIBERA1_URL','$LIBERA2_URL','$GHOST_URL']' > "${TEMP_DIR}/ASAP/locations.conf"
+    echo '["usb:/","usbfs:/","sdmc:/","sdmc:/roms/","system:/","user:/","safe:/",'$EEVEE_URL','$ECCHI_URL','$NXSAVE_URL','$ATHEME_URL','$LIBERA1_URL','$LIBERA2_URL','$WD_URL','$GHOST1_URL','$GHOST2_URL','$GHOST3_URL']' > "${TEMP_DIR}/ASAP/locations.conf"
     
     # zip the ASAP folder
     cd "${TEMP_DIR}"
