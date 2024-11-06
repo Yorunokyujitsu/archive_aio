@@ -1,34 +1,34 @@
 {
   "AIS": {
-    "version": "1.0.3.6",
+    "version": "1.0.3.7",
     "download_link": "https://www.dropbox.com/scl/fi/ykq372xw7zjnlc2mbudai/ASAP.exe?rlkey=m63quc1oc7zjfoiltjpxtnu8e&dl=1"
   },
   "ASAP": {
-    "version": "1029",
+    "version": "1106",
     "download_link": "https://www.dropbox.com/scl/fi/anra3x6dz41dlbhcl7uw2/ASAP.zip?rlkey=b31q03n6zv7lluxwlbigslle4&dl=1"
   },
   "Origin": {
     "version": "6.2.2/1.8.0",
-    "download_link": "https://www.dropbox.com/scl/fi/jk5x5ba44qiormyp46xko/Hekate_6.2.1_Atmosphere_1.7.1.zip?rlkey=4zma4xs1ibvlj4moil24rq0f5&dl=1"
+    "download_link": "https://www.dropbox.com/scl/fi/a8ysszg892jsvhq1cc6vp/Hekate_6.2.2_Atmosphere_1.8.0.zip?rlkey=7v59u98n0gge5durwqa17s3ma&dl=1"
   },
   "NXVenom": {
-    "version": "5.0.2",
+    "version": "5.0.3",
     "download_link": "https://www.dropbox.com/scl/fi/7sehpjkwi5qy8f5r9mkdo/NXVenom.zip?rlkey=bu5b3vsrgec64x43ryt1snv3l&dl=1"
   },
   "HATS": {
-    "version": "1.8.0-v1.1",
-    "download_link": "https://www.dropbox.com/scl/fi/z8829r15c3cscvikj5ro7/HATS-1.71-5.zip?rlkey=ah07pf58d76wc9tuozie6nuus&dl=1"
+    "version": "1.8.0-v1.2",
+    "download_link": "https://www.dropbox.com/s/ir5nlx8n29li8jb/HATS-1.8.0-prerelease-V1.2.zip?dl=1"
   },
   "Kefir": {
     "version": "754",
-    "download_link": "https://www.dropbox.com/scl/fi/kuawmoj8nd4yskddfqp6u/kefir745.zip?rlkey=cqzwgf1fo8gz1cxebx43u5fog&dl=1"
+    "download_link": "https://www.dropbox.com/scl/fi/sie6d1sr01fola52eiphk/kefir754.zip?rlkey=k9sc3lwkj711lnihmrsvnkasa&dl=1"
   },
   "DeepSea": {
     "version": "4.11.0",
     "download_link": "https://www.dropbox.com/scl/fi/6jwg0ui1ki8aj4cw0f40g/deepsea-advanced_v4.11.0.zip?rlkey=u6ykukbf5c9unxhe9bjm6d8gb&dl=1"
   },
   "Horizon": {
-    "version": "19.0.0",
+    "version": "19.0.1",
     "download_link": "https://www.dropbox.com/scl/fi/m3vm8cnwkoc71bvniywg8/Firmware.zip?rlkey=hss071iat58z6hpd8rozhkki7&dl=1"
   },
   "Retroarch": {
