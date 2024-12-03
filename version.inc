@@ -2,7 +2,7 @@ BUILD_VER=$(date +'%m%d')
 
 LATEST_VER="latest"
 
-MSYS2_VER="20240727"
+MSYS2_VER="20241116"
 PYTHON_VER="3.13.0"
 
 ATMO_VER="1.8.0"
@@ -14,6 +14,13 @@ HEKATE_VER="6.2.2"
 NYX_VER="1.6.4"
 
 DEEPSEA_VER="4.11.0"
-KEFIR_VER="754"
+KEFIR_VER="756"
 HATS_VER="1.8.0-prerelease-V1.2"
 HATS_HASH="ol2g9l8c6ms8y1q"
+
+[latest_version]
+ultrahand_version=1.8.2
+tester_version=1202
+toolkit_version=1.5.0
+kip_version=1.5.0
+eos_version=1.1.1
