@@ -15,8 +15,8 @@ NYX_VER="1.6.4"
 
 DEEPSEA_VER="4.11.0"
 KEFIR_VER="756"
-HATS_VER="1.8.0-prerelease-V1.2"
-HATS_HASH="ol2g9l8c6ms8y1q"
+HATS_VER="1.8.0-prerelease-V1.3"
+HATS_HASH="rg6pbf52fvgp4fo"
 
 [latest_version]
 ultrahand_version=1.8.2
