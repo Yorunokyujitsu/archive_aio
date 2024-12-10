@@ -554,6 +554,7 @@ pack_asap() {
     # cofig folder
     mkdir -p "${TEMP_DIR}/config/ASAP-assist/Controller/MissionControl" && mkdir -p "${TEMP_DIR}/config/ASAP-assist/Controller/sys-con"
     mkdir -p "${TEMP_DIR}/config/ASAP-assist/Homebrews/JKSV" && mkdir -p "${TEMP_DIR}/config/ASAP-assist/Homebrews/Linkalho"
+    cp -r "${TOP_DIR}/Atmosphere/out/nintendo_nx_arm64_armv8a/release/atmosphere-out/config" "${TEMP_DIR}/"
     cp -r "${OVL_DIR}/Ultrahand-Overlay/Packages/KO/Packages/" "${TEMP_DIR}/config/ASAP-assist/"
     cp -r "${OVL_DIR}/Ultrahand-Overlay/Packages/ultrahand" "${TEMP_DIR}/config/"
     cp -r "${SMD_DIR}/MissionControl/dist/MissionControl" "${TEMP_DIR}/config/ASAP-assist/Controller/"
@@ -578,6 +579,7 @@ pack_asap() {
     cp -r "${APP_DIR}/DBI" "${TEMP_DIR}/switch/"
     cp -r "${APP_DIR}/DBI-ru" "${TEMP_DIR}/switch/"
     cp -r "${APP_DIR}/Tinfoil" "${TEMP_DIR}/switch/"
+    cp -r "${APP_DIR}/Sphaira" "${TEMP_DIR}/switch/"
     cp -r "${CLK_DIR}/sys-clk-oc/switch" "${TEMP_DIR}/"
     cp -r "${OVL_DIR}/ReverseNX-RT/Out/switch/.overlays/ReverseNX-RT-ovl.ovl" "${TEMP_DIR}/switch/.overlays/.offload/"
     cp -r "${OVL_DIR}/NX-FanControl/out/switch/.overlays/NX-FanControl.ovl" "${TEMP_DIR}/switch/.overlays/.offload/"
