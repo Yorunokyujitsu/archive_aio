@@ -635,6 +635,7 @@ pack_ultrahand() {
     rm -rf "${TEMP_DIR}/switch/DBI-ru"
     rm -rf "${TEMP_DIR}/switch/Haze"
     rm -rf "${TEMP_DIR}/switch/Reboot2payload"
+    rm -rf "${TEMP_DIR}/switch/sphaira"
     rm -rf "${TEMP_DIR}/switch/Tinfoil"
     rm -rf "${TEMP_DIR}/warmboot_mariko"
     rm -rf "${TEMP_DIR}/boot.dat"
