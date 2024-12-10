@@ -2,7 +2,7 @@
 mode con: cols=101 lines=32
 SETLOCAL ENABLEDELAYEDEXPANSION
 chcp 949 >nul 2>&1
-title ASAP Install Supporter
+title ASAP Maker
 
 COLOR 09
 set wd=%temp%\sdfiles
