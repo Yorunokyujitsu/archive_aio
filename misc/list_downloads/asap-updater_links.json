@@ -105,7 +105,7 @@
             "[ Chiaki : 2.2.0 ] - PlayStation 리모트 플레이": "https://www.dropbox.com/scl/fi/l5oa4u0cz1bbkefz0gx1y/chiaki.zip?rlkey=w9fra82sf4htn1cxg1xra18pb&dl=1",
             "[ Daybreak : 1.0.0 ] - Horizon OS 업데이트": "https://www.dropbox.com/scl/fi/0p4b3ciif5i4bklx72dkl/Daybreak.zip?rlkey=3jxb8fbhtq9p8c3ld9n1q6hef&dl=1",
             "[ DB Installer : 658 ] - 종합 파일 관리": "https://www.dropbox.com/scl/fi/6xm9juxdmo11yj3x4agjc/DBI.zip?rlkey=mu6ji916mgldplfimafy9nbex&dl=1",
-            "[ DB Installer : 731 ] - 러시아어 버전": "https://www.dropbox.com/scl/fi/4x6qhiornfwkfnp9qksb0/DBI-ru.zip?rlkey=twxivr46jkmdt0ognmzd4688f&dl=1",
+            "[ DB Installer : 740 ] - 러시아어 버전": "https://www.dropbox.com/scl/fi/4x6qhiornfwkfnp9qksb0/DBI-ru.zip?rlkey=twxivr46jkmdt0ognmzd4688f&dl=1",
             "[ DuckStation : 0.1-5426 ] - PlayStation 에뮬레이터": "https://www.dropbox.com/scl/fi/w2bfgxxywly4ayycqlyr9/duckstation.zip?rlkey=o3ob96vdmtpzypi6dklirryu2&dl=1",
             "[ Fizeau : 2.8.1 ] - 색감 관리": "https://www.dropbox.com/scl/fi/o1f1vhbwneumt1snzegbq/Fizeau.zip?rlkey=sem01j6gnquof8kx86lka5m39&dl=1",
             "[ Goldleaf : 1.0.0 ] - 종합 파일 관리": "https://www.dropbox.com/scl/fi/bsn7uq58c36qd0vujai6a/Goldleaf.zip?rlkey=42831yq7sfmgo54kwddupu2ae&dl=1",
@@ -149,7 +149,7 @@
     },        
     "extra": {
         "android": {
-            "[ Lineage OS ] 21.0 (241203)｜Android 14｜TV": "https://www.dropbox.com/scl/fi/t3k05bsgqp3ffoyetd23v/Android14_tv.zip?rlkey=bkyzomuyr8ww9mwzr6334a1au&dl=1",
+            "[ Lineage OS ] 21.0 (241210)｜Android 14｜TV": "https://www.dropbox.com/scl/fi/t3k05bsgqp3ffoyetd23v/Android14_tv.zip?rlkey=bkyzomuyr8ww9mwzr6334a1au&dl=1",
             "[ Lineage OS ] 21.0 (241208)｜Android 14｜Tablet": "https://www.dropbox.com/scl/fi/v55tu5qstqq5cv3iahgem/Android14_tab.zip?rlkey=kv0cb1d2hmm9sacgobp1ic91y&dl=1"
         },
         "ubuntu": {
