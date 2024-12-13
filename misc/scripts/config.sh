@@ -110,7 +110,7 @@ ASA_URL="${BASE_URL}${USER_1}"
 EX_URL="${BASE_URL}${USER_1}/archive_aio/${RELEASE}Extra+/${FILE_6}"
 SOURCE_URL="${BASE_URL}${USER_1}/archive_aio/archive/refs/heads/${UPDATE_FILE}"
 BB_URL="${BASE_URL}${USER_4}"
-LIBNX_URL="${BASE_URL}${TEAM_3}/libnx"
+LIBNX_URL="${BASE_URL}${TEAM_2}/libnx"
 ATMO_URL="${BASE_URL}${TEAM_3}/Atmosphere/${RELEASE}1.8.0-${PRE_BRANCH}/${FILE_11}"
 FUSEE_URL="${BASE_URL}${TEAM_3}/Atmosphere/${RELEASE}1.8.0-${PRE_BRANCH}/${FILE_12}"
 HEKATE_URL="${BASE_URL}${USER_2}/hekate/${LATEST}${FILE_13}"
@@ -128,7 +128,7 @@ LIBERA2_URL='{"url":"https://liberashop.rs/roms","title":"LiberaShop Retro ROMs"
 GHOST1_URL='{"url":"https://nx-meta.nlib.cc/","title":"Custom NX DB","enabled":1}'
 GHOST2_URL='{"url":"https://nx.ghostland.at/","title":"Ghost eShop","enabled":1}'
 GHOST3_URL='{"url":"https://nx-retro.ghostland.at/","title":"Ghost eShop RETRO","enabled":1}'
-WD_URL='{"url":"http://world:digital@free.worldigital-brasil.com:8080/","title":"WorldDigital","enabled":1}'
+ULTRA_URL='{"url":"https://tinfoil.ultranx.ru","title":"UltraNX","enabled":1}'
 
 # info: utilitys
 PACMAN="pacman -Syuu --needed --noconfirm"
@@ -351,7 +351,7 @@ git_clone_repo() {
     clone "${ASA_URL}/nx-hbmenu" "${TOP_DIR}/hb/hbmenu"
     clone "${ASA_URL}/nx-hbloader" "${TOP_DIR}/hb/nx-hbloader"
     clone "${ASA_URL}/hekate" "${TOP_DIR}/hekate"
-    clone "${LIBNX_URL}" "${TOP_DIR}/libnx" "${TEMP_BRANCH}"
+    clone "${LIBNX_URL}" "${TOP_DIR}/libnx"
     clone "${ASA_URL}/JKSV" "${APP_DIR}/JKSV"
     clone "${ASA_URL}/EdiZon-Overlay" "${OVL_DIR}/EdiZon-Overlay"
     clone "${ASA_URL}/emuiibo" "${OVL_DIR}/emuiibo" "${TEST_BRANCH}"
@@ -359,34 +359,11 @@ git_clone_repo() {
     clone "${ASA_URL}/ovl-sysmodules" "${OVL_DIR}/ovl-sysmodules"
     clone "${ASA_URL}/ReverseNX-RT" "${OVL_DIR}/ReverseNX-RT"
     clone "${ASA_URL}/Status-Monitor-Overlay" "${OVL_DIR}/Status-Monitor-Overlay"
+    clone "${ASA_URL}/NX-FanControl" "${OVL_DIR}/NX-FanControl"
     clone "${ASA_URL}/Ultrahand-Overlay" "${OVL_DIR}/Ultrahand-Overlay"
     clone "${ASA_URL}/MissionControl" "${SMD_DIR}/MissionControl"
     clone "${ASA_URL}/sys-con" "${SMD_DIR}/sys-con"
     clone "${BB_URL}/Switch-Ghidra-Guides" "${TOP_DIR}/Switch-Ghidra-Guides"
-}
-
-
-# info: cleanup repo
-cleanup_repo() {
-    build "${TOP_DIR}/libnx" "clean" "y"
-    build "${TOP_DIR}/Atmosphere" "clean" "y"
-    build "${TOP_DIR}/hekate" "clean" "y"
-    build "${TOP_DIR}/ASAP-Updater" "clean" "y"
-    build "${TOP_DIR}/ATLAS" "clean" "y"
-    build "${TOP_DIR}/hb/hbmenu" "clean" "y"
-    build "${TOP_DIR}/hb/nx-hbloader" "clean" "y"
-    build "${PCH_DIR}/sys-patch" "clean" "y"
-    build "${PCH_DIR}/SPU" "clean" "y"
-    build "${APP_DIR}/JKSV" "clean" "y"
-    build "${APP_DIR}/Linkalho" "clean" "y"
-    build "${OVL_DIR}/EdiZon-Overlay" "clean" "y"
-    build "${OVL_DIR}/emuiibo" "clean" "y"
-    build "${OVL_DIR}/FPSLocker" "clean" "y"
-    build "${OVL_DIR}/ovl-sysmodules" "clean" "y"
-    build "${OVL_DIR}/ReverseNX-RT" "clean" "y"
-    build "${OVL_DIR}/Status-Monitor-Overlay" "clean" "y"
-    build "${SMD_DIR}/MissionControl" "clean" "y"
-    build "${SMD_DIR}/sys-con" "clean" "y"
 }
 
 
@@ -409,12 +386,54 @@ make_repo() {
     build "${OVL_DIR}/ovl-sysmodules" "make" "y"
     build "${OVL_DIR}/ReverseNX-RT" "make" "y"
     build "${OVL_DIR}/Status-Monitor-Overlay" "make" "y"
+    build "${OVL_DIR}/NX-FanControl" "make" "n"
     # build "${CLK_DIR}/sys-clk" "make" "y"
     build "${SMD_DIR}/MissionControl" "make dist" "y"
     build "${SMD_DIR}/sys-con" "make" "y"
 }
 
+# for ASAP-Updater
+del_updater_tegra() {
+    rm -rf "${TOP_DIR}/ASAP-Updater/TegraExplorer"
+    rm -rf "${TOP_DIR}/ASAP-Updater/custom_packs.json"
+    rm -rf "${TOP_DIR}/ASAP-Updater/hide_tabs.json"
+    rm -rf "${TOP_DIR}/ASAP-Updater/internet.json"
+    rm -rf "${TOP_DIR}/ASAP-Updater/jc_profiles.json"
+    rm -rf "${TOP_DIR}/ASAP-Updater/pc_profiles.json"
+}
 
+# info: 8gb ram
+build_for_8gb() {
+    mkdir -p "${TOP_DIR}/Atmosphere/ram/8gb/atmosphere" && mkdir -p "${TOP_DIR}/Atmosphere/ram/8gb/bootloader/payloads"
+    mkdir -p "${TOP_DIR}/hekate/ram/8gb/bootloader/sys"
+    
+    cp "${TOP_DIR}/Atmosphere/out/nintendo_nx_arm64_armv8a/release/atmosphere-out/atmosphere/package3" "${TOP_DIR}/Atmosphere/ram/8gb/atmosphere/"
+    cp "${TOP_DIR}/Atmosphere/out/nintendo_nx_arm64_armv8a/release/atmosphere-out/atmosphere/reboot_payload.bin" "${TOP_DIR}/Atmosphere/ram/8gb/atmosphere/"
+    cp "${TOP_DIR}/Atmosphere/out/nintendo_nx_arm64_armv8a/release/atmosphere-out/atmosphere/stratosphere.romfs" "${TOP_DIR}/Atmosphere/ram/8gb/atmosphere/"
+    cp "${TOP_DIR}/Atmosphere/out/nintendo_nx_arm64_armv8a/release/atmosphere-out/bootloader/payloads/fusee.bin" "${TOP_DIR}/Atmosphere/ram/8gb/bootloader/payloads/"
+    cp "${TOP_DIR}/hekate/output/hekate.bin" "${TOP_DIR}/hekate/ram/8gb/bootloader/update.bin"
+    cp "${TOP_DIR}/hekate/output/hekate.bin" "${TOP_DIR}/hekate/ram/8gb/payload.bin"
+    cp "${TOP_DIR}/hekate/output/libsys_lp0.bso" "${TOP_DIR}/hekate/ram/8gb/bootloader/sys/"
+    cp "${TOP_DIR}/hekate/output/libsys_minerva.bso" "${TOP_DIR}/hekate/ram/8gb/bootloader/sys/"
+    cp "${TOP_DIR}/hekate/output/nyx.bin" "${TOP_DIR}/hekate/ram/8gb/bootloader/sys/"
+    
+    build "${TOP_DIR}/Atmosphere" "make clean" "y"
+    build "${TOP_DIR}/hekate" "make clean" "y"
+
+    cp -r "${TOP_DIR}/Atmosphere/patches/4GB_RAM/exosphere" "${TOP_DIR}/Atmosphere/"
+    cp -r "${TOP_DIR}/hekate/4GB_RAM/bdk" "${TOP_DIR}/hekate/"
+    
+    build "${TOP_DIR}/Atmosphere" "make" "y"
+    build "${TOP_DIR}/hekate" "make" "y"
+
+    mv "${TOP_DIR}/Atmosphere/ram/8gb" "${TOP_DIR}/Atmosphere/out/nintendo_nx_arm64_armv8a/release/atmosphere-out/atmosphere/"
+    mv "${TOP_DIR}/hekate/ram/8gb" "${TOP_DIR}/hekate/output/"
+
+    rm -rf "${TOP_DIR}/Atmosphere/ram"
+    rm -rf "${TOP_DIR}/hekate/ram"
+}
+
+# rebuild atmosphere by converting your splash.png to splash.bin
 make_splash() {
     cd "${UTIL_DIR}/"
     rm -rf "${TOP_DIR}/Atmosphere/img/splash.bin"
@@ -428,7 +447,7 @@ make_splash() {
     build "${TOP_DIR}/Atmosphere" "make" "y"
 }
 
-
+# if failed make ultrahand > try zziplib package change
 make_ultrahand_zziplib() {
     rm -rf "${DEV_DIR}/portlibs/switch"
     unzip "${ZIP_DIR}/${ZZIPLIB1}" -d "${DEV_DIR}"
@@ -447,8 +466,9 @@ make_ultrahand() {
 # make ASAP
 build_ASAP(){
     make_repo
-    make_splash
+    # make_splash
     make_ultrahand
+    build_for_8gb
     cd "${TOP_DIR}/misc/scripts"
 }
 
@@ -474,6 +494,7 @@ update_repo() {
     install_packages
     clone "${ASA_URL}/atmo_logo_creator" "${TOP_DIR}/atmo_logo_creator"
     git_clone_repo
+    del_updater_tegra
     
     curl -L -o "${TOP_DIR}/archive_aio-${UPDATE_FILE}" "${SOURCE_URL}"
     curl -L -o "${TOP_DIR}/${FILE_6}" "${EX_URL}"
@@ -509,6 +530,7 @@ pack_asap() {
     cp -r "${SMD_DIR}/SaltySD/0000000000534C56" "${TEMP_DIR}/atmosphere/contents/"
     cp -r "${OVL_DIR}/420000000007E51A" "${TEMP_DIR}/atmosphere/contents/"
     cp -r "${OVL_DIR}/emuiibo/emuiibo/0100000000000352" "${TEMP_DIR}/atmosphere/contents/"
+    cp -r "${OVL_DIR}/NX-FanControl/out/atmosphere/contents/00FF0000B378D640" "${TEMP_DIR}/atmosphere/contents/"
     cp "${TOP_DIR}/hb/hbmenu/hbmenu.nro" "${TEMP_DIR}/atmosphere/hb/"
     cp "${TOP_DIR}/hb/nx-hbloader/hbl.nsp" "${TEMP_DIR}/atmosphere/hb/"
     echo "${ASAP_VER}" > "${TEMP_DIR}/atmosphere/contents/010B6ECF3B30D000/03/0100B0E8EB470000"
@@ -521,6 +543,7 @@ pack_asap() {
     mv "${TEMP_DIR}/atmosphere/package3" "${TEMP_DIR}/ASAP/atmosphere/"
     mv "${TEMP_DIR}/atmosphere/reboot_payload.bin" "${TEMP_DIR}/ASAP/atmosphere/"
     mv "${TEMP_DIR}/atmosphere/stratosphere.romfs" "${TEMP_DIR}/ASAP/atmosphere/"
+    mv "${TEMP_DIR}/atmosphere/8gb" "${TEMP_DIR}/ASAP/atmosphere/"
     rm -rf "${TEMP_DIR}/ASAP/atmosphere/contents/010B6ECF3B30D000/01/01001FF3CDEC5000_T"
 
     # backup folder
@@ -531,7 +554,7 @@ pack_asap() {
     cp -r "${TOP_DIR}/Atmosphere/out/nintendo_nx_arm64_armv8a/release/atmosphere-out/bootloader" "${TEMP_DIR}/"
     cp -r "${TOP_DIR}/ATLAS/output/bootloader" "${TEMP_DIR}/"
     cp -r "${TOP_DIR}/hekate/CTCaer/." "${TEMP_DIR}/bootloader"
-    # cp -r "${TOP_DIR}/Atmosphere/fs_enabled/fusee.bin" "${TEMP_DIR}/bootloader/payloads/" #fs enabled fusee.bin
+    cp -r "${TOP_DIR}/hekate/output/8gb" "${TEMP_DIR}/bootloader/"
     cp "${TOP_DIR}/ASAP-Updater/ATLAS/output/ATLAS.bin" "${TEMP_DIR}/bootloader/payloads/"
     cp "${TOP_DIR}/hekate/output/libsys_lp0.bso" "${TEMP_DIR}/bootloader/sys/"
     cp "${TOP_DIR}/hekate/output/libsys_minerva.bso" "${TEMP_DIR}/bootloader/sys/"
@@ -541,6 +564,7 @@ pack_asap() {
     # cofig folder
     mkdir -p "${TEMP_DIR}/config/ASAP-assist/Controller/MissionControl" && mkdir -p "${TEMP_DIR}/config/ASAP-assist/Controller/sys-con"
     mkdir -p "${TEMP_DIR}/config/ASAP-assist/Homebrews/JKSV" && mkdir -p "${TEMP_DIR}/config/ASAP-assist/Homebrews/Linkalho"
+    cp -r "${TOP_DIR}/Atmosphere/out/nintendo_nx_arm64_armv8a/release/atmosphere-out/config" "${TEMP_DIR}/"
     cp -r "${OVL_DIR}/Ultrahand-Overlay/Packages/KO/Packages/" "${TEMP_DIR}/config/ASAP-assist/"
     cp -r "${OVL_DIR}/Ultrahand-Overlay/Packages/ultrahand" "${TEMP_DIR}/config/"
     cp -r "${SMD_DIR}/MissionControl/dist/MissionControl" "${TEMP_DIR}/config/ASAP-assist/Controller/"
@@ -565,8 +589,10 @@ pack_asap() {
     cp -r "${APP_DIR}/DBI" "${TEMP_DIR}/switch/"
     cp -r "${APP_DIR}/DBI-ru" "${TEMP_DIR}/switch/"
     cp -r "${APP_DIR}/Tinfoil" "${TEMP_DIR}/switch/"
+    cp -r "${APP_DIR}/Sphaira" "${TEMP_DIR}/switch/"
     cp -r "${CLK_DIR}/sys-clk-oc/switch" "${TEMP_DIR}/"
     cp -r "${OVL_DIR}/ReverseNX-RT/Out/switch/.overlays/ReverseNX-RT-ovl.ovl" "${TEMP_DIR}/switch/.overlays/.offload/"
+    cp -r "${OVL_DIR}/NX-FanControl/out/switch/.overlays/NX-FanControl.ovl" "${TEMP_DIR}/switch/.overlays/.offload/"
     cp -r "${PCH_DIR}/sys-patch/out/switch/.overlays/sys-patch-overlay.ovl" "${TEMP_DIR}/switch/.overlays/"
     cp "${OVL_DIR}/emuiibo/emuiibo/emuiibo.ovl" "${TEMP_DIR}/switch/.overlays/"
     cp "${OVL_DIR}/FPSLocker/FPSLocker.ovl" "${TEMP_DIR}/switch/.overlays/"
@@ -586,7 +612,7 @@ pack_asap() {
     mv "${TEMP_DIR}/bootloader/hekate.bin" "${TEMP_DIR}/payload.bin"
 
     # Create locations.conf file
-    echo '["usb:/","usbfs:/","sdmc:/","sdmc:/roms/","system:/","user:/","safe:/",'$EEVEE_URL','$ECCHI_URL','$NXSAVE_URL','$ATHEME_URL','$LIBERA1_URL','$LIBERA2_URL','$WD_URL','$GHOST1_URL','$GHOST2_URL','$GHOST3_URL']' > "${TEMP_DIR}/ASAP/locations.conf"
+    echo '["usb:/","usbfs:/","sdmc:/","sdmc:/roms/","system:/","user:/","safe:/",'$ECCHI_URL','$NXSAVE_URL','$GHOST1_URL','$ATHEME_URL','$ULTRA_URL','$GHOST3_URL','$GHOST2_URL']' > "${TEMP_DIR}/ASAP/locations.conf"
     
     # zip the ASAP folder
     cd "${TEMP_DIR}"
@@ -619,6 +645,7 @@ pack_ultrahand() {
     rm -rf "${TEMP_DIR}/switch/DBI-ru"
     rm -rf "${TEMP_DIR}/switch/Haze"
     rm -rf "${TEMP_DIR}/switch/Reboot2payload"
+    rm -rf "${TEMP_DIR}/switch/sphaira"
     rm -rf "${TEMP_DIR}/switch/Tinfoil"
     rm -rf "${TEMP_DIR}/warmboot_mariko"
     rm -rf "${TEMP_DIR}/boot.dat"
@@ -677,6 +704,7 @@ pack_tester() {
     
     # nsp folder
     cp -r "${TOP_DIR}/SAK/output/nsp" "${TEMP_DIR}/TESTER/"
+    rm -rf "${TEMP_DIR}/TESTER/nsp/DBI_ru_[01ED1F4DEEA68000].nsp"
 
     # SX_Gear
     cp "${TOP_DIR}/misc/modchip/SX/SX_Gear/boot.dat" "${TEMP_DIR}/TESTER/"
