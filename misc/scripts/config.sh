@@ -132,13 +132,13 @@ ULTRA_URL='{"url":"https://tinfoil.ultranx.ru","title":"UltraNX","enabled":1}'
 
 # info: utilitys
 PACMAN="pacman -Syuu --needed --noconfirm"
-DEFAULT_P="git gcc make curl zip lz4 p7zip"
+DEFAULT_P="git gcc make cmake curl zip lz4 p7zip"
 DEVKIT_P="devkitA64 devkitARM dkp-toolchain-vars hactool"
 PYTHON_P="python-pip python-setuptools python-certifi"
 MINGWPY_P="mingw-w64-x86_64-python-pip mingw-w64-x86_64-python-pycryptodome mingw-w64-x86_64-python-lz4 mingw-w64-x86_64-python-psutil mingw-w64-x86_64-python-numpy"
-MINGWUT_P="mingw-w64-x86_64-gcc mingw-w64-x86_64-libjpeg-turbo mingw-w64-x86_64-zlib mingw-w64-x86_64-libtiff mingw-w64-x86_64-freetype"
+MINGWUT_P="mingw-w64-x86_64-cmake mingw-w64-x86_64-gcc mingw-w64-x86_64-libjpeg-turbo mingw-w64-x86_64-zlib mingw-w64-x86_64-libtiff mingw-w64-x86_64-freetype"
 SWITCH_P1="switch-dev switch-sdl2_image switch-sdl2_gfx switch-glad switch-glfw switch-glm"
-SWITCH_P2="switch-harfbuzz switch-freetype switch-libconfig switch-libjson-c switch-physfs"
+SWITCH_P2="switch-cmake switch-harfbuzz switch-freetype switch-libconfig switch-libjson-c switch-physfs"
 SWITCH_P3="switch-curl switch-zziplib switch-mbedtls switch-jansson switch-tinyxml2"
 PIP_P="install certifi pyinstaller py lz4 pillow pycryptodome requests"
 
@@ -353,6 +353,7 @@ git_clone_repo() {
     clone "${ASA_URL}/hekate" "${TOP_DIR}/hekate"
     clone "${LIBNX_URL}" "${TOP_DIR}/libnx"
     clone "${ASA_URL}/JKSV" "${APP_DIR}/JKSV"
+    clone "${ASA_URL}/sphaira" "${APP_DIR}/sphaira" "${TEST_BRANCH}"
     clone "${ASA_URL}/EdiZon-Overlay" "${OVL_DIR}/EdiZon-Overlay"
     clone "${ASA_URL}/emuiibo" "${OVL_DIR}/emuiibo" "${TEST_BRANCH}"
     clone "${ASA_URL}/FPSLocker" "${OVL_DIR}/FPSLocker"
@@ -390,6 +391,16 @@ make_repo() {
     # build "${CLK_DIR}/sys-clk" "make" "y"
     build "${SMD_DIR}/MissionControl" "make dist" "y"
     build "${SMD_DIR}/sys-con" "make" "y"
+}
+
+# cmake sphaira
+build_sphaira() {
+    cd "${TOP_DIR}/programs/homebrews/sphaira"
+
+    "${TOP_DIR}/msys64/clang64.exe" bash -c "
+        mkdir build && cd build && cmake .. && cd ../ && ./build_release.sh
+    "
+    cd "${TOP_DIR}/"
 }
 
 # for ASAP-Updater
@@ -465,6 +476,7 @@ make_ultrahand() {
 
 # make ASAP
 build_ASAP(){
+    build_sphaira
     make_repo
     # make_splash
     make_ultrahand
@@ -485,6 +497,7 @@ update_repo() {
     rm -rf "${TOP_DIR}/libnx"
     rm -rf "${TOP_DIR}/output"
     rm -rf "${TOP_DIR}/programs"
+    rm -rf "${APP_DIR}/sphaira/build" && rm -rf "${APP_DIR}/sphaira/out"
     rm -rf "${TOP_DIR}/SAK"
     rm -rf "${TOP_DIR}/Switch-Ghidra-Guides"
     rm -rf "${SCRIPT_DIR}/.state_keys"
@@ -530,7 +543,6 @@ pack_asap() {
     cp -r "${SMD_DIR}/SaltySD/0000000000534C56" "${TEMP_DIR}/atmosphere/contents/"
     cp -r "${OVL_DIR}/420000000007E51A" "${TEMP_DIR}/atmosphere/contents/"
     cp -r "${OVL_DIR}/emuiibo/emuiibo/0100000000000352" "${TEMP_DIR}/atmosphere/contents/"
-    cp -r "${OVL_DIR}/NX-FanControl/out/atmosphere/contents/00FF0000B378D640" "${TEMP_DIR}/atmosphere/contents/"
     cp "${TOP_DIR}/hb/hbmenu/hbmenu.nro" "${TEMP_DIR}/atmosphere/hb/"
     cp "${TOP_DIR}/hb/nx-hbloader/hbl.nsp" "${TEMP_DIR}/atmosphere/hb/"
     echo "${ASAP_VER}" > "${TEMP_DIR}/atmosphere/contents/010B6ECF3B30D000/03/0100B0E8EB470000"
@@ -562,7 +574,8 @@ pack_asap() {
     cp "${TEMP_DIR}/bootloader/hekate.bin" "${TEMP_DIR}/bootloader/update.bin"
     
     # cofig folder
-    mkdir -p "${TEMP_DIR}/config/ASAP-assist/Controller/MissionControl" && mkdir -p "${TEMP_DIR}/config/ASAP-assist/Controller/sys-con"
+    mkdir -p "${TEMP_DIR}/config/ASAP-assist/Controller/MissionControl" && mkdir -p "${TEMP_DIR}/config/ASAP-assist/Controller/sys-con" 
+    mkdir -p "${TEMP_DIR}/config/ASAP-assist/Controller/NX-FanControl"
     mkdir -p "${TEMP_DIR}/config/ASAP-assist/Homebrews/JKSV" && mkdir -p "${TEMP_DIR}/config/ASAP-assist/Homebrews/Linkalho"
     cp -r "${TOP_DIR}/Atmosphere/out/nintendo_nx_arm64_armv8a/release/atmosphere-out/config" "${TEMP_DIR}/"
     cp -r "${OVL_DIR}/Ultrahand-Overlay/Packages/KO/Packages/" "${TEMP_DIR}/config/ASAP-assist/"
@@ -571,6 +584,7 @@ pack_asap() {
     cp -r "${SMD_DIR}/sys-con/out/atmosphere/contents/690000000000000D" "${TEMP_DIR}/config/ASAP-assist/Controller/sys-con/"
     cp -r "${SMD_DIR}/sys-con/out/config/sys-con" "${TEMP_DIR}/config/ASAP-assist/Controller/sys-con/"
     cp -r "${SMD_DIR}/sys-con/out/switch" "${TEMP_DIR}/config/ASAP-assist/Controller/sys-con/"
+    cp -r "${OVL_DIR}/NX-FanControl/out/atmosphere/contents/00FF0000B378D640" "${TEMP_DIR}/config/ASAP-assist/Controller/NX-FanControl/"
     cp -r "${APP_DIR}/AmiiboGenerator" "${TEMP_DIR}/config/ASAP-assist/Homebrews/"
     cp "${APP_DIR}/JKSV/JKSV.nro" "${TEMP_DIR}/config/ASAP-assist/Homebrews/JKSV/"
     cp "${APP_DIR}/Linkalho/linkalho.nro" "${TEMP_DIR}/config/ASAP-assist/Homebrews/Linkalho/"
@@ -589,7 +603,7 @@ pack_asap() {
     cp -r "${APP_DIR}/DBI" "${TEMP_DIR}/switch/"
     cp -r "${APP_DIR}/DBI-ru" "${TEMP_DIR}/switch/"
     cp -r "${APP_DIR}/Tinfoil" "${TEMP_DIR}/switch/"
-    cp -r "${APP_DIR}/Sphaira" "${TEMP_DIR}/switch/"
+    cp -r "${APP_DIR}/Sphaira/out/switch/sphaira" "${TEMP_DIR}/switch/"
     cp -r "${CLK_DIR}/sys-clk-oc/switch" "${TEMP_DIR}/"
     cp -r "${OVL_DIR}/ReverseNX-RT/Out/switch/.overlays/ReverseNX-RT-ovl.ovl" "${TEMP_DIR}/switch/.overlays/.offload/"
     cp -r "${OVL_DIR}/NX-FanControl/out/switch/.overlays/NX-FanControl.ovl" "${TEMP_DIR}/switch/.overlays/.offload/"
