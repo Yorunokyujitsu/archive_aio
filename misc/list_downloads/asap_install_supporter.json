@@ -1,10 +1,10 @@
 {
   "AIS": {
-    "version": "1.0.3.7",
+    "version": "1.0.3.8",
     "download_link": "https://www.dropbox.com/scl/fi/ykq372xw7zjnlc2mbudai/ASAP.exe?rlkey=m63quc1oc7zjfoiltjpxtnu8e&dl=1"
   },
   "ASAP": {
-    "version": "1106",
+    "version": "1214",
     "download_link": "https://www.dropbox.com/scl/fi/anra3x6dz41dlbhcl7uw2/ASAP.zip?rlkey=b31q03n6zv7lluxwlbigslle4&dl=1"
   },
   "Origin": {
@@ -12,16 +12,16 @@
     "download_link": "https://www.dropbox.com/scl/fi/a8ysszg892jsvhq1cc6vp/Hekate_6.2.2_Atmosphere_1.8.0.zip?rlkey=7v59u98n0gge5durwqa17s3ma&dl=1"
   },
   "NXVenom": {
-    "version": "5.0.3",
+    "version": "5.0.4",
     "download_link": "https://www.dropbox.com/scl/fi/7sehpjkwi5qy8f5r9mkdo/NXVenom.zip?rlkey=bu5b3vsrgec64x43ryt1snv3l&dl=1"
   },
   "HATS": {
-    "version": "1.8.0-v1.2",
-    "download_link": "https://www.dropbox.com/s/ir5nlx8n29li8jb/HATS-1.8.0-prerelease-V1.2.zip?dl=1"
+    "version": "1.8.0-v1.3",
+    "download_link": "https://www.dropbox.com/scl/fi/7giqghm55y72r2xobd0m5/HATS-1.8.0-V1.3.zip?rlkey=i844rtp3bgrlianrrlk8y7um4&dl=1"
   },
   "Kefir": {
-    "version": "754",
-    "download_link": "https://www.dropbox.com/scl/fi/sie6d1sr01fola52eiphk/kefir754.zip?rlkey=k9sc3lwkj711lnihmrsvnkasa&dl=1"
+    "version": "756",
+    "download_link": "https://www.dropbox.com/scl/fi/h39vh80akksaz8srpxyhl/kefir756.zip?rlkey=ebg12djbao98eiynwun588dq5&dl=1"
   },
   "DeepSea": {
     "version": "4.11.0",
@@ -37,7 +37,7 @@
   },
   "Android_TV": {
     "version": "21.0-TV",
-    "download_link": "https://www.dropbox.com/scl/fi/ogjpzpcnxjytzjytjt4b1/Android14_tv.zip?rlkey=qcucj973htt7z1o5njqdhzetv&dl=1"
+    "download_link": "https://www.dropbox.com/scl/fi/v9scclusz2gbmn6zt34jj/Android14_tv.zip?rlkey=r1bxs1osf5b8qgn7z520fojim&dl=1"
   },
   "Android_Tablet": {
     "version": "21.0-Tablet",

@@ -2,7 +2,7 @@
 mode con: cols=101 lines=32
 SETLOCAL ENABLEDELAYEDEXPANSION
 chcp 949 >nul 2>&1
-title ASAP Install Supporter
+title ASAP Maker
 
 COLOR 09
 set wd=%temp%\sdfiles
@@ -55,6 +55,8 @@ if /i "%TITLE%"=="MAKE" GOTO MAKE
 if /i "%TITLE%"=="SDMC" GOTO NOTICE
 if /i "%TITLE%"=="UPDATE" GOTO UPDATE
 if /i "%TITLE%"=="MIGRATE" GOTO MIGRATE
+
+if /i "%TITLE%"=="AUTOUPDATE" GOTO AUTOUPDATE
 
 pause>nul 2>&1
 
@@ -420,12 +422,46 @@ REM ============================================================
 :UPDATE
 
 @echo off
-curl -o "%~dp0misc\scripts\config.sh" https://raw.githubusercontent.com/Yorunokyujitsu/archive_aio/main/misc/scripts/config.sh
 curl -o "%~dp0ASAP.bat" https://raw.githubusercontent.com/Yorunokyujitsu/archive_aio/main/ASAP.bat
-cd /d "%~dp0misc\scripts\"
-%~dp0msys64\mingw64.exe %~dp0misc\scripts\update.sh
+curl -o "%~dp0misc\scripts\build.sh" https://raw.githubusercontent.com/Yorunokyujitsu/archive_aio/main/misc/scripts/build.sh
+curl -o "%~dp0misc\scripts\config.sh" https://raw.githubusercontent.com/Yorunokyujitsu/archive_aio/main/misc/scripts/config.sh
+curl -o "%~dp0misc\scripts\keys.sh" https://raw.githubusercontent.com/Yorunokyujitsu/archive_aio/main/misc/scripts/keys.sh
+curl -o "%~dp0misc\scripts\linux.sh" https://raw.githubusercontent.com/Yorunokyujitsu/archive_aio/main/misc/scripts/linux.sh
+curl -o "%~dp0misc\scripts\migrate.sh" https://raw.githubusercontent.com/Yorunokyujitsu/archive_aio/main/misc/scripts/migrate.sh
+curl -o "%~dp0misc\scripts\prepare.sh" https://raw.githubusercontent.com/Yorunokyujitsu/archive_aio/main/misc/scripts/prepare.sh
+curl -o "%~dp0misc\scripts\update.sh" https://raw.githubusercontent.com/Yorunokyujitsu/archive_aio/main/misc/scripts/update.sh
 
-exit
+GOTO AUTOUPDATE
+
+REM ============================================================
+:AUTOUPDATE
+COLOR 09
+cls
+echo.
+echo -----------------------------------------------------------------------------------------------------
+echo.
+echo                                            - UPDATE -  
+echo.
+echo            This will remove all existing builds and update from the latest repository.
+echo.
+echo                                      Do you want to run it?
+echo.
+echo =====================================================================================================
+echo.
+echo      Y.  Rebuild latest repo
+echo.
+echo      B.  Select again
+echo.
+echo -----------------------------------------------------------------------------------------------------
+echo.
+
+set /p AUTOUPDATE=     - Please enter the command: 
+if /i "%AUTOUPDATE%"=="Y" (
+    cd /d "%~dp0misc\scripts\"
+    %~dp0msys64\mingw64.exe %~dp0misc\scripts\update.sh
+    exit
+) else if /i "%AUTOUPDATE%"=="B" GOTO TITLE
+pause>nul 2>&1
 
 REM ============================================================
 :MIGRATE

@@ -11,6 +11,7 @@ MESSAGE_2=""
 ASAP_workflow() {
     print_header
     git_clone_repo
+    del_updater_tegra
     unzip_extra
     atmo_builtin_patch
     sak_keys
