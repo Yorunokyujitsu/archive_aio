@@ -551,7 +551,6 @@ pack_asap() {
 
     # ASAP folder
     mkdir -p "${TEMP_DIR}/ASAP/" && cp -r "${TOP_DIR}/ATLAS/output/atmosphere" "${TEMP_DIR}/ASAP/"
-    cp -r "${OVL_DIR}/Ultrahand-Overlay/Packages/KO/Packages/" "${TEMP_DIR}/ASAP/"
     cp "${TOP_DIR}/ASAP-Updater/ASAP-Updater.nro" "${TEMP_DIR}/ASAP/"
     cp "${APP_DIR}/JKSV/webdav.json" "${TEMP_DIR}/ASAP/"
     cp "${CLK_DIR}/sys-clk-oc/config/sys-clk/config.ini" "${TEMP_DIR}/ASAP/"
@@ -580,6 +579,7 @@ pack_asap() {
     mkdir -p "${TEMP_DIR}/config/ASAP-assist/Controller/MissionControl" && mkdir -p "${TEMP_DIR}/config/ASAP-assist/Controller/sys-con" 
     mkdir -p "${TEMP_DIR}/config/ASAP-assist/Controller/NX-FanControl"
     mkdir -p "${TEMP_DIR}/config/ASAP-assist/Homebrews/JKSV" && mkdir -p "${TEMP_DIR}/config/ASAP-assist/Homebrews/Linkalho"
+    cp -r "${OVL_DIR}/Ultrahand-Overlay/Packages/KO/Packages" "${TEMP_DIR}/config/ASAP-assist/"
     cp -r "${TOP_DIR}/Atmosphere/out/nintendo_nx_arm64_armv8a/release/atmosphere-out/config" "${TEMP_DIR}/"
     cp -r "${OVL_DIR}/Ultrahand-Overlay/Packages/ultrahand" "${TEMP_DIR}/config/"
     cp -r "${SMD_DIR}/MissionControl/dist/MissionControl" "${TEMP_DIR}/config/ASAP-assist/Controller/"
