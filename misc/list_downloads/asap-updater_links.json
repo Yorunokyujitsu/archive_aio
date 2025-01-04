@@ -5,7 +5,7 @@
         },
         "AIO": {
             "[ NX-Venom : 5.1.0 ] 19.0.1｜1.8.0｜6.2.2": "https://www.dropbox.com/scl/fi/s5fr5ocehtw9n25okq1po/NX-Venom.zip?rlkey=vzv5jf6y5g8utolp4mw993czc&dl=1",
-            "[ Kefir : 756 ] 19.0.1｜1.8.0｜6.2.2": "https://www.dropbox.com/scl/fi/z9oszjpb6kmlgr5xen6ct/Kefir.zip?rlkey=uyv5who08ey5oddfu8lik6seu&dl=1",
+            "[ Kefir : 758 ] 19.0.1｜1.8.0｜6.2.2": "https://www.dropbox.com/scl/fi/z9oszjpb6kmlgr5xen6ct/Kefir.zip?rlkey=uyv5who08ey5oddfu8lik6seu&dl=1",
             "[ HATS : 1.8.0-v1.3 ] 19.0.1｜1.8.0｜6.2.2": "https://www.dropbox.com/scl/fi/n8j73wy67phus5tc617j2/HATS.zip?rlkey=rroehklcouv9cka5b98edjo3n&dl=1"
         }
     },
@@ -151,7 +151,7 @@
     "extra": {
         "android": {
             "[ Lineage OS ] 21.0 (241224)｜Android 14｜TV": "https://www.dropbox.com/scl/fi/t3k05bsgqp3ffoyetd23v/Android14_tv.zip?rlkey=bkyzomuyr8ww9mwzr6334a1au&dl=1",
-            "[ Lineage OS ] 21.0 (241222)｜Android 14｜Tablet": "https://www.dropbox.com/scl/fi/v55tu5qstqq5cv3iahgem/Android14_tab.zip?rlkey=kv0cb1d2hmm9sacgobp1ic91y&dl=1"
+            "[ Lineage OS ] 21.0 (241229)｜Android 14｜Tablet": "https://www.dropbox.com/scl/fi/v55tu5qstqq5cv3iahgem/Android14_tab.zip?rlkey=kv0cb1d2hmm9sacgobp1ic91y&dl=1"
         },
         "ubuntu": {
             "[ Ubuntu Noble ] 24.04 LTS": "https://www.dropbox.com/scl/fi/aabai016zos6q24xrcs8n/ubuntu-noble.zip?rlkey=ln0mfn6vtht35spc8hyvdt934&dl=1",
