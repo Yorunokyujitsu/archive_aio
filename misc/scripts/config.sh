@@ -407,6 +407,7 @@ build_sphaira() {
         rm -rf assets/romfs/github/ftpsrv.json && rm -rf assets/romfs/github/untitled.json
         cmake --preset ${PRESET} -DUSE_VFS_GC=0 && cmake --build --preset ${PRESET} --parallel 4
     "
+    # ./build_release.sh
     cd "${TOP_DIR}/"
 }
 
@@ -617,6 +618,7 @@ pack_asap() {
     cp -r "${OVL_DIR}/ReverseNX-RT/Out/switch/.overlays/ReverseNX-RT-ovl.ovl" "${TEMP_DIR}/switch/.overlays/.offload/"
     cp -r "${OVL_DIR}/NX-FanControl/out/switch/.overlays/NX-FanControl.ovl" "${TEMP_DIR}/switch/.overlays/.offload/"
     cp -r "${PCH_DIR}/sys-patch/out/switch/.overlays/sys-patch-overlay.ovl" "${TEMP_DIR}/switch/.overlays/"
+    cp "${APP_DIR}/Sphaira/.sphaira.nro.star" "${TEMP_DIR}/switch/sphaira/"
     cp "${TOP_DIR}/hb/hbmenu/hbmenu.nro" "${TEMP_DIR}/switch/"
     cp "${OVL_DIR}/emuiibo/emuiibo/emuiibo.ovl" "${TEMP_DIR}/switch/.overlays/"
     cp "${OVL_DIR}/FPSLocker/FPSLocker.ovl" "${TEMP_DIR}/switch/.overlays/"
@@ -741,6 +743,7 @@ pack_tester() {
     # switch folder
     mkdir "${TEMP_DIR}/TESTER/switch/"
     cp -r "${APP_DIR}/Sphaira/build/${PRESET}/switch/sphaira" "${TEMP_DIR}/TESTER/switch/"
+    cp "${APP_DIR}/Sphaira/.sphaira.nro.star" "${TEMP_DIR}/TESTER/switch/sphaira/"
     cp "${TOP_DIR}/hb/hbmenu/hbmenu.nro" "${TEMP_DIR}/TESTER/switch/"
 
     # SX_Gear
