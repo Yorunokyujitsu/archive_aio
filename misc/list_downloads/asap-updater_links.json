@@ -1,10 +1,11 @@
 {
     "cfws": {
         "ASAP": {
-            "ver.1230 : 안정": "https://www.dropbox.com/scl/fi/anra3x6dz41dlbhcl7uw2/ASAP.zip?rlkey=b31q03n6zv7lluxwlbigslle4&dl=1"
+            "ver.1230 : 안정": "https://www.dropbox.com/scl/fi/anra3x6dz41dlbhcl7uw2/ASAP.zip?rlkey=b31q03n6zv7lluxwlbigslle4&dl=1",
+            "ver.0108 : 개발자 전용": "https://www.dropbox.com/scl/fi/u5c991k5jxgbb8e5bj639/Nightly.zip?rlkey=df78j2ifyyoepz96ox4fv14ag&dl=1"
         },
         "AIO": {
-            "[ NX-Venom : 5.1.0 ] 19.0.1｜1.8.0｜6.2.2": "https://www.dropbox.com/scl/fi/s5fr5ocehtw9n25okq1po/NX-Venom.zip?rlkey=vzv5jf6y5g8utolp4mw993czc&dl=1",
+            "[ NX-Venom : 5.2.0 ] 19.0.1｜1.8.0｜6.2.2": "https://www.dropbox.com/scl/fi/s5fr5ocehtw9n25okq1po/NX-Venom.zip?rlkey=vzv5jf6y5g8utolp4mw993czc&dl=1",
             "[ Kefir : 758 ] 19.0.1｜1.8.0｜6.2.2": "https://www.dropbox.com/scl/fi/z9oszjpb6kmlgr5xen6ct/Kefir.zip?rlkey=uyv5who08ey5oddfu8lik6seu&dl=1",
             "[ HATS : 1.8.0-v1.3 ] 19.0.1｜1.8.0｜6.2.2": "https://www.dropbox.com/scl/fi/n8j73wy67phus5tc617j2/HATS.zip?rlkey=rroehklcouv9cka5b98edjo3n&dl=1"
         }
