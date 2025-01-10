@@ -2,7 +2,7 @@
     "cfws": {
         "ASAP": {
             "ver.1230 : 안정": "https://www.dropbox.com/scl/fi/anra3x6dz41dlbhcl7uw2/ASAP.zip?rlkey=b31q03n6zv7lluxwlbigslle4&dl=1",
-            "ver.0108 : 개발자 전용": "https://www.dropbox.com/scl/fi/u5c991k5jxgbb8e5bj639/Nightly.zip?rlkey=df78j2ifyyoepz96ox4fv14ag&dl=1"
+            "ver.0110 : 시험판": "https://www.dropbox.com/scl/fi/u5c991k5jxgbb8e5bj639/Nightly.zip?rlkey=df78j2ifyyoepz96ox4fv14ag&dl=1"
         },
         "AIO": {
             "[ NX-Venom : 5.2.0 ] 19.0.1｜1.8.0｜6.2.2": "https://www.dropbox.com/scl/fi/s5fr5ocehtw9n25okq1po/NX-Venom.zip?rlkey=vzv5jf6y5g8utolp4mw993czc&dl=1",
@@ -108,7 +108,7 @@
             "[ Chiaki : 2.2.0 ] - PlayStation 리모트 플레이": "https://www.dropbox.com/scl/fi/l5oa4u0cz1bbkefz0gx1y/chiaki.zip?rlkey=w9fra82sf4htn1cxg1xra18pb&dl=1",
             "[ Daybreak : 1.0.0 ] - Horizon OS 업데이트": "https://www.dropbox.com/scl/fi/0p4b3ciif5i4bklx72dkl/Daybreak.zip?rlkey=3jxb8fbhtq9p8c3ld9n1q6hef&dl=1",
             "[ DB Installer : 658 ] - 종합 파일 관리": "https://www.dropbox.com/scl/fi/6xm9juxdmo11yj3x4agjc/DBI.zip?rlkey=mu6ji916mgldplfimafy9nbex&dl=1",
-            "[ DB Installer : 749 ] - 러시아어 버전": "https://www.dropbox.com/scl/fi/4x6qhiornfwkfnp9qksb0/DBI-ru.zip?rlkey=twxivr46jkmdt0ognmzd4688f&dl=1",
+            "[ DB Installer : 750 ] - 러시아어 버전": "https://www.dropbox.com/scl/fi/4x6qhiornfwkfnp9qksb0/DBI-ru.zip?rlkey=twxivr46jkmdt0ognmzd4688f&dl=1",
             "[ DuckStation : 0.1-5426 ] - PlayStation 에뮬레이터": "https://www.dropbox.com/scl/fi/w2bfgxxywly4ayycqlyr9/duckstation.zip?rlkey=o3ob96vdmtpzypi6dklirryu2&dl=1",
             "[ Fizeau : 2.8.1 ] - 색감 관리": "https://www.dropbox.com/scl/fi/o1f1vhbwneumt1snzegbq/Fizeau.zip?rlkey=sem01j6gnquof8kx86lka5m39&dl=1",
             "[ Goldleaf : 1.0.0 ] - 종합 파일 관리": "https://www.dropbox.com/scl/fi/bsn7uq58c36qd0vujai6a/Goldleaf.zip?rlkey=42831yq7sfmgo54kwddupu2ae&dl=1",
@@ -151,8 +151,8 @@
     },        
     "extra": {
         "android": {
-            "[ Lineage OS ] 21.0 (241224)｜Android 14｜TV": "https://www.dropbox.com/scl/fi/t3k05bsgqp3ffoyetd23v/Android14_tv.zip?rlkey=bkyzomuyr8ww9mwzr6334a1au&dl=1",
-            "[ Lineage OS ] 21.0 (241229)｜Android 14｜Tablet": "https://www.dropbox.com/scl/fi/v55tu5qstqq5cv3iahgem/Android14_tab.zip?rlkey=kv0cb1d2hmm9sacgobp1ic91y&dl=1"
+            "[ Lineage OS ] 21.0 (250107)｜Android 14｜TV": "https://www.dropbox.com/scl/fi/t3k05bsgqp3ffoyetd23v/Android14_tv.zip?rlkey=bkyzomuyr8ww9mwzr6334a1au&dl=1",
+            "[ Lineage OS ] 21.0 (240105)｜Android 14｜Tablet": "https://www.dropbox.com/scl/fi/v55tu5qstqq5cv3iahgem/Android14_tab.zip?rlkey=kv0cb1d2hmm9sacgobp1ic91y&dl=1"
         },
         "ubuntu": {
             "[ Ubuntu Noble ] 24.04 LTS": "https://www.dropbox.com/scl/fi/aabai016zos6q24xrcs8n/ubuntu-noble.zip?rlkey=ln0mfn6vtht35spc8hyvdt934&dl=1",

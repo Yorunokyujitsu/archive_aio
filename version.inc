@@ -20,7 +20,7 @@ HATS_HASH="rg6pbf52fvgp4fo"
 
 [latest_version]
 ultrahand_version=1.8.2
-tester_version=0108
+tester_version=0110
 toolkit_version=1.5.0
 kip_version=1.5.0
 eos_version=1.1.4

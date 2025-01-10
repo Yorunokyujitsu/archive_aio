@@ -351,10 +351,10 @@ git_clone_repo() {
     clone "${ASA_URL}/Atmosphere" "${TOP_DIR}/Atmosphere"
     clone "${ASA_URL}/nx-hbmenu" "${TOP_DIR}/hb/hbmenu"
     clone "${ASA_URL}/nx-hbloader" "${TOP_DIR}/hb/nx-hbloader"
+    clone "${ASA_URL}/sphaira" "${TOP_DIR}/hb/sphaira" "theme_v2"
     clone "${ASA_URL}/hekate" "${TOP_DIR}/hekate"
     clone "${LIBNX_URL}" "${TOP_DIR}/libnx"
     clone "${ASA_URL}/JKSV" "${APP_DIR}/JKSV"
-    clone "${ASA_URL}/sphaira" "${APP_DIR}/sphaira"
     clone "${ASA_URL}/EdiZon-Overlay" "${OVL_DIR}/EdiZon-Overlay"
     clone "${ASA_URL}/emuiibo" "${OVL_DIR}/emuiibo" "${TEST_BRANCH}"
     clone "${ASA_URL}/FPSLocker" "${OVL_DIR}/FPSLocker"
@@ -397,14 +397,14 @@ make_repo() {
 
 # cmake sphaira - Release, RelWithDebInfo, MinSizeRel, Debug
 build_sphaira() {
-    cd "${TOP_DIR}/programs/homebrews/sphaira"
+    cd "${TOP_DIR}/hb/sphaira"
 
     "${TOP_DIR}/msys64/clang64.exe" bash -c "
         export TZ=Asia/Seoul
         echo 'export TZ=Asia/Seoul' >> ~/.bashrc
         source ~/.bashrc
-        rm -rf assets/romfs/themes/black_theme.ini && rm -rf assets/romfs/github/sphaira.json
-        rm -rf assets/romfs/github/ftpsrv.json && rm -rf assets/romfs/github/untitled.json
+        rm -rf assets/romfs/themes/white_theme.ini && rm -rf assets/romfs/themes/black_theme.ini && 
+        rm -rf assets/romfs/github/sphaira.json && rm -rf assets/romfs/github/ftpsrv.json && rm -rf assets/romfs/github/untitled.json
         cmake --preset ${PRESET} -DUSE_VFS_GC=0 && cmake --build --preset ${PRESET} --parallel 4
     "
     # ./build_release.sh
@@ -550,7 +550,7 @@ pack_asap() {
     cp -r "${OVL_DIR}/emuiibo/emuiibo/0100000000000352" "${TEMP_DIR}/atmosphere/contents/"
     # cp -r "${SMD_DIR}/ftpsrv/420000000000011B" "${TEMP_DIR}/atmosphere/contents/"
     cp "${TOP_DIR}/hb/nx-hbloader/hbl.nsp" "${TEMP_DIR}/atmosphere/hb/"
-    cp "${APP_DIR}/Sphaira/build/${PRESET}/switch/sphaira/sphaira.nro" "${TEMP_DIR}/atmosphere/hb/hbmenu.nro"
+    cp "${TOP_DIR}/hb/sphaira/build/${PRESET}/switch/sphaira/sphaira.nro" "${TEMP_DIR}/atmosphere/hb/hbmenu.nro"
     echo "${ASAP_VER}" > "${TEMP_DIR}/atmosphere/contents/010B6ECF3B30D000/03/0100B0E8EB470000"
 
     # ASAP folder
@@ -613,12 +613,12 @@ pack_asap() {
     cp -r "${APP_DIR}/DBI" "${TEMP_DIR}/switch/"
     cp -r "${APP_DIR}/DBI-ru" "${TEMP_DIR}/switch/"
     cp -r "${APP_DIR}/Tinfoil" "${TEMP_DIR}/switch/"
-    cp -r "${APP_DIR}/Sphaira/build/${PRESET}/switch/sphaira" "${TEMP_DIR}/switch/"
+    cp -r "${TOP_DIR}/hb/sphaira/build/${PRESET}/switch/sphaira" "${TEMP_DIR}/switch/"
     cp -r "${CLK_DIR}/sys-clk-oc/switch/.overlays" "${TEMP_DIR}/switch/"
     cp -r "${OVL_DIR}/ReverseNX-RT/Out/switch/.overlays/ReverseNX-RT-ovl.ovl" "${TEMP_DIR}/switch/.overlays/.offload/"
     cp -r "${OVL_DIR}/NX-FanControl/out/switch/.overlays/NX-FanControl.ovl" "${TEMP_DIR}/switch/.overlays/.offload/"
     cp -r "${PCH_DIR}/sys-patch/out/switch/.overlays/sys-patch-overlay.ovl" "${TEMP_DIR}/switch/.overlays/"
-    cp "${APP_DIR}/Sphaira/.sphaira.nro.star" "${TEMP_DIR}/switch/sphaira/"
+    cp "${TOP_DIR}/hb/sphaira/.sphaira.nro.star" "${TEMP_DIR}/switch/sphaira/"
     cp "${TOP_DIR}/hb/hbmenu/hbmenu.nro" "${TEMP_DIR}/switch/"
     cp "${OVL_DIR}/emuiibo/emuiibo/emuiibo.ovl" "${TEMP_DIR}/switch/.overlays/"
     cp "${OVL_DIR}/FPSLocker/FPSLocker.ovl" "${TEMP_DIR}/switch/.overlays/"
@@ -702,7 +702,7 @@ pack_tester() {
     cp -r "${PCH_DIR}/sys-patch/out/atmosphere/contents/420000000000000B/" "${TEMP_DIR}/TESTER/ASAP/atmosphere/contents/"
     cp -r "${OVL_DIR}/420000000007E51A" "${TEMP_DIR}/TESTER/ASAP/atmosphere/contents/"
     # cp -r "${SMD_DIR}/ftpsrv/420000000000011B" "${TEMP_DIR}/TESTER/ASAP/atmosphere/contents/"
-    cp "${APP_DIR}/Sphaira/build/${PRESET}/switch/sphaira/sphaira.nro" "${TEMP_DIR}/TESTER/ASAP/atmosphere/hb/hbmenu.nro"
+    cp "${TOP_DIR}/hb/sphaira/build/${PRESET}/switch/sphaira/sphaira.nro" "${TEMP_DIR}/TESTER/ASAP/atmosphere/hb/hbmenu.nro"
     cp "${TOP_DIR}/hb/nx-hbloader/hbl.nsp" "${TEMP_DIR}/TESTER/ASAP/atmosphere/hb/"
     cp -r "${PCH_DIR}/sys-patch/out/switch/.overlays/sys-patch-overlay.ovl" "${TEMP_DIR}/TESTER/ASAP/"
     cp -r "${PCH_DIR}/SPU/out/switch/SPU" "${TEMP_DIR}/TESTER/ASAP/"
@@ -742,8 +742,8 @@ pack_tester() {
 
     # switch folder
     mkdir "${TEMP_DIR}/TESTER/switch/"
-    cp -r "${APP_DIR}/Sphaira/build/${PRESET}/switch/sphaira" "${TEMP_DIR}/TESTER/switch/"
-    cp "${APP_DIR}/Sphaira/.sphaira.nro.star" "${TEMP_DIR}/TESTER/switch/sphaira/"
+    cp -r "${TOP_DIR}/hb/sphaira/build/${PRESET}/switch/sphaira" "${TEMP_DIR}/TESTER/switch/"
+    cp "${TOP_DIR}/hb/sphaira/.sphaira.nro.star" "${TEMP_DIR}/TESTER/switch/sphaira/"
     cp "${TOP_DIR}/hb/hbmenu/hbmenu.nro" "${TEMP_DIR}/TESTER/switch/"
 
     # SX_Gear
