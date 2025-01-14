@@ -1,6 +1,6 @@
 # archive_aio
   - **ASAP 간편 빌드 툴**
-  - 인스톨러만 필요한 경우 **[ASAP.exe](https://blog.kakaocdn.net/dn/cgqCfh/btsGT8BHpZZ/ng4cBvvHU9R8fcEEngwhbk/ASAP.exe?attach=1&knm=tfile.exe)** 다운로드.
+  - 인스톨러만 필요한 경우 **[ASAP.exe](https://github.com/Yorunokyujitsu/archive_aio/releases/latest/download/ASAP.exe)** 다운로드.
 
 ## 소스 코드
 - [Git bash](https://git-scm.com/downloads) 혹은 터미널을 이용하여 저장소를 복제.

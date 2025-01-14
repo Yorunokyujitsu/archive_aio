@@ -1,6 +1,6 @@
 # archive_aio
   - **Build ASAP ([Korean](https://github.com/Yorunokyujitsu/archive_aio/blob/main/misc/docs/README_KR.md))**
-  - If just need an AIO installer, download **[ASAP.exe](https://github.com/Yorunokyujitsu/archive_aio/releases/download/Extra%2B/ASAP.exe)**.
+  - If just need an AIO installer, download **[ASAP.exe](https://github.com/Yorunokyujitsu/archive_aio/releases/latest/download/ASAP.exe)**.
 
 ## Source Code
 - Run [Git bash](https://git-scm.com/downloads) or Terminal and clone repo.
