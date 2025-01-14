@@ -1,19 +1,21 @@
 {
     "cfws": {
         "ASAP": {
-            "ver.0704 : 안정": "https://www.dropbox.com/scl/fi/dtjnulywsug7fvtn5pdkk/AIS_normal.zip?rlkey=zf1iba15jm7kadr8r490wa9vk&dl=1"
+            "ver.1230 : 안정": "https://www.dropbox.com/scl/fi/anra3x6dz41dlbhcl7uw2/ASAP.zip?rlkey=b31q03n6zv7lluxwlbigslle4&dl=1"
         },
         "AIO": {
-            "[ Kefir : 741 ] 18.1.0｜1.7.1｜6.2.0": "https://www.dropbox.com/scl/fi/a2spu5s7cscv5ra9hxhzd/KEFIR.zip?rlkey=bjvet26zztw6yurykc6k4nqaz&dl=1",
-            "[ HATS : 1.7.1-3 ] 18.1.0｜1.7.1｜6.2.1": "https://www.dropbox.com/scl/fi/360jvkb7txldze2q51prc/HATS.zip?rlkey=wkczurm805w8qewn9si47lcex&dl=1",
-            "[ DeepSea : 4.10.0 ] 18.0.1｜1.7.0｜6.1.1": "https://www.dropbox.com/scl/fi/e2u2wsyyisw2cdiqrf0gg/DEEPSEA.zip?rlkey=e5ajdm9xdha8giesqxnsunrw4&dl=1"
+            "[ NX-Venom : 5.2.0 ] 19.0.1｜1.8.0｜6.2.2": "https://www.dropbox.com/scl/fi/s5fr5ocehtw9n25okq1po/NX-Venom.zip?rlkey=vzv5jf6y5g8utolp4mw993czc&dl=1",
+            "[ Kefir : 758 ] 19.0.1｜1.8.0｜6.2.2": "https://www.dropbox.com/scl/fi/z9oszjpb6kmlgr5xen6ct/Kefir.zip?rlkey=uyv5who08ey5oddfu8lik6seu&dl=1",
+            "[ HATS : 1.8.0-v1.3 ] 19.0.1｜1.8.0｜6.2.2": "https://www.dropbox.com/scl/fi/n8j73wy67phus5tc617j2/HATS.zip?rlkey=rroehklcouv9cka5b98edjo3n&dl=1"
         }
     },
     "hekate": {
-        "[ Hekate 6.2.1 & Nyx 1.6.3 ]": "https://github.com/CTCaer/hekate/releases/download/v6.2.1/hekate_ctcaer_6.2.1_Nyx_1.6.3.zip"
+        "[ Hekate 6.2.2 & Nyx 1.6.4 ]": "https://github.com/CTCaer/hekate/releases/download/v6.2.2/hekate_ctcaer_6.2.2_Nyx_1.6.4.zip"
     },
     "HorizonOS": {
-        "[ HOS ] 18.1.0": "https://www.dropbox.com/scl/fi/42g20dffmexcvtjejf6tm/Firmware.18.1.0.zip?rlkey=8kxoae3acr688btmrcs83bkhb&dl=1",
+        "[ HOS ] 19.0.1": "https://www.dropbox.com/scl/fi/fwgwne65ujvqzkhevnwf0/19.0.1_Firmware.zip?rlkey=5o6t5eowl2tni4gm3t3eqf950&dl=1",
+        "[ HOS ] 19.0.0": "https://www.dropbox.com/scl/fi/jyp361pb8bq4a8q2z5f51/19.0.0_Firmware.zip?rlkey=dnsjgucj3fc9j58nkj95m46t0&dl=1",
+        "[ HOS ] 18.1.0 Rebootless": "https://www.dropbox.com/scl/fi/czovjge06vbyqehnwt38l/18.1.0_Firmware_Rebootless.zip?rlkey=sm9v9ci0ovjdxrpgabqc17ff8&dl=1",
         "[ HOS ] 18.0.1": "https://www.dropbox.com/scl/fi/o7zs9ly06mx7nkfcqm69n/18.0.1_Firmware.zip?rlkey=7ndlrbeadtrbf40bfymimfqfb&dl=1",
         "[ HOS ] 18.0.0": "https://www.dropbox.com/scl/fi/u11jx35z44200nux81unf/18.0.0_Firmware.zip?rlkey=6kdtu5lww8e9umc5vxx46xt17&dl=1",
         "[ HOS ] 17.0.1 Rebootless": "https://www.dropbox.com/scl/fi/et9su7hrn5a0iodbxs2k1/17.0.1_Firmware_Rebootless.zip?rlkey=u7vfikcrvluiapx9hlyrchscr&dl=1",
@@ -78,58 +80,69 @@
         "[ HOS ]  1.0.0": "https://www.dropbox.com/scl/fi/1pouwx4eoo9vvzjia3zmv/1.0.0_Firmware.zip?rlkey=tdixh705hh4csvixcpwcf97e6&dl=1"
     },
     "etc": {
-        "[ Ultrahand ] - ASAP 전용 Ultrahand 패키지": "https://www.dropbox.com/scl/fi/qaloyjyg7u75zta9f6x3t/Ultrahand.zip?rlkey=3ygvhm99sdizhsgaeocnct1za&dl=1"
+        "[ Ultrahand ] - ASAP 전용 Ultrahand 패키지": "https://www.dropbox.com/scl/fi/7agecsu9tijdprswbktnl/Ultrahand.zip?rlkey=7qzu3lb17hu1pi8f6bsdrbcse&dl=1",
+        "[ ASAP-Installer ] - ASAP.exe": "https://www.dropbox.com/scl/fi/ykq372xw7zjnlc2mbudai/ASAP.exe?rlkey=m63quc1oc7zjfoiltjpxtnu8e&dl=1"
     },   
     "custom": {  
         "sys": {
-            "[ Edizon : 1.0.8 ] - 치트 설정 오버레이": "https://www.dropbox.com/scl/fi/8992alnrga7bvctp6d0jm/EdiZon.zip?rlkey=567jlsqdn8wgku9vrjcp0kd54&dl=1",
+            "[ Edizon : 1.0.9 ] - 치트 설정 오버레이": "https://www.dropbox.com/scl/fi/8992alnrga7bvctp6d0jm/EdiZon.zip?rlkey=567jlsqdn8wgku9vrjcp0kd54&dl=1",
             "[ emuiibo : 1.1.1 ] - 가상 Amiibo 오버레이": "https://www.dropbox.com/scl/fi/ml63wynhjzq2m1gvf5hz4/emuiibo.zip?rlkey=owgb782vs936jo57ho22h7w95&dl=1",
-            "[ FPSLocker : 2.0.0 ] - FPS 관리 오버레이": "https://www.dropbox.com/scl/fi/m79mv1o4uauejgktlf0xh/FPSLocker.zip?rlkey=6938b7n3ll5yfyk520g8nnkqu&dl=1",
+            "[ FPSLocker : 2.1.0 ] - FPS 관리 오버레이": "https://www.dropbox.com/scl/fi/m79mv1o4uauejgktlf0xh/FPSLocker.zip?rlkey=6938b7n3ll5yfyk520g8nnkqu&dl=1",
             "[ FPSLocker-Warehouse ] - FPSLocker 설정 묶음": "https://www.dropbox.com/scl/fi/ffk2lpobb4ucn3h5bg733/FPSLocker-Warehouse.zip?rlkey=57kepo6jwh8zym5oi0l972cun&dl=1",
-            "[ Mission Control : 0.11.1 ] - 타사 컨트롤러 무선 지원": "https://www.dropbox.com/scl/fi/i6wnp634lzwhqtt0vlq9q/MissionControl.zip?rlkey=umqq41lv0ofohjm6faz8vjs25&dl=1",
+            "[ ftpsrv : 1.1.0 ] - 가벼운 ftp 서버 모듈 ": "https://www.dropbox.com/scl/fi/7mvv9t3ozpyzrln40mxna/ftpsrv.zip?rlkey=r6bnfp5khcsixvisiyb5q5d83&dl=1",
+            "[ Mission Control : 0.12.0 ] - 타사 컨트롤러 무선 지원": "https://www.dropbox.com/scl/fi/i6wnp634lzwhqtt0vlq9q/MissionControl.zip?rlkey=umqq41lv0ofohjm6faz8vjs25&dl=1",
+            "[ NX-FanControl : 1.0.3 ] - 팬 커브 조절 오버레이": "https://www.dropbox.com/scl/fi/3jmu4pizet84bycdj7eic/NX-FanControl.zip?rlkey=sqtoinwukvd2s3nyxzuand31v&dl=1",
             "[ QuickNTP : 1.2.8 ] - NTP서버 시간 동기화 오버레이": "https://www.dropbox.com/scl/fi/w616fmqc8dcou5q41xwbe/QuickNTP.zip?rlkey=gsi42mta89lp4ybwbppv2z2ne&dl=1",
-            "[ SaltyNX : 0.8.0 ] - FPSLockr, Status-monitor, ReverseNX-RT 모듈": "https://www.dropbox.com/scl/fi/4n35qrps3sb178ns9y0mu/SaltyNX.zip?rlkey=gqlguhmx21vcbrxogzp0f7zbo&dl=1",
-            "[ Status-Monitor : 1.0.4 ] - 시스템 상태 모니터 오버레이": "https://www.dropbox.com/scl/fi/2kzahof4yenqnojzppeib/Status-Monitor.zip?rlkey=xosjoabrck0k7oza8bubxusgj&dl=1",
+            "[ ReverseNX-RT : 2.1.0 ] - 독/휴대모드 전환 오버레이": "https://www.dropbox.com/scl/fi/oxxep2xac0xsjo0e0q8hf/ReverseNX.zip?rlkey=5w1kais73oq6qmwm6iiq6vfrr&dl=1",
+            "[ SaltyNX : 1.2.0 ] - FPSLockr, Status-monitor, ReverseNX-RT 모듈": "https://www.dropbox.com/scl/fi/4n35qrps3sb178ns9y0mu/SaltyNX.zip?rlkey=gqlguhmx21vcbrxogzp0f7zbo&dl=1",
+            "[ Status-Monitor : 1.1.7a ] - 시스템 상태 모니터 오버레이": "https://www.dropbox.com/scl/fi/2kzahof4yenqnojzppeib/Status-Monitor.zip?rlkey=xosjoabrck0k7oza8bubxusgj&dl=1",
             "[ studious-pancake : 1.0.0 ] - 리부트 런처 오버레이": "https://www.dropbox.com/scl/fi/bdn54bhhtphc13jq299sg/studious-pancake.zip?rlkey=njb1g78bm5pyphxkzsq7jqwoz&dl=1",
-            "[ Sys-Con : 0.6.4 ] - 타사 컨트롤러 유선 지원": "https://www.dropbox.com/scl/fi/5mtnk5a21y3au5mh3iolt/Sys-Con.zip?rlkey=avmop8jh8y3zp0asgd21xz5sd&dl=1",
-            "[ sys-ftpd-light : 1.0.4b ] - FTP 서버 관리 오버레이": "https://www.dropbox.com/scl/fi/zuvw2efpww52zg697bot2/sys-ftpd-light.zip?rlkey=16g2eutwqx7voylzutci84ddx&dl=1",
-            "[ ReverseNX-RT : 2.0.0 ] - 독/휴대모드 전환 오버레이": "https://www.dropbox.com/scl/fi/oxxep2xac0xsjo0e0q8hf/ReverseNX.zip?rlkey=5w1kais73oq6qmwm6iiq6vfrr&dl=1"  
+            "[ sys-Botbase : 2.4 ] - 원격 제어, 메모리 조작 모듈": "https://www.dropbox.com/scl/fi/pa58briwooiruoy2sis5m/sys-botbase.zip?rlkey=13mq23q7d7i40umkqjqpaj9wp&dl=1",
+            "[ Sys-Con : 1.4.3 ] - 타사 컨트롤러 유선 지원": "https://www.dropbox.com/scl/fi/5mtnk5a21y3au5mh3iolt/Sys-Con.zip?rlkey=avmop8jh8y3zp0asgd21xz5sd&dl=1",
+            "[ sys-ftpd-light : 1.0.5 ] - FTP 서버 관리 오버레이": "https://www.dropbox.com/scl/fi/zuvw2efpww52zg697bot2/sys-ftpd-light.zip?rlkey=16g2eutwqx7voylzutci84ddx&dl=1"
         },
         "home": {
-            "[ Battery Desync Fix : 1.3.0 ] - 배터리 정보 동기화": "https://www.dropbox.com/scl/fi/d6n67i4c9nn9ajpsjeobm/battery_desync_fix.zip?rlkey=y60lsxtlls49dwnla20ya45yg&dl=1",
+            "[ AmiiboGenerator : 2.1.1 ] - 아미보 생성기": "https://www.dropbox.com/scl/fi/y5r05j8u9kyjybytdznf0/AmiiboGenerator.zip?rlkey=cbvs9ldqm4qfq7v164q9lq4ly&dl=1",
+            "[ Battery Desync Fix : 1.5.0 ] - 배터리 정보 동기화": "https://www.dropbox.com/scl/fi/d6n67i4c9nn9ajpsjeobm/battery_desync_fix.zip?rlkey=y60lsxtlls49dwnla20ya45yg&dl=1",
             "[ Chiaki : 2.2.0 ] - PlayStation 리모트 플레이": "https://www.dropbox.com/scl/fi/l5oa4u0cz1bbkefz0gx1y/chiaki.zip?rlkey=w9fra82sf4htn1cxg1xra18pb&dl=1",
             "[ Daybreak : 1.0.0 ] - Horizon OS 업데이트": "https://www.dropbox.com/scl/fi/0p4b3ciif5i4bklx72dkl/Daybreak.zip?rlkey=3jxb8fbhtq9p8c3ld9n1q6hef&dl=1",
             "[ DB Installer : 658 ] - 종합 파일 관리": "https://www.dropbox.com/scl/fi/6xm9juxdmo11yj3x4agjc/DBI.zip?rlkey=mu6ji916mgldplfimafy9nbex&dl=1",
+            "[ DB Installer : 750 ] - 러시아어 버전": "https://www.dropbox.com/scl/fi/4x6qhiornfwkfnp9qksb0/DBI-ru.zip?rlkey=twxivr46jkmdt0ognmzd4688f&dl=1",
             "[ DuckStation : 0.1-5426 ] - PlayStation 에뮬레이터": "https://www.dropbox.com/scl/fi/w2bfgxxywly4ayycqlyr9/duckstation.zip?rlkey=o3ob96vdmtpzypi6dklirryu2&dl=1",
-            "[ Fizeau : 2.5.3 ] - 색감 관리": "https://www.dropbox.com/scl/fi/o1f1vhbwneumt1snzegbq/Fizeau.zip?rlkey=sem01j6gnquof8kx86lka5m39&dl=1",
+            "[ Fizeau : 2.8.1 ] - 색감 관리": "https://www.dropbox.com/scl/fi/o1f1vhbwneumt1snzegbq/Fizeau.zip?rlkey=sem01j6gnquof8kx86lka5m39&dl=1",
             "[ Goldleaf : 1.0.0 ] - 종합 파일 관리": "https://www.dropbox.com/scl/fi/bsn7uq58c36qd0vujai6a/Goldleaf.zip?rlkey=42831yq7sfmgo54kwddupu2ae&dl=1",
             "[ Haze : 1.0.0 ] - MTP/PTP 파일 전송": "https://www.dropbox.com/scl/fi/b8ujwpnys2s525lez59pb/Haze.zip?rlkey=f29bqg910a8uvejcqjzhojosb&dl=1",
             "[ HB-appstore : 2.3.2 ] - 홈브류/시스모듈/오버레이 앱 스토어": "https://www.dropbox.com/scl/fi/ln9f6qgce3z648tz7n0rw/appstore.zip?rlkey=46h1rnodv0utzmm5zidu0fqxa&dl=1",
             "[ Hekate-Toolbox : 4.0.4 ] - 시스템 모듈 관리/부팅 설정": "https://www.dropbox.com/scl/fi/064znecgwp02oktchr8q5/Hekate-Toolbox.zip?rlkey=ofzz7i0c9ouwye5z451jr3maj&dl=1",
-            "[ JKSV : 2024.05.29 ] - 세이브 데이터 관리": "https://www.dropbox.com/scl/fi/zkkep3ys5oia4rcy90mf1/JKSV.zip?rlkey=2q5biefgkzuo5abyho4ax4o9a&dl=1",
+            "[ JKSV : 2024.11.06 ] - 세이브 데이터 관리": "https://www.dropbox.com/scl/fi/zkkep3ys5oia4rcy90mf1/JKSV.zip?rlkey=2q5biefgkzuo5abyho4ax4o9a&dl=1",
             "[ Joy-Con Utility : 1.0.1 ] - 조이콘 정보/펌웨어 관리": "https://www.dropbox.com/scl/fi/ue3z8kwojk8hkt0nqbafe/Joy-Con_Utility.zip?rlkey=xcezt4zugl9tdsfmq9dmi4xle&dl=1",
-            "[ ldnmitm : 1.1.1/1.17.0 ] - LAN 플레이 홈브류/오버레이" : "https://www.dropbox.com/scl/fi/avmqr2cg00rxy6v9h3b75/ldnmitm_config.zip?rlkey=3hhu2s3thmrty3zppvc0ydidi&dl=1",
+            "[ ldnmitm : 1.1.1/1.18.0 ] - LAN 플레이 홈브류/오버레이" : "https://www.dropbox.com/scl/fi/avmqr2cg00rxy6v9h3b75/ldnmitm_config.zip?rlkey=3hhu2s3thmrty3zppvc0ydidi&dl=1",
             "[ Linkalho : 2.0.1 ] - 어카운트 연동/해제 관리": "https://www.dropbox.com/scl/fi/pdu3bo2wl3w2b6gwjz4d0/Linkalho.zip?rlkey=x42ed9h072j1ulznufl7jl0qj&dl=1",
             "[ melonDS : release6,fix1 ] - NDS 에뮬레이터": "https://www.dropbox.com/scl/fi/rqh09ar0vyfihijxb68zi/melonDS.zip?rlkey=66zhh7gtm6d7ch0nvxfmbt4ex&dl=1",
-            "[ mGBA : 0.10.3 ] - GB 에뮬레이터": "https://www.dropbox.com/scl/fi/vhl1dcin94s0tjzhm10zg/mGBA.zip?rlkey=z11eud4kl92o93ut5epb0x8d3&dl=1",
-            "[ Moonlight-Switch : 1.1.0 ] - PC 스트리밍": "https://www.dropbox.com/scl/fi/0qcvl7qej46lzy6nshyic/Moonlight-Switch.zip?rlkey=7ahwnlhnbzqx46e0z6tzv3v04&dl=1",
-            "[ NX-Activity-Log : 1.5.0 ] - 활동 기록 관리": "https://www.dropbox.com/scl/fi/6z3nm7n6vz7aak4bfq3zx/NX-Activity-Log.zip?rlkey=wi7gdpmhul3taqscidsk1yydp&dl=1",
-            "[ NXDumpTool : 2.0.0 ] - 카트리지/롬 덤프": "https://www.dropbox.com/scl/fi/boduuwhlna9vcrtsfmrm2/NXDumpTool.zip?rlkey=kx08x9qab45sefp293vs5ih85&dl=1",
+            "[ mGBA : 0.10.4 ] - GB 에뮬레이터": "https://www.dropbox.com/scl/fi/vhl1dcin94s0tjzhm10zg/mGBA.zip?rlkey=z11eud4kl92o93ut5epb0x8d3&dl=1",
+            "[ Moonlight-Switch : 1.2.3 ] - PC 스트리밍": "https://www.dropbox.com/scl/fi/0qcvl7qej46lzy6nshyic/Moonlight-Switch.zip?rlkey=7ahwnlhnbzqx46e0z6tzv3v04&dl=1",
+            "[ NX-Activity-Log : 1.5.4 ] - 활동 기록 관리": "https://www.dropbox.com/scl/fi/6z3nm7n6vz7aak4bfq3zx/NX-Activity-Log.zip?rlkey=wi7gdpmhul3taqscidsk1yydp&dl=1",
+            "[ NXDumpTool : rewrite.ver ] - 카트리지/롬 덤프": "https://www.dropbox.com/scl/fi/boduuwhlna9vcrtsfmrm2/NXDumpTool.zip?rlkey=kx08x9qab45sefp293vs5ih85&dl=1",
             "[ NXMP : 0.9.0 ] - 영상 관리": "https://www.dropbox.com/scl/fi/ycnodi9lsj8r9p2vxj75b/NXMP.zip?rlkey=faxxkjejjq0ciagp4o3k95ifk&dl=1",
             "[ NX-Shell : 4.0.1 ] - 종합 파일 관리": "https://www.dropbox.com/scl/fi/fud1zdlwh6ok3a9ktmwe6/NX-Shell.zip?rlkey=goqyljufji9hrci2j2iqc8yvv&dl=1",
             "[ NxThemesinstaller : 2.7.1 ] - 테마 관리": "https://www.dropbox.com/scl/fi/8ab70zzs371jnk59dwnwx/NxThemesinstaller.zip?rlkey=quky56sxm8zhoek48s1tctn44&dl=1",
+            "[ PPSSPP : 1.17.1 ] - PSP 에뮬레이터": "https://www.dropbox.com/scl/fi/764imgke428hj1o4t9iex/PPSSPP.zip?rlkey=rnzxl2srehpk691fr4729r2je&dl=1",
             "[ Reboot to Payload : 1.0.0 ] - Erista 기기 재부팅": "https://www.dropbox.com/scl/fi/5jn5mf9s9cthyegh20x7u/Reboot2payload.zip?rlkey=8r2wuo5k44jnu0hcmnq97nack&dl=1",
             "[ RetroArch : 1.19.1 ] - 종합 콘솔 에뮬레이터": "https://www.dropbox.com/scl/fi/xmfxtzrzka4beqqgdhw4a/RetroArch.zip?rlkey=3pg9hch3pm4d99sxotojxdxw7&dl=1",
-            "[ ReverseNX-RT-Tool : 3.1.3 ] - 독/휴대모드 홈브류": "https://www.dropbox.com/scl/fi/j1nspm16ywnh06qjg21jx/ReverseNX-RT-Tool.zip?rlkey=9zfflrfym8hn627bsxea3gqnr&dl=1" ,
             "[ SimpleModDownloader : 2.1.0 ] - 모드/관리 툴 다운로더": "https://www.dropbox.com/scl/fi/wwxjy78eafl30zlx5b090/SimpleModDownloader.zip?rlkey=61njaa0mmknqawq8nao0n25jc&dl=1",
             "[ SysDVR : 6.1.1/1.0.11 ] - USB 스트리밍 홈브류/오버레이": "https://www.dropbox.com/scl/fi/hld9y8ra4tbb1xquzejzw/SysDVR.zip?rlkey=p0qa4mbmwg9jt9zreu5jld3lh&dl=1",
-            "[ Tinfoil : 18.0 [v1] ] - 파일 탐색/설치": "https://www.dropbox.com/scl/fi/n9k2jndi31ryrkkpgh3kd/Tinfoil.zip?rlkey=3bs31adedg8y62meb7oj91wr5&dl=1",
-            "[ Tinfoil DB : 18.0 [v1] ] - 타이틀 썸네일 DB": "https://www.dropbox.com/scl/fi/1119l8irzor99ynb5c1po/tinfoilDB.zip?rlkey=5ejeke3kpiwr2dfu6lz2iy0z2&dl=1",
+            "[ Tinfoil : 19.0 [v1] ] - 설치 버전 파일 탐색/설치": "https://www.dropbox.com/scl/fi/zfr3s1ci29oeyct5rsqdr/Tinfoil_self_installer.zip?rlkey=04iin9nvc7rkr5pgqrhci4md2&dl=1",
+            "[ Tinfoil : 19.0 [v1] ] - 애플릿 버전 파일 탐색/설치": "https://www.dropbox.com/scl/fi/n9k2jndi31ryrkkpgh3kd/Tinfoil.zip?rlkey=3bs31adedg8y62meb7oj91wr5&dl=1",
+            "[ Tinfoil DB : 19.0 [v1] ] - 타이틀 썸네일 DB": "https://www.dropbox.com/scl/fi/1119l8irzor99ynb5c1po/tinfoilDB.zip?rlkey=5ejeke3kpiwr2dfu6lz2iy0z2&dl=1",
             "[ vgedit+ : 2.1 ] - 텍스트 편집기": "https://www.dropbox.com/scl/fi/xrpmyzjeoabfc221cnbdm/vgedit.zip?rlkey=lj2nnhg6m3awsirlwg6cuv87m&dl=1"
         },
         "modchip": {
-            "[ Picofly : 2.75 ]": "https://www.dropbox.com/scl/fi/3fgwzsnwhuy0gis13zjqn/picofly2.75.zip?rlkey=b9ktcn7m7hshrsydiyhiv8epd&dl=1",
-            "[ Picofly : 2.76 ]": "https://www.dropbox.com/scl/fi/k40y06bmues8sd0atk1ir/picofly.zip?rlkey=i8i2485y971twzw82usl4yce8&dl=1",
+            "[ Picofly : 2.75 ]": "https://www.dropbox.com/scl/fi/9k0wn9ul0l8mpaag0xw1n/fw_2.75.zip?rlkey=li9sa97i17fh9nvulgui4xlwt&dl=1",
+            "[ Picofly : 2.76 ]": "https://www.dropbox.com/scl/fi/rd0k3bh493eo4lh643s8q/fw_2.76.zip?rlkey=yxaintm1z6hrximlgzkm1vdxf&dl=1",
+            "[ Picofly : 2.77 ]": "https://www.dropbox.com/scl/fi/9dm7x43tm6jg1wxwx3w8q/fw_2.77.zip?rlkey=473jbpsu9jtftp7z4hs3sewcr&dl=1",
+            "[ Picofly : 2.78 ]": "https://www.dropbox.com/scl/fi/bsckk48mqm0z6609zo3iz/fw_2.78.zip?rlkey=dqvr3gws3urqizg99vug16xre&dl=1",
+            "[ Picofly : 2.79 ]": "https://www.dropbox.com/scl/fi/jolb0xg7s49i2ogn0azzi/fw_2.79.zip?rlkey=o67g5mtwj7h6ia9jttv4tcmjp&dl=1",
+            "[ Picofly : 2.80 ]": "https://www.dropbox.com/scl/fi/n9wfpkvh3glly9lkyhxul/fw_2.80.zip?rlkey=vs5hu3l0a95i4hm4q4u2jkgoo&dl=1",
             "[ Hwfly : 0.7.2 ]": "https://www.dropbox.com/scl/fi/7z4dkc7du44v6lo3c1ys6/hwfly.zip?rlkey=dyim6fdk5p2z4328oxezsiy99&dl=1",
             "[ INSTINCT : 1.3 ]": "https://www.dropbox.com/scl/fi/uhp34kq8rx0250dy69ij9/instinct.zip?rlkey=wn32ldw2na2c2168ihgkd4f4k&dl=1",
             "[ SX Boot.dat/ini ]": "https://www.dropbox.com/scl/fi/81zzdidfmd636g2qwq5r0/sx.zip?rlkey=bf7wqlaf7xbdgytlpbikins4m&dl=1"
@@ -137,16 +150,16 @@
     },        
     "extra": {
         "android": {
-            "[ Lineage OS ] 21.0｜Android 14｜TV": "https://www.dropbox.com/scl/fi/ogjpzpcnxjytzjytjt4b1/Android14_tv.zip?rlkey=qcucj973htt7z1o5njqdhzetv&dl=1",
-            "[ Lineage OS ] 21.0｜Android 14｜Tablet": "https://www.dropbox.com/scl/fi/ypyd3qj12b8rowkxihjgk/Android14_tab.zip?rlkey=8ouu7td9sy6gwmle6iva7pjqm&dl=1"
+            "[ Lineage OS ] 21.0 (250107)｜Android 14｜TV": "https://www.dropbox.com/scl/fi/t3k05bsgqp3ffoyetd23v/Android14_tv.zip?rlkey=bkyzomuyr8ww9mwzr6334a1au&dl=1",
+            "[ Lineage OS ] 21.0 (240105)｜Android 14｜Tablet": "https://www.dropbox.com/scl/fi/v55tu5qstqq5cv3iahgem/Android14_tab.zip?rlkey=kv0cb1d2hmm9sacgobp1ic91y&dl=1"
         },
         "ubuntu": {
-            "[ Ubuntu Noble ] 24.04 LTS": "https://www.dropbox.com/scl/fi/ma4y46yawtpq35b16b5qr/ubuntu-noble.zip?rlkey=dn02n2j09y6nmp3hf6awgawcx&dl=1",
-            "[ Ubuntu Jammy ] 22.04 LTS": "https://www.dropbox.com/scl/fi/l37t5d4e263a56b8dft39/ubuntu-jammy.zip?rlkey=mkul2xdi4gi74bna91no9k0ck&dl=1",
-            "[ Ubuntu Bionic ] 18.04 LTS": "https://www.dropbox.com/scl/fi/c6njt8k6jijf41l8qm0pt/ubuntu-bionic.zip?rlkey=hoqmv7jet7ftwlai2dkvzx2vi&dl=1"
+            "[ Ubuntu Noble ] 24.04 LTS": "https://www.dropbox.com/scl/fi/aabai016zos6q24xrcs8n/ubuntu-noble.zip?rlkey=ln0mfn6vtht35spc8hyvdt934&dl=1",
+            "[ Ubuntu Jammy ] 22.04 LTS": "https://www.dropbox.com/scl/fi/sajjvk05cxb31uvkuxvaj/ubuntu-jammy.zip?rlkey=95324d2dbyofx7qjur728opc0&dl=1",
+            "[ Ubuntu Bionic ] 18.04 LTS": "https://www.dropbox.com/scl/fi/sd35nj0wwnr533p3kx49w/ubuntu-bionic.zip?rlkey=f12kk5hn6mwgfzoun2tz2wn6x&dl=1"
         },
         "lakka": {
-            "[ Lakka ] aarch64-4.4": "https://www.dropbox.com/scl/fi/4ryz27tqjymywuubhup9j/Lakka.zip?rlkey=2gy7w4c2slu6horyplka8k2fy&dl=1"
+            "[ Lakka ] aarch65-5.0": "https://www.dropbox.com/scl/fi/m7u9x8uormqoqwr3qpkdq/Lakka.zip?rlkey=jjl2y5dw28kk7roiq55fuu5xg&dl=1"
         }  
     }
 }

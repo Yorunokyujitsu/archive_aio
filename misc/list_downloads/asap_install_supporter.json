@@ -1,46 +1,54 @@
 {
   "AIS": {
-    "version": "1.0.3.3",
-    "download_link": "https://www.dropbox.com/scl/fi/t9uq752fz312e9eki1o3x/ASAP.exe?rlkey=vxuir60wnrwt66y599yysuo56&dl=1"
+    "version": "1.0.3.8",
+    "download_link": "https://www.dropbox.com/scl/fi/ykq372xw7zjnlc2mbudai/ASAP.exe?rlkey=m63quc1oc7zjfoiltjpxtnu8e&dl=1"
   },
   "ASAP": {
-    "version": "0704",
-    "download_link": "https://www.dropbox.com/scl/fi/dtjnulywsug7fvtn5pdkk/AIS_normal.zip?rlkey=zf1iba15jm7kadr8r490wa9vk&dl=1"
+    "version": "1230",
+    "download_link": "https://www.dropbox.com/scl/fi/anra3x6dz41dlbhcl7uw2/ASAP.zip?rlkey=b31q03n6zv7lluxwlbigslle4&dl=1"
   },
   "Origin": {
-    "version": "6.2.1/1.7.1",
-    "download_link": "https://www.dropbox.com/scl/fi/rcs0wue6egpi9tcuahvbm/atmosphere_1.7.1_hekate_6.2.1.zip?rlkey=v12fboqbr8h6qbv1y0vh4dlzq&dl=1"
-  }, 
+    "version": "6.2.2/1.8.0",
+    "download_link": "https://www.dropbox.com/scl/fi/a8ysszg892jsvhq1cc6vp/Hekate_6.2.2_Atmosphere_1.8.0.zip?rlkey=7v59u98n0gge5durwqa17s3ma&dl=1"
+  },
+  "NXVenom": {
+    "version": "5.2.0",
+    "download_link": "https://www.dropbox.com/scl/fi/7sehpjkwi5qy8f5r9mkdo/NXVenom.zip?rlkey=bu5b3vsrgec64x43ryt1snv3l&dl=1"
+  },
   "HATS": {
-    "version": "1.7.1-3",
-    "download_link": "https://www.dropbox.com/scl/fi/o4yd48gvrveqbzpgwvsz4/HATS-1.71-3.zip?rlkey=bulfgfah26c8oa8k9y8e2rqyy&dl=1"
+    "version": "1.8.0-v1.3",
+    "download_link": "https://www.dropbox.com/scl/fi/7giqghm55y72r2xobd0m5/HATS-1.8.0-V1.3.zip?rlkey=i844rtp3bgrlianrrlk8y7um4&dl=1"
   },
   "Kefir": {
-    "version": "741",
-    "download_link": "https://www.dropbox.com/scl/fi/283lk4c4zm91n4aziqkpt/kefir741.zip?rlkey=w8kfkudg009f7b0h0fzj3pcwf&dl=1"
+    "version": "758",
+    "download_link": "https://www.dropbox.com/scl/fi/sx2z3b0tv33qwbh1r21n6/kefir758.zip?rlkey=502whr2zkwf1v468uzxu1cvx7&dl=1"
   },
   "DeepSea": {
-    "version": "4.10.0",
-    "download_link": "https://www.dropbox.com/scl/fi/zd3ht6ahg9hin0l2oth22/deepsea-advanced_v4.10.0.zip?rlkey=hvj7hqhlyldt544e0b22amoip&dl=1"
+    "version": "4.11.0",
+    "download_link": "https://www.dropbox.com/scl/fi/6jwg0ui1ki8aj4cw0f40g/deepsea-advanced_v4.11.0.zip?rlkey=u6ykukbf5c9unxhe9bjm6d8gb&dl=1"
   },
   "Horizon": {
-    "version": "18.1.0",
+    "version": "19.0.1",
     "download_link": "https://www.dropbox.com/scl/fi/m3vm8cnwkoc71bvniywg8/Firmware.zip?rlkey=hss071iat58z6hpd8rozhkki7&dl=1"
   },
   "Retroarch": {
     "version": "1.19.1",
     "download_link": "https://www.dropbox.com/scl/fi/xmfxtzrzka4beqqgdhw4a/RetroArch.zip?rlkey=3pg9hch3pm4d99sxotojxdxw7&dl=1"
   },
-  "Android": {
-    "version": "21.0-Tab",
+  "Android_TV": {
+    "version": "21.0-TV",
+    "download_link": "https://www.dropbox.com/scl/fi/v9scclusz2gbmn6zt34jj/Android14_tv.zip?rlkey=r1bxs1osf5b8qgn7z520fojim&dl=1"
+  },
+  "Android_Tablet": {
+    "version": "21.0-Tablet",
     "download_link": "https://www.dropbox.com/scl/fi/ypyd3qj12b8rowkxihjgk/Android14_tab.zip?rlkey=8ouu7td9sy6gwmle6iva7pjqm&dl=1"
   },
   "Emulator": {
-    "version": "aarch64-4.4",
+    "version": "aarch65-5.0",
     "download_link": "https://www.dropbox.com/scl/fi/4ryz27tqjymywuubhup9j/Lakka.zip?rlkey=2gy7w4c2slu6horyplka8k2fy&dl=1"
   },
   "Linux": {
-    "version": "24.04 LTS",
-    "download_link": "https://www.dropbox.com/scl/fi/ma4y46yawtpq35b16b5qr/ubuntu-noble.zip?rlkey=dn02n2j09y6nmp3hf6awgawcx&dl=1"
+    "version": "22.04 LTS",
+    "download_link": "https://www.dropbox.com/scl/fi/l37t5d4e263a56b8dft39/ubuntu-jammy.zip?rlkey=mkul2xdi4gi74bna91no9k0ck&dl=1"
   }
 }
