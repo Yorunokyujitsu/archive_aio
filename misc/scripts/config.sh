@@ -756,7 +756,7 @@ pack_tester() {
     cd "${TEMP_DIR}/TESTER"
     zip -r "${TEMP_DIR}/ASAP-Tester.zip" "./"*
     mv "${TEMP_DIR}/ASAP-Tester.zip" "${OUT_DIR}/REPO/"
-    cp "${OUT_DIR}/ASAP.zip" "${OUT_DIR}/REPO/ASAP-${BUILD_VER}"
+    cp "${OUT_DIR}/ASAP.zip" "${OUT_DIR}/REPO/ASAP-${BUILD_VER}.zip"
 
     echo "ASAP-Tester.zip complete"
     echo ""
