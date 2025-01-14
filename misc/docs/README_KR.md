@@ -1,47 +1,47 @@
 # archive_aio
-  - **Build ASAP ([Korean](https://github.com/Yorunokyujitsu/archive_aio/blob/main/misc/docs/README_KR.md))**
-  - If just need an AIO installer, download **[ASAP.exe](https://github.com/Yorunokyujitsu/archive_aio/releases/latest/download/ASAP.exe)**.
+  - **ASAP 간편 빌드 툴**
+  - 인스톨러만 필요한 경우 **[ASAP.exe](https://github.com/Yorunokyujitsu/archive_aio/releases/latest/download/ASAP.exe)** 다운로드.
 
-## Source Code
-- Run [Git bash](https://git-scm.com/downloads) or Terminal and clone repo.
-- If don't have Git, just download the **[Source Code](https://github.com/Yorunokyujitsu/archive_aio/archive/refs/heads/main.zip)**.
+## 소스 코드
+- [Git bash](https://git-scm.com/downloads) 혹은 터미널을 이용하여 저장소를 복제.
+- Git이 없다면 **[Source Code](https://github.com/Yorunokyujitsu/archive_aio/archive/refs/heads/main.zip)** 를 다운로드.
 
 ## extra.7z
-- extra.7z is encrypted, password is `last build date`.
+- extra.7z 은 암호화되어 있으며, 패스워드는 `마지막 빌드일` 입니다.
 
-## How to build on Windows
-- Run `ASAP.bat` and enter command `DOWN`.
-- Install **[MSYS2.exe](https://github.com/msys2/msys2-installer/releases/latest)** in `./msys64` & **[Python.exe](https://www.python.org/downloads)** by checking the items.
+## Windows 에서 빌드하는 방법
+- `ASAP.bat`을 실행하여 `DOWN` 커맨드 입력.
+- `./msys64`경로에 **[MSYS2.exe](https://github.com/msys2/msys2-installer/releases/latest)** 설치 & **[Python.exe](https://www.python.org/downloads)** 은 다음 사항을 체크하여 설치.
 ```
 ✅ Use admin privileges when installing py.exe
 ✅ Add python.exe to PATH
 ```
-- Enter commands `KEYS` > `PREP` > `MAKE` > extra.7z password.
+- 설치 완료 후, `KEYS` > `PREP` > `MAKE` > extra.7z 패스워드 순으로 커맨드를 입력.
 
-## Rebuild with latest repos
-- This runs *Updating old repos* > *Building* > *Packaging*.
-- **[archive_aio](https://github.com/Yorunokyujitsu/archive_aio)** must have been built at least once.
-- Run `ASAP.bat` and enter command `UPDATE`.
+## 최신 저장소로 다시 빌드하는 방법
+- 이것은 *오래된 저장소를 업데이트* > *리빌드* > *패키징* 을 실행합니다.
+- **[archive_aio](https://github.com/Yorunokyujitsu/archive_aio)** 를 적어도 1회 이상 빌드했었어야 합니다.
+- `ASAP.bat` 을 실행하여 `UPDATE` 커맨드 입력. 
 
-## How to build on Linux
-<details><summary>It may vary depending on PC environment.</summary>
+## Linux 에서 빌드하는 방법
+<details><summary>PC 환경에 따라 다를 수 있습니다.</summary>
   
-- Install utilities & python libraries.
+- 유틸리티 & 파이썬 라이브러리 설치.
 ```
 sudo apt install lz4 zip git make gcc python3 python-is-python3 python3-pip 
 sudo pip install py pillow pycryptodome lz4 numpy
 
-# if using ubuntu 22.04 ~
+# 먄약 우분투 버전이 22.04 ~ 일 경우
 sudo apt update
 sudo apt install lz4 zip git make gcc python3 python-is-python3 python3-py python3-pip python3-pil python3-pycryptodome python3-lz4 python3-numpy
 ```
-- Install devkitpro.
+- devkitpro 설치.
 ```
 wget https://apt.devkitpro.org/install-devkitpro-pacman
 chmod +x ./install-devkitpro-pacman
 sudo ./install-devkitpro-pacman
 ```
-- Install devkitpro-pacman packages.
+- devkitpro-pacman 패키지 설치.
 ```
 sudo dkp-pacman -Syuu --needed --noconfirm \
     devkitA64 devkitARM dkp-toolchain-vars hactool \
@@ -49,13 +49,13 @@ sudo dkp-pacman -Syuu --needed --noconfirm \
     switch-freetype switch-libconfig switch-libjson-c switch-physfs \
     switch-curl switch-zziplib switch-mbedtls switch-jansson switch-tinyxml2
 ```
-- Setting environment variables for devkitpro.
+- devkitpro에 대한 환경변수 설정.
 ```
 export DEVKITPRO=/opt/devkitpro
 export DEVKITARM=/opt/devkitpro/devkitARM
 export DEVKITPPC=/opt/devkitpro/devkitPPC
 ```
-- Build all repositories.
+- 저장소를 빌드.
 ```
 cd archive_aio/misc/scripts
 chmod +x linux.sh
@@ -64,7 +64,7 @@ chmod +x linux.sh
 
 </details>
 
-## Credits
+## 크레딧
 - **[MSYS2](https://www.msys2.org/)** : [MSYS2](https://github.com/msys2/msys2-installer) ┃ **Python** : [Python](https://www.python.org) ┃ **[stahlworks](http://stahlworks.com/)** : [zip.exe](http://stahlworks.com/dev/zip.exe), [unzip.exe](http://stahlworks.com/dev/unzip.exe) ┃ **[dezem](https://github.com/dezem)** : [SAK](https://github.com/dezem/SAK) <br>
 - **[switchbrew](https://github.com/switchbrew)** : [libnx](https://github.com/switchbrew/libnx), [nx-hbloader](https://github.com/switchbrew/nx-hbloader) ┃ **Patches** : [ITotalJustice](https://github.com/ITotalJustice), [mrdude2478](https://github.com/mrdude2478), [borntohonk](https://github.com/borntohonk), [impeeza](https://github.com/impeeza) <br>
 
