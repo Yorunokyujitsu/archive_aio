@@ -566,7 +566,7 @@ pack_asap() {
     rm -rf "${TEMP_DIR}/ASAP/atmosphere/contents/010B6ECF3B30D000/01/01001FF3CDEC5000_T"
 
     # backup folder
-    mkdir -p "${TEMP_DIR}/backup/kips/.OC" && cp "${CLK_DIR}/loader.kip" "${TEMP_DIR}/backup/kips/.OC/" && mkdir -p "${TEMP_DIR}/backup/fptsrv"
+    mkdir -p "${TEMP_DIR}/backup/kips/.OC" && cp "${CLK_DIR}/loader.kip" "${TEMP_DIR}/backup/kips/.OC/" && mkdir -p "${TEMP_DIR}/backup/ftpsrv"
 
     # bootloader folder
     mkdir -p "${TEMP_DIR}/bootloader/ini"
@@ -710,7 +710,7 @@ pack_tester() {
     echo "${TEST_VER}" > "${TEMP_DIR}/TESTER/ASAP/atmosphere/contents/010B6ECF3B30D000/03/0100B0E8EB470000"
 
     # backup folder
-    mkdir -p "${TEMP_DIR}/TESTER/backup/kips/.OC" && cp "${CLK_DIR}/loader.kip" "${TEMP_DIR}/TESTER/backup/kips/.OC/" && mkdir -p "${TEMP_DIR}/TESTER/backup/fptsrv"
+    mkdir -p "${TEMP_DIR}/TESTER/backup/kips/.OC" && cp "${CLK_DIR}/loader.kip" "${TEMP_DIR}/TESTER/backup/kips/.OC/" && mkdir -p "${TEMP_DIR}/TESTER/backup/ftpsrv"
 
     # bootloader folder
     cp -r "${TOP_DIR}/Atmosphere/out/nintendo_nx_arm64_armv8a/release/atmosphere-out/bootloader" "${TEMP_DIR}/TESTER/"
@@ -765,7 +765,7 @@ pack_tester() {
 
 # info: sphaira.zip
 pack_sphaira() {
-    mkdir -p "${TEMP_DIR}/sphaira/"
+    mkdir -p "${TEMP_DIR}/sphaira/atmosphere/hb"
     cp "${TOP_DIR}/hb/sphaira/build/${PRESET}/switch/sphaira/sphaira.nro" "${TEMP_DIR}/sphaira/atmosphere/hb/"
     cp "${TOP_DIR}/hb/sphaira/.sphaira.nro.star" "${TEMP_DIR}/sphaira/atmosphere/hb/"
     cd "${TEMP_DIR}/sphaira"
