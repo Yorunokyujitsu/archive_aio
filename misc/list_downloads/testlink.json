@@ -1,0 +1,378 @@
+{
+    "ASAP": {
+        "description": [
+            "◆ ASAP",
+            "   : Asa's Switch All-in-one Package.\n     As Soon As Possible.\n",
+            "◇ Auther\n   : Asa, Yorunokyujitsu\n",
+            "◇ Support",
+            "   : HOS 19.0.1\n",
+            "◇ Volume (Lite - Normal · 8GB RAM)",
+            "   : 77 - 151 MB\n",
+            "◇ Bootloader · Custom Firmware",
+            "   : Hekate · Atmosphère\n",
+            "◇ Payloads\n   : ATLAS, fusee\n",
+            "◇ Patches\n   : Built-in, sys-patch\n",
+            "◇ Tesla Menu · Packages",
+            "   : Ultrahand · Extra Setting+,",
+            "     Launcher+, Memory Config,",
+            "     System Clock+, OC Toolkit(SC·EOS),",
+            "     Quick Guide+, UltraCam+,",
+            "     Backlight+, Volume+\n",
+            "◇ Sysmodules\n   : MissionControl, NX-FanControl,",
+            "     ovlloader+, SaltyNX, sys-con\n",
+            "◇ Overlays\n   : EdiZon, emuiibo, FPSLocker,",
+            "     ovlsysmodule, ReverseNX-RT,",
+            "     Status-Monitor, sys-clk-oc\n",
+            "◇ Homebrews\n   : ASAP-Updater, AmiiboGenerator",
+            "     Daybreak, DBI, Haze, Linkalho",
+            "     JKSV, sys-clk manager, Tinfoil"
+        ],
+        "url": [
+            "https://github.com/Yorunokyujitsu/archive_aio"
+        ],
+        "download": "https://www.dropbox.com/scl/fi/6ly263chmnoyy12ul5fdi/ASAPt.zip?rlkey=vgfla4lul2bca3f1wddzk86wp&dl=1",
+        "pack_ver": "0121"
+    },
+    "Hekate_Atmosphere": {
+        "description": [
+            "◆ Hekate & Nyx",
+            "   : GUI based Nintendo Switch\n     Bootloader.\n",
+            "◇ Developer\n   : CTCaer\n",
+            "◆ Atmosphère",
+            "   : Work-in-progress customized",
+            "     firmware for the Nintendo Switch.\n",
+            "◇ Developer\n   : Atmosphere-NX\n",
+            "◇ Support",
+            "   : HOS 19.0.1\n",
+            "◇ Volume",
+            "   : 14.5 MB\n",
+            "◇ Sigpatches\n   : sys-patch\n",
+            "◇ Sysmodule · Overlay\n   : Not included.\n",
+            "◇ Homebrews\n   : Daybreak, Haze, Reboot to payload"
+        ],
+        "url": [
+            "https://github.com/CTCaer/hekate",
+            "https://github.com/Atmosphere-NX/Atmosphere"
+        ],
+        "download": "https://www.dropbox.com/scl/fi/a8ysszg892jsvhq1cc6vp/Hekate_6.2.2_Atmosphere_1.8.0.zip?rlkey=7v59u98n0gge5durwqa17s3ma&dl=1",
+        "pack_ver": "6.2.2-1.8.0"
+    },
+    "NX-Venom": {
+        "description": [
+            "◆ NX-Venom",
+            "   : The ultimate all-in-one bundle for",
+            "     overclocking Nintendo Switch devices",
+            "     running Atmosphere CFW.\n",
+            "◇ Auther\n   : CatcherITGF\n",
+            "◇ Support",
+            "   : HOS 19.0.1\n",
+            "◇ Volume",
+            "   : 91.7 MB\n",
+            "◇ Bootloader · Custom Firmware",
+            "   : Hekate · Atmosphère\n",
+            "◇ Payloads\n   : fusee, Lockpick RCM,",
+            "   Picofly Toolbox, TegraExplorer\n",
+            "◇ Sigpatches\n   : Sigmapatches, sys-patch\n",
+            "◇ Tesla Menu · Packages",
+            "   : Uberhand · SC Wizard,",
+            "     Software Installer, System Tweaks\n",
+            "◇ Sysmodules\n   : SaltyNX\n",
+            "◇ Overlays\n   : DisplayLocker, EdiZon, FPSLocker,",
+            "     Observer-Tool, ReverseNX-RT,",
+            "     Status-Monitor, sys-clk-oc\n",
+            "◇ Homebrews\n   : AIO Switch Updater, Daybreak, DBI,",
+            "     HB-appstore, MemToolkitNX,",
+            "     ReverseNX-Tool, sys-clk manager,\n     Tinfoil"
+        ],
+        "url": [
+            "https://github.com/CatcherITGF/NX-Venom"
+        ],
+        "download": "https://github.com/CatcherITGF/NX-Venom/releases/latest/download/NXVenom.zip",
+        "pack_ver": "　5.3.1　"
+    },
+    "HATS": {
+        "description": [
+            "◆ HATS",
+            "   : Contains (H)ekate + (A)tmosphere +",
+            "     (T)infoil + (S)igpatches and several",
+            "     homebrew apps, plugins, etc.\n",
+            "◇ Auther\n   : sthetix\n",
+            "◇ Support",
+            "   : HOS 19.0.1\n",
+            "◇ Volume",
+            "   : 155 MB\n",
+            "◇ Bootloader · Custom Firmware",
+            "   : Hekate · Atmosphère\n",
+            "◇ Payloads\n   : Lockpick RCM, TegraExplorer,",
+            "     Hwfly · INSTINCT · Picofly Toolbox,\n     Prodinfo_gen\n",
+            "◇ Sigpatches\n   : Sigmapatches, sys-patch\n",
+            "◇ Tesla Menu\n   : Tesla\n",
+            "◇ Sysmodules\n   : MissionControl, Noexes, SaltyNX\n",
+            "◇ Overlays\n   : EdiZon, DNS-MITM_Manager,",
+            "     QuickNTP, sys-clk, Status-Monitor\n",
+            "◇ Homebrews\n   : AIO Switch Updater, breeze, Daybreak,",
+            "     DBI, EdiZon-SE, FTPD Pro, Goldleaf,",
+            "     HB-appstore, JKSV, Linkalho, NX-Shell,",
+            "     Reboot to payload, NS 90DNS tester,",
+            "     sys-clk manager, Tinfoil"
+        ],
+        "url": [
+            "https://www.sthetix.info/hats"
+        ],
+        "download": "https://www.mediafire.com/file_premium/rg6pbf52fvgp4fo/HATS-1.8.0-V1.3.zip",
+        "pack_ver": "1.8.0-v3"
+    },
+    "Kefir": {
+        "description": [
+            "◆ Kefir",
+            "   : This is a bundle that consists of",
+            "     a modified Atmosphere, necessary",
+            "     programs and scripts that all install\n     correctly.\n",
+            "◇ Auther\n   : rashevskyv\n",
+            "◇ Support",
+            "   : HOS 19.0.1\n",
+            "◇ Volume",
+            "   : 93 MB\n",
+            "◇ Bootloader · Custom Firmware",
+            "   : Hekate · Atmosphère\n",
+            "◇ Payloads\n   : fusee, Lockpick RCM,",
+            "   Picofly Toolbox, TegraExplorer\n",
+            "◇ Sigpatches\n   : Built-in, sys-patch\n",
+            "◇ Tesla Menu · Packages",
+            "   : Uberhand\n     DBI Translator, OC Setting\n",
+            "◇ Sysmodules\n   : MissionControl, sys-con\n",
+            "◇ Overlays\n   : EdiZon, sys-clk(4FIR)\n",
+            "◇ Homebrews\n   : Daybreak, DBI, HB-appstore,",
+            "     Kefir-Updater, Linkalho,\n     NxThemesInstaller, Tinfoil"
+        ],
+        "url": [
+            "https://github.com/rashevskyv/kefir"
+        ],
+        "download": "https://github.com/rashevskyv/kefir/releases/latest/download/kefir758.zip",
+        "pack_ver": "758"
+    },
+    "DeepSea": {
+        "description": [
+            "◆ DeepSea",
+            "   : The new All-in-One CFW package",
+            "     for the Nintendo Switch.\n",
+            "◇ Auther\n   : Team-Neptune\n",
+            "◇ Support",
+            "   : HOS 18.1.0\n",
+            "◇ Volume",
+            "   : 105 MB\n",
+            "◇ Bootloader · Custom Firmware",
+            "   : Hekate · Atmosphère\n",
+            "◇ Payloads\n   : CPR, TegraExplorer\n",
+            "◇ Sigpatches\n   : Not supported\n",
+            "◇ Tesla Menu\n   : Tesla\n",
+            "◇ Sysmodules\n   : MissionControl, sys-con, sys-ftpd\n",
+            "◇ Overlays\n   : EdiZon, emuiibo, sys-clk,\n     Status-Monitor\n",
+            "◇ Homebrews\n   : AIO Switch Updater, Daybreak,",
+            "     DeepSea-Toolbox, EdiZon-SE,",
+            "     Goldleaf, Haze, HB-appstore, JKSV,\n     NX-Shell, sys-clk manager"
+        ],
+        "url": [
+            "https://github.com/Team-Neptune/DeepSea"
+        ],
+        "download": "https://github.com/Team-Neptune/DeepSea/releases/latest/download/deepsea-advanced_v4.11.0.zip",
+        "pack_ver": "4.11.0"
+    },
+    "Horizon": {
+        "description": [
+            "◆ Horizon OS",
+            "   : Nintendo Switch System Firmware\n",
+            "◇ Volume",
+            "   : 320 MB\n",
+            "◇ Released",
+            "- 19.0.1 (Rebootless)  <<  Current\n- 19.0.1\n- 19.0.0\n",
+            "- 18.1.0\n- 18.0.1\n- 18.0.0\n\n- 17.0.1 (Rebootless)\n- 17.0.1\n- 17.0.0 (Rebootless)\n- 17.0.0\n\n- 16.1.0",
+            "- 16.0.3 (Rebootless 2)\n- 16.0.3 (Rebootless 1)\n- 16.0.3\n- 16.0.2\n- 16.0.1\n- 16.0.0\n\n- 15.0.1 (Rebootless)\n- 15.0.1\n- 15.0.0\n",
+            "- 14.1.2 (Rebootless 3)\n- 14.1.2 (Rebootless 2)\n- 14.1.2 (Rebootless 1)\n- 14.1.2\n- 14.1.1\n- 14.1.0\n- 14.0.1\n- 14.0.0\n\n- 13.2.1",
+            "- 13.2.0\n- 13.1.0\n- 13.0.0\n\n- 12.1.0\n- 12.0.3\n- 12.0.2\n- 12.0.1\n- 12.0.0\n\n- 11.0.1 (Rebootless)\n- 11.0.1\n- 11.0.0\n",
+            "- 10.2.0\n- 10.1.0\n- 10.0.4\n- 10.0.3\n- 10.0.2\n- 10.0.1\n- 10.0.0\n\n- 9.2.0\n- 9.1.0\n- 9.0.1\n- 9.0.0\n\n- 8.1.1\n- 8.1.0",
+            "- 8.0.1\n- 8.0.0\n\n- 7.0.1\n- 7.0.0\n\n- 6.2.0\n- 6.1.0\n- 6.0.1\n- 6.0.0\n- 6.0.0 (Pre-Release)\n\n- 5.1.0\n- 5.0.2\n- 5.0.1\n- 5.0.0\n",
+            "- 4.1.0\n- 4.0.1\n- 4.0.0\n\n- 3.0.2\n- 3.0.1\n- 3.0.0\n\n- 2.3.0\n- 2.2.0\n- 2.1.0\n- 2.0.0\n\n- 1.0.0\n- 1.0.0-7 (Pre-Release)"
+        ],
+        "url": [
+            "https://darthsternie.net/switch-firmwares"
+        ],
+        "download": "https://www.dropbox.com/scl/fi/m3vm8cnwkoc71bvniywg8/Firmware.zip?rlkey=hss071iat58z6hpd8rozhkki7&dl=1",
+        "pack_ver": "19.0.1 Rebootless"
+    },
+    "RetroArch": {
+        "description": [
+            "◆ RetroArch",
+            "   : Retro console emulator homebrew\n",
+            "◇ Developer",
+            "   : Libretro\n",
+            "◇ Volume",
+            "   : 2.59 GB\n",
+            "◇ Contents",
+            "   : ROM, switch, retroarch, nsp folder\n",
+            "◇ How to play?",
+            "   : After inserting the game file into the",
+            "     ROM folder, run it from the full",
+            "     memory mode homebrew menu or",
+            "     nsp forwarder.\n",
+            "◇ Can't run the game",
+            "   : Install libretro core appropriate",
+            "     for the console format."
+        ],
+        "url": [
+            "https://www.retroarch.com"
+        ],
+        "download": "https://www.dropbox.com/scl/fi/xmfxtzrzka4beqqgdhw4a/RetroArch.zip?rlkey=3pg9hch3pm4d99sxotojxdxw7&dl=1",
+        "pack_ver": "1.20.0"
+    },
+    "Lakka": {
+        "description": [
+            "◆ Lakka OS",
+            "   : Retro console emulator for linux\n",
+            "◇ Developer",
+            "   : Lakka team\n",
+            "◇ Volume",
+            "   : 1.13 GB\n",
+            "◇ Contents",
+            "   : bootloader, lakka folder\n",
+            "◇ How to play?",
+            "   : Click the 'Lakka' icon in the",
+            "     more config menu of hekate.\n",
+            "◇ Can't run the game",
+            "   : Install libretro core appropriate",
+            "     for the console format."
+        ],
+        "url": [
+            "https://www.lakka.tv"
+        ],
+        "download": "https://www.dropbox.com/scl/fi/4ryz27tqjymywuubhup9j/Lakka.zip?rlkey=2gy7w4c2slu6horyplka8k2fy&dl=1",
+        "pack_ver": "AARCH65-5.0"
+    },
+    "Android TV": {
+        "description": [
+            "◆ Lineage OS",
+            "   : TV version Android 14\n",
+            "◇ Developer",
+            "   : switchroot team\n",
+            "◇ Volume",
+            "   : 933 MB\n",
+            "◇ Contents",
+            "   : bootloader, switchroot folder",
+            "     LineageOS_21.0.zip, Gapps.zip\n",
+            "◇ Prerequisites",
+            "   : Min 16 GB ~ Max 1 TB SD Card",
+            "     Recommended U3 or U3/A2 class,",
+            "     Dump Joy-Con BT, Android partition\n",
+            "◇ Notice",
+            "   : Please note that creating a",
+            "     new partition will remove the",
+            "     existing partition."
+        ],
+        "url": [
+            "https://wiki.switchroot.org/wiki/android"
+        ],
+        "download": "https://www.dropbox.com/scl/fi/ogjpzpcnxjytzjytjt4b1/Android14_tv.zip?rlkey=qcucj973htt7z1o5njqdhzetv&dl=1",
+        "pack_ver": "21.0-250114"
+    },
+    "Android Tablet": {
+        "description": [
+            "◆ Lineage OS",
+            "   : Mobile tablet version Android 15\n",
+            "◇ Developer",
+            "   : switchroot team\n",
+            "◇ Volume",
+            "   : 1.26 GB\n",
+            "◇ Contents",
+            "   : bootloader, switchroot folder",
+            "     LineageOS_22.1.zip, Gapps.zip\n",
+            "◇ Prerequisites",
+            "   : Min 16 GB ~ Max 1 TB SD Card",
+            "     Recommended U3 or U3/A2 class,",
+            "     Dump Joy-Con BT, Android partition\n",
+            "◇ Notice",
+            "   : Please note that creating a",
+            "     new partition will remove the",
+            "     existing partition."
+        ],
+        "url": [
+            "https://wiki.switchroot.org/wiki/android"
+        ],
+        "download": "https://www.dropbox.com/scl/fi/ypyd3qj12b8rowkxihjgk/Android14_tab.zip?rlkey=8ouu7td9sy6gwmle6iva7pjqm&dl=1",
+        "pack_ver": "22.1-250120"
+    },
+    "Ubuntu Bionic": {
+        "description": [
+            "◆ Ubuntu OS",
+            "   : Linux OS for Tegra\n",
+            "◇ Developer",
+            "   : switchroot team\n",
+            "◇ Volume",
+            "   : 5.31 GB\n",
+            "◇ Contents",
+            "   : bootloader, switchroot folder\n",
+            "◇ Prerequisites",
+            "   : Min 16 GB ~ Max 1 TB SD Card",
+            "     Recommended U3 or U3/A2 class,",
+            "     Dump Joy-Con BT, LINUX partition\n",
+            "◇ Notice",
+            "   : Please note that creating a",
+            "     new partition will remove the",
+            "     existing partition."
+        ],
+        "url": [
+            "https://wiki.switchroot.org/wiki/linux"
+        ],
+        "download": "https://www.dropbox.com/scl/fi/l37t5d4e263a56b8dft39/ubuntu-jammy.zip?rlkey=mkul2xdi4gi74bna91no9k0ck&dl=1",
+        "pack_ver": "18.04-BIONIC"
+    },
+    "Ubuntu Jammy": {
+        "description": [
+            "◆ Ubuntu OS",
+            "   : Linux OS for Tegra\n",
+            "◇ Developer",
+            "   : switchroot team\n",
+            "◇ Volume",
+            "   : 5.31 GB\n",
+            "◇ Contents",
+            "   : bootloader, switchroot folder\n",
+            "◇ Prerequisites",
+            "   : Min 16 GB ~ Max 1 TB SD Card",
+            "     Recommended U3 or U3/A2 class,",
+            "     Dump Joy-Con BT, LINUX partition\n",
+            "◇ Notice",
+            "   : Please note that creating a",
+            "     new partition will remove the",
+            "     existing partition."
+        ],
+        "url": [
+            "https://wiki.switchroot.org/wiki/linux"
+        ],
+        "download": "https://www.dropbox.com/scl/fi/l37t5d4e263a56b8dft39/ubuntu-jammy.zip?rlkey=mkul2xdi4gi74bna91no9k0ck&dl=1",
+        "pack_ver": "22.04-JAMMY"
+    },
+    "Ubuntu Noble": {
+        "description": [
+            "◆ Ubuntu OS",
+            "   : Linux OS for Tegra\n",
+            "◇ Developer",
+            "   : switchroot team\n",
+            "◇ Volume",
+            "   : 5.31 GB\n",
+            "◇ Contents",
+            "   : bootloader, switchroot folder\n",
+            "◇ Prerequisites",
+            "   : Min 16 GB ~ Max 1 TB SD Card",
+            "     Recommended U3 or U3/A2 class,",
+            "     Dump Joy-Con BT, LINUX partition\n",
+            "◇ Notice",
+            "   : Please note that creating a",
+            "     new partition will remove the",
+            "     existing partition."
+        ],
+        "url": [
+            "https://wiki.switchroot.org/wiki/linux"
+        ],
+        "download": "https://www.dropbox.com/scl/fi/l37t5d4e263a56b8dft39/ubuntu-jammy.zip?rlkey=mkul2xdi4gi74bna91no9k0ck&dl=1",
+        "pack_ver": "24.04-NOBLE"
+    }
+}
