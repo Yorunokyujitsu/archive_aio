@@ -176,7 +176,7 @@
         ],
         "url": "https://github.com/Team-Neptune/DeepSea",
         "download": "https://www.dropbox.com/scl/fi/zfsh9tt3wajdygp0gvfh6/DeepSea.7z?rlkey=gii7df9whu38xpomqyus6ik0i&dl=1",
-        "pack_ver": "Advanced-4.11.0"
+        "pack_ver": "4.11.0"
     },
     "Horizon": {
         "description": [
@@ -242,7 +242,7 @@
         "download": "https://www.dropbox.com/scl/fi/cy7e6q2qxsu4em6q3uo9t/Lakka.7z?rlkey=93ddgbze46lakr3fwcflhrpgu&dl=1",
         "pack_ver": "AARCH65-5.0"
     },
-    "Android TV": {
+    "Android_TV": {
         "description": [
             "◆ Lineage OS",
             "   : TV version Android 15\n",
@@ -266,7 +266,7 @@
         "download": "https://www.dropbox.com/s/1bkmdz3jtevujfg/Android_tv.7z?dl=1",
         "pack_ver": "21.0-250114"
     },
-    "Android Tablet": {
+    "Android_Tablet": {
         "description": [
             "◆ Lineage OS",
             "   : Mobile tablet version Android 15\n",
@@ -290,7 +290,7 @@
         "download": "https://www.dropbox.com/s/e79okz877pywt8h/Android_tab.7z?dl=1",
         "pack_ver": "22.1-250120"
     },
-    "Ubuntu Bionic": {
+    "Ubuntu_Bionic": {
         "description": [
             "◆ Ubuntu OS",
             "   : Linux OS for Tegra\n",
@@ -313,7 +313,7 @@
         "download": "https://www.dropbox.com/scl/fi/uzvg4rc4l1mfaouv37mu9/ubuntu-bionic.7z?rlkey=y2w8w59ut29urmzg5yf1lplhx&dl=1",
         "pack_ver": "18.04-BIONIC"
     },
-    "Ubuntu Jammy": {
+    "Ubuntu_Jammy": {
         "description": [
             "◆ Ubuntu OS",
             "   : Linux OS for Tegra\n",
@@ -336,7 +336,7 @@
         "download": "https://www.dropbox.com/scl/fi/vv6n1wehxawgnk9hohq6k/ubuntu-jammy.7z?rlkey=kfi0ityli1ie667nqz2ol2jxb&dl=1",
         "pack_ver": "22.04-JAMMY"
     },
-    "Ubuntu Noble": {
+    "Ubuntu_Noble": {
         "description": [
             "◆ Ubuntu OS",
             "   : Linux OS for Tegra\n",
