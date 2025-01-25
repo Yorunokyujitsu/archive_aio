@@ -31,9 +31,7 @@
             "     Daybreak, DBI, Haze, Linkalho",
             "     JKSV, sys-clk manager, Tinfoil"
         ],
-        "url": [
-            "https://github.com/Yorunokyujitsu/archive_aio"
-        ],
+        "url": "https://github.com/Yorunokyujitsu/archive_aio",
         "download": "https://www.dropbox.com/s/b7exscbzm4l1m5k/ASAP.7z?dl=1",
         "pack_ver": "0121"
     },
@@ -118,9 +116,7 @@
             "     Reboot to payload, NS 90DNS tester,",
             "     sys-clk manager, Tinfoil"
         ],
-        "url": [
-            "https://www.sthetix.info/hats"
-        ],
+        "url": "https://www.sthetix.info/hats",
         "download": "https://www.mediafire.com/file_premium/rg6pbf52fvgp4fo/HATS-1.8.0-V1.3.zip",
         "pack_ver": "1.8.0-v3"
     },
@@ -147,9 +143,7 @@
             "◇ Homebrews\n   : Daybreak, DBI, HB-appstore,",
             "     Kefir-Updater, Linkalho,\n     NxThemesInstaller, Tinfoil"
         ],
-        "url": [
-            "https://github.com/rashevskyv/kefir"
-        ],
+        "url": "https://github.com/rashevskyv/kefir",
         "download": "https://github.com/rashevskyv/kefir/releases/latest/download/kefir758.zip",
         "pack_ver": "758"
     },
@@ -174,9 +168,7 @@
             "     DeepSea-Toolbox, EdiZon-SE,",
             "     Goldleaf, Haze, HB-appstore, JKSV,\n     NX-Shell, sys-clk manager"
         ],
-        "url": [
-            "https://github.com/Team-Neptune/DeepSea"
-        ],
+        "url": "https://github.com/Team-Neptune/DeepSea",
         "download": "https://github.com/Team-Neptune/DeepSea/releases/latest/download/deepsea-advanced_v4.11.0.zip",
         "pack_ver": "4.11.0"
     },
@@ -196,9 +188,7 @@
             "- 8.0.1\n- 8.0.0\n\n- 7.0.1\n- 7.0.0\n\n- 6.2.0\n- 6.1.0\n- 6.0.1\n- 6.0.0\n- 6.0.0 (Pre-Release)\n\n- 5.1.0\n- 5.0.2\n- 5.0.1\n- 5.0.0\n",
             "- 4.1.0\n- 4.0.1\n- 4.0.0\n\n- 3.0.2\n- 3.0.1\n- 3.0.0\n\n- 2.3.0\n- 2.2.0\n- 2.1.0\n- 2.0.0\n\n- 1.0.0\n- 1.0.0-7 (Pre-Release)"
         ],
-        "url": [
-            "https://darthsternie.net/switch-firmwares"
-        ],
+        "url": "https://darthsternie.net/switch-firmwares",
         "download": "https://www.dropbox.com/scl/fi/m3vm8cnwkoc71bvniywg8/Firmware.zip?rlkey=hss071iat58z6hpd8rozhkki7&dl=1",
         "pack_ver": "19.0.1 Rebootless"
     },
@@ -221,9 +211,7 @@
             "   : Install libretro core appropriate",
             "     for the console format."
         ],
-        "url": [
-            "https://www.retroarch.com"
-        ],
+        "url": "https://www.retroarch.com",
         "download": "https://www.dropbox.com/scl/fi/xmfxtzrzka4beqqgdhw4a/RetroArch.zip?rlkey=3pg9hch3pm4d99sxotojxdxw7&dl=1",
         "pack_ver": "1.20.0"
     },
@@ -244,9 +232,7 @@
             "   : Install libretro core appropriate",
             "     for the console format."
         ],
-        "url": [
-            "https://www.lakka.tv"
-        ],
+        "url": "https://www.lakka.tv",
         "download": "https://www.dropbox.com/scl/fi/4ryz27tqjymywuubhup9j/Lakka.zip?rlkey=2gy7w4c2slu6horyplka8k2fy&dl=1",
         "pack_ver": "AARCH65-5.0"
     },
@@ -270,9 +256,7 @@
             "     new partition will remove the",
             "     existing partition."
         ],
-        "url": [
-            "https://wiki.switchroot.org/wiki/android"
-        ],
+        "url": "https://wiki.switchroot.org/wiki/android",
         "download": "https://www.dropbox.com/scl/fi/ogjpzpcnxjytzjytjt4b1/Android14_tv.zip?rlkey=qcucj973htt7z1o5njqdhzetv&dl=1",
         "pack_ver": "21.0-250114"
     },
@@ -296,9 +280,7 @@
             "     new partition will remove the",
             "     existing partition."
         ],
-        "url": [
-            "https://wiki.switchroot.org/wiki/android"
-        ],
+        "url": "https://wiki.switchroot.org/wiki/android",
         "download": "https://www.dropbox.com/scl/fi/ypyd3qj12b8rowkxihjgk/Android14_tab.zip?rlkey=8ouu7td9sy6gwmle6iva7pjqm&dl=1",
         "pack_ver": "22.1-250120"
     },
@@ -321,9 +303,7 @@
             "     new partition will remove the",
             "     existing partition."
         ],
-        "url": [
-            "https://wiki.switchroot.org/wiki/linux"
-        ],
+        "url": "https://wiki.switchroot.org/wiki/linux",
         "download": "https://www.dropbox.com/scl/fi/l37t5d4e263a56b8dft39/ubuntu-jammy.zip?rlkey=mkul2xdi4gi74bna91no9k0ck&dl=1",
         "pack_ver": "18.04-BIONIC"
     },
@@ -346,9 +326,7 @@
             "     new partition will remove the",
             "     existing partition."
         ],
-        "url": [
-            "https://wiki.switchroot.org/wiki/linux"
-        ],
+        "url": "https://wiki.switchroot.org/wiki/linux",
         "download": "https://www.dropbox.com/scl/fi/l37t5d4e263a56b8dft39/ubuntu-jammy.zip?rlkey=mkul2xdi4gi74bna91no9k0ck&dl=1",
         "pack_ver": "22.04-JAMMY"
     },
@@ -371,9 +349,7 @@
             "     new partition will remove the",
             "     existing partition."
         ],
-        "url": [
-            "https://wiki.switchroot.org/wiki/linux"
-        ],
+        "url": "https://wiki.switchroot.org/wiki/linux",
         "download": "https://www.dropbox.com/scl/fi/l37t5d4e263a56b8dft39/ubuntu-jammy.zip?rlkey=mkul2xdi4gi74bna91no9k0ck&dl=1",
         "pack_ver": "24.04-NOBLE"
     }
