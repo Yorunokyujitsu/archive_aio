@@ -88,9 +88,7 @@
             "     HB-appstore, MemToolkitNX,",
             "     ReverseNX-Tool, sys-clk manager,\n     Tinfoil"
         ],
-        "url": [
-            "https://github.com/CatcherITGF/NX-Venom"
-        ],
+        "url": "https://github.com/CatcherITGF/NX-Venom",
         "download": "https://github.com/CatcherITGF/NX-Venom/releases/latest/download/NXVenom.zip",
         "pack_ver": "　5.3.1　"
     },
