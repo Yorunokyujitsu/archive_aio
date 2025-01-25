@@ -10,12 +10,13 @@
             "◇ Auther\n   : Asa, Yorunokyujitsu\n",
             "◇ Support",
             "   : HOS 19.0.1\n",
-            "◇ Volume (Lite - Normal · 8GB RAM)",
-            "   : 77 - 151 MB\n",
+            "◇ Volume (Lite · Normal, 8GB RAM)",
+            "   : 77 · 133 MB\n",
             "◇ Bootloader · Custom Firmware",
             "   : Hekate · Atmosphère\n",
             "◇ Payloads\n   : ATLAS, fusee\n",
             "◇ Patches\n   : Built-in, sys-patch\n",
+            "◇ Homebrew menu\n   : Sphaira\n",
             "◇ Tesla Menu · Packages",
             "   : Ultrahand · Extra Setting+,",
             "     Launcher+, Memory Config,",
@@ -32,7 +33,7 @@
             "     JKSV, sys-clk manager, Tinfoil"
         ],
         "url": "https://github.com/Yorunokyujitsu/archive_aio",
-        "download": "https://www.dropbox.com/s/b7exscbzm4l1m5k/ASAP.7z?dl=1",
+        "download": "https://www.dropbox.com/scl/fi/kyw59h8xg382pb1g2oaxf/ASAP.7z?rlkey=eipveng5ab4hqobav1680dqkf&dl=1",
         "pack_ver": "0121"
     },
     "Hekate_Atmosphere": {
@@ -47,8 +48,9 @@
             "◇ Support",
             "   : HOS 19.0.1\n",
             "◇ Volume",
-            "   : 14.5 MB\n",
-            "◇ Sigpatches\n   : sys-patch\n",
+            "   : 14.4 MB\n",
+            "◇ Patches\n   : sys-patch\n",
+            "◇ Homebrew menu\n   : hbmenu\n",
             "◇ Sysmodule · Overlay\n   : Not included.\n",
             "◇ Homebrews\n   : Daybreak, Haze, Reboot to payload"
         ],
@@ -56,7 +58,7 @@
             "https://github.com/CTCaer/hekate",
             "https://github.com/Atmosphere-NX/Atmosphere"
         ],
-        "download": "https://www.dropbox.com/scl/fi/a8ysszg892jsvhq1cc6vp/Hekate_6.2.2_Atmosphere_1.8.0.zip?rlkey=7v59u98n0gge5durwqa17s3ma&dl=1",
+        "download": "https://www.dropbox.com/scl/fi/u32ap4wgw9140a22yfepl/Hekate_Atmosphere.7z?rlkey=ib1no7rpxvsta0lgygbxjy86b&dl=1",
         "pack_ver": "6.2.2-1.8.0"
     },
     "NX-Venom": {
@@ -69,12 +71,13 @@
             "◇ Support",
             "   : HOS 19.0.1\n",
             "◇ Volume",
-            "   : 91.7 MB\n",
+            "   : 72.4 MB\n",
             "◇ Bootloader · Custom Firmware",
             "   : Hekate · Atmosphère\n",
             "◇ Payloads\n   : fusee, Lockpick RCM,",
             "   Picofly Toolbox, TegraExplorer\n",
-            "◇ Sigpatches\n   : Sigmapatches, sys-patch\n",
+            "◇ Patches\n   : Sigmapatches, sys-patch\n",
+            "◇ Homebrew menu\n   : hbmenu\n",
             "◇ Tesla Menu · Packages",
             "   : Uberhand · SC Wizard,",
             "     Software Installer, System Tweaks\n",
@@ -87,7 +90,7 @@
             "     ReverseNX-Tool, sys-clk manager,\n     Tinfoil"
         ],
         "url": "https://github.com/CatcherITGF/NX-Venom",
-        "download": "https://github.com/CatcherITGF/NX-Venom/releases/latest/download/NXVenom.zip",
+        "download": "https://www.dropbox.com/scl/fi/8qeta8lu1snzk1tsp3fkp/NXVenom.7z?rlkey=uphesze8n6aay9l9694himy38&dl=1",
         "pack_ver": "　5.3.1　"
     },
     "HATS": {
@@ -100,12 +103,13 @@
             "◇ Support",
             "   : HOS 19.0.1\n",
             "◇ Volume",
-            "   : 155 MB\n",
+            "   : 168 MB\n",
             "◇ Bootloader · Custom Firmware",
             "   : Hekate · Atmosphère\n",
             "◇ Payloads\n   : Lockpick RCM, TegraExplorer,",
             "     Hwfly · INSTINCT · Picofly Toolbox,\n     Prodinfo_gen\n",
-            "◇ Sigpatches\n   : Sigmapatches, sys-patch\n",
+            "◇ Patches\n   : Sigmapatches, sys-patch\n",
+            "◇ Homebrew menu\n   : hbmenu\n",
             "◇ Tesla Menu\n   : Tesla\n",
             "◇ Sysmodules\n   : MissionControl, Noexes, SaltyNX\n",
             "◇ Overlays\n   : EdiZon, DNS-MITM_Manager,",
@@ -117,7 +121,7 @@
             "     sys-clk manager, Tinfoil"
         ],
         "url": "https://www.sthetix.info/hats",
-        "download": "https://www.mediafire.com/file_premium/rg6pbf52fvgp4fo/HATS-1.8.0-V1.3.zip",
+        "download": "https://www.dropbox.com/scl/fi/41tw48yhrcxidqi4yzp8b/HATS.7z?rlkey=jo8xkoqhz4nkdh7km2prwpjk4&dl=1",
         "pack_ver": "1.8.0-v3"
     },
     "Kefir": {
@@ -130,12 +134,13 @@
             "◇ Support",
             "   : HOS 19.0.1\n",
             "◇ Volume",
-            "   : 93 MB\n",
+            "   : 90.8 MB\n",
             "◇ Bootloader · Custom Firmware",
             "   : Hekate · Atmosphère\n",
             "◇ Payloads\n   : fusee, Lockpick RCM,",
             "   Picofly Toolbox, TegraExplorer\n",
-            "◇ Sigpatches\n   : Built-in, sys-patch\n",
+            "◇ Patches\n   : Built-in, sys-patch\n",
+            "◇ Homebrew menu\n   : hbmenu\n",
             "◇ Tesla Menu · Packages",
             "   : Uberhand\n     DBI Translator, OC Setting\n",
             "◇ Sysmodules\n   : MissionControl, sys-con\n",
@@ -144,7 +149,7 @@
             "     Kefir-Updater, Linkalho,\n     NxThemesInstaller, Tinfoil"
         ],
         "url": "https://github.com/rashevskyv/kefir",
-        "download": "https://github.com/rashevskyv/kefir/releases/latest/download/kefir758.zip",
+        "download": "https://www.dropbox.com/scl/fi/lfygee6rpgpj7jkithchq/Kefir.7z?rlkey=irgt68monudd0b1ty1zp99xpw&dl=1",
         "pack_ver": "758"
     },
     "DeepSea": {
@@ -160,7 +165,8 @@
             "◇ Bootloader · Custom Firmware",
             "   : Hekate · Atmosphère\n",
             "◇ Payloads\n   : CPR, TegraExplorer\n",
-            "◇ Sigpatches\n   : Not supported\n",
+            "◇ Patches\n   : Not supported\n",
+            "◇ Homebrew menu\n   : hbmenu\n",
             "◇ Tesla Menu\n   : Tesla\n",
             "◇ Sysmodules\n   : MissionControl, sys-con, sys-ftpd\n",
             "◇ Overlays\n   : EdiZon, emuiibo, sys-clk,\n     Status-Monitor\n",
@@ -169,7 +175,7 @@
             "     Goldleaf, Haze, HB-appstore, JKSV,\n     NX-Shell, sys-clk manager"
         ],
         "url": "https://github.com/Team-Neptune/DeepSea",
-        "download": "https://github.com/Team-Neptune/DeepSea/releases/latest/download/deepsea-advanced_v4.11.0.zip",
+        "download": "https://www.dropbox.com/scl/fi/zfsh9tt3wajdygp0gvfh6/DeepSea.7z?rlkey=gii7df9whu38xpomqyus6ik0i&dl=1",
         "pack_ver": "4.11.0"
     },
     "Horizon": {
@@ -177,7 +183,7 @@
             "◆ Horizon OS",
             "   : Nintendo Switch System Firmware\n",
             "◇ Volume",
-            "   : 320 MB\n",
+            "   : 322 MB\n",
             "◇ Released",
             "- 19.0.1 (Rebootless)  <<  Current\n- 19.0.1\n- 19.0.0\n",
             "- 18.1.0\n- 18.0.1\n- 18.0.0\n\n- 17.0.1 (Rebootless)\n- 17.0.1\n- 17.0.0 (Rebootless)\n- 17.0.0\n\n- 16.1.0",
@@ -189,7 +195,7 @@
             "- 4.1.0\n- 4.0.1\n- 4.0.0\n\n- 3.0.2\n- 3.0.1\n- 3.0.0\n\n- 2.3.0\n- 2.2.0\n- 2.1.0\n- 2.0.0\n\n- 1.0.0\n- 1.0.0-7 (Pre-Release)"
         ],
         "url": "https://darthsternie.net/switch-firmwares",
-        "download": "https://www.dropbox.com/scl/fi/m3vm8cnwkoc71bvniywg8/Firmware.zip?rlkey=hss071iat58z6hpd8rozhkki7&dl=1",
+        "download": "https://www.dropbox.com/s/zy9r3her9c5pcl9/Firmware.7z?dl=1",
         "pack_ver": "19.0.1 Rebootless"
     },
     "RetroArch": {
@@ -199,9 +205,9 @@
             "◇ Developer",
             "   : Libretro\n",
             "◇ Volume",
-            "   : 2.59 GB\n",
+            "   : 2.75 GB\n",
             "◇ Contents",
-            "   : ROM, switch, retroarch, nsp folder\n",
+            "   : ROM, switch, retroarch\n",
             "◇ How to play?",
             "   : After inserting the game file into the",
             "     ROM folder, run it from the full",
@@ -212,7 +218,7 @@
             "     for the console format."
         ],
         "url": "https://www.retroarch.com",
-        "download": "https://www.dropbox.com/scl/fi/xmfxtzrzka4beqqgdhw4a/RetroArch.zip?rlkey=3pg9hch3pm4d99sxotojxdxw7&dl=1",
+        "download": "https://www.dropbox.com/scl/fi/e7cv44jde7992orbu62om/RetroArch.7z?rlkey=rdwyc034u0mskk5tod6suaeur&dl=1",
         "pack_ver": "1.20.0"
     },
     "Lakka": {
@@ -222,7 +228,7 @@
             "◇ Developer",
             "   : Lakka team\n",
             "◇ Volume",
-            "   : 1.13 GB\n",
+            "   : 1.19 GB\n",
             "◇ Contents",
             "   : bootloader, lakka folder\n",
             "◇ How to play?",
@@ -233,22 +239,22 @@
             "     for the console format."
         ],
         "url": "https://www.lakka.tv",
-        "download": "https://www.dropbox.com/scl/fi/4ryz27tqjymywuubhup9j/Lakka.zip?rlkey=2gy7w4c2slu6horyplka8k2fy&dl=1",
+        "download": "https://www.dropbox.com/scl/fi/cy7e6q2qxsu4em6q3uo9t/Lakka.7z?rlkey=93ddgbze46lakr3fwcflhrpgu&dl=1",
         "pack_ver": "AARCH65-5.0"
     },
     "Android TV": {
         "description": [
             "◆ Lineage OS",
-            "   : TV version Android 14\n",
+            "   : TV version Android 15\n",
             "◇ Developer",
             "   : switchroot team\n",
             "◇ Volume",
-            "   : 933 MB\n",
+            "   : 944 MB\n",
             "◇ Contents",
             "   : bootloader, switchroot folder",
-            "     LineageOS_21.0.zip, Gapps.zip\n",
+            "     LineageOS_22.1.zip, Gapps.zip\n",
             "◇ Prerequisites",
-            "   : Min 16 GB ~ Max 1 TB SD Card",
+            "   : Min 16 GB ~ Max 2 TB SD Card",
             "     Recommended U3 or U3/A2 class,",
             "     Dump Joy-Con BT, Android partition\n",
             "◇ Notice",
@@ -256,8 +262,8 @@
             "     new partition will remove the",
             "     existing partition."
         ],
-        "url": "https://wiki.switchroot.org/wiki/android",
-        "download": "https://www.dropbox.com/scl/fi/ogjpzpcnxjytzjytjt4b1/Android14_tv.zip?rlkey=qcucj973htt7z1o5njqdhzetv&dl=1",
+        "url": "https://wiki.switchroot.org/wiki/android/android-14-15",
+        "download": "https://www.dropbox.com/s/1bkmdz3jtevujfg/Android_tv.7z?dl=1",
         "pack_ver": "21.0-250114"
     },
     "Android Tablet": {
@@ -267,12 +273,12 @@
             "◇ Developer",
             "   : switchroot team\n",
             "◇ Volume",
-            "   : 1.26 GB\n",
+            "   : 1.27 GB\n",
             "◇ Contents",
             "   : bootloader, switchroot folder",
             "     LineageOS_22.1.zip, Gapps.zip\n",
             "◇ Prerequisites",
-            "   : Min 16 GB ~ Max 1 TB SD Card",
+            "   : Min 16 GB ~ Max 2 TB SD Card",
             "     Recommended U3 or U3/A2 class,",
             "     Dump Joy-Con BT, Android partition\n",
             "◇ Notice",
@@ -280,8 +286,8 @@
             "     new partition will remove the",
             "     existing partition."
         ],
-        "url": "https://wiki.switchroot.org/wiki/android",
-        "download": "https://www.dropbox.com/scl/fi/ypyd3qj12b8rowkxihjgk/Android14_tab.zip?rlkey=8ouu7td9sy6gwmle6iva7pjqm&dl=1",
+        "url": "https://wiki.switchroot.org/wiki/android/android-14-15",
+        "download": "https://www.dropbox.com/s/e79okz877pywt8h/Android_tab.7z?dl=1",
         "pack_ver": "22.1-250120"
     },
     "Ubuntu Bionic": {
@@ -291,11 +297,11 @@
             "◇ Developer",
             "   : switchroot team\n",
             "◇ Volume",
-            "   : 5.31 GB\n",
+            "   : 4.27 GB\n",
             "◇ Contents",
             "   : bootloader, switchroot folder\n",
             "◇ Prerequisites",
-            "   : Min 16 GB ~ Max 1 TB SD Card",
+            "   : Min 16 GB ~ Max 2 TB SD Card",
             "     Recommended U3 or U3/A2 class,",
             "     Dump Joy-Con BT, LINUX partition\n",
             "◇ Notice",
@@ -303,8 +309,8 @@
             "     new partition will remove the",
             "     existing partition."
         ],
-        "url": "https://wiki.switchroot.org/wiki/linux",
-        "download": "https://www.dropbox.com/scl/fi/l37t5d4e263a56b8dft39/ubuntu-jammy.zip?rlkey=mkul2xdi4gi74bna91no9k0ck&dl=1",
+        "url": "https://wiki.switchroot.org/wiki/linux/l4t-ubuntu-bionic-installation-guide",
+        "download": "https://www.dropbox.com/scl/fi/uzvg4rc4l1mfaouv37mu9/ubuntu-bionic.7z?rlkey=y2w8w59ut29urmzg5yf1lplhx&dl=1",
         "pack_ver": "18.04-BIONIC"
     },
     "Ubuntu Jammy": {
@@ -314,11 +320,11 @@
             "◇ Developer",
             "   : switchroot team\n",
             "◇ Volume",
-            "   : 5.31 GB\n",
+            "   : 5.47 GB\n",
             "◇ Contents",
             "   : bootloader, switchroot folder\n",
             "◇ Prerequisites",
-            "   : Min 16 GB ~ Max 1 TB SD Card",
+            "   : Min 16 GB ~ Max 2 TB SD Card",
             "     Recommended U3 or U3/A2 class,",
             "     Dump Joy-Con BT, LINUX partition\n",
             "◇ Notice",
@@ -326,8 +332,8 @@
             "     new partition will remove the",
             "     existing partition."
         ],
-        "url": "https://wiki.switchroot.org/wiki/linux",
-        "download": "https://www.dropbox.com/scl/fi/l37t5d4e263a56b8dft39/ubuntu-jammy.zip?rlkey=mkul2xdi4gi74bna91no9k0ck&dl=1",
+        "url": "https://wiki.switchroot.org/wiki/linux/l4t-ubuntu-jammy-installation-guide",
+        "download": "https://www.dropbox.com/scl/fi/vv6n1wehxawgnk9hohq6k/ubuntu-jammy.7z?rlkey=kfi0ityli1ie667nqz2ol2jxb&dl=1",
         "pack_ver": "22.04-JAMMY"
     },
     "Ubuntu Noble": {
@@ -337,11 +343,11 @@
             "◇ Developer",
             "   : switchroot team\n",
             "◇ Volume",
-            "   : 5.31 GB\n",
+            "   : 6.88 GB\n",
             "◇ Contents",
             "   : bootloader, switchroot folder\n",
             "◇ Prerequisites",
-            "   : Min 16 GB ~ Max 1 TB SD Card",
+            "   : Min 16 GB ~ Max 2 TB SD Card",
             "     Recommended U3 or U3/A2 class,",
             "     Dump Joy-Con BT, LINUX partition\n",
             "◇ Notice",
@@ -349,8 +355,8 @@
             "     new partition will remove the",
             "     existing partition."
         ],
-        "url": "https://wiki.switchroot.org/wiki/linux",
-        "download": "https://www.dropbox.com/scl/fi/l37t5d4e263a56b8dft39/ubuntu-jammy.zip?rlkey=mkul2xdi4gi74bna91no9k0ck&dl=1",
+        "url": "https://wiki.switchroot.org/wiki/linux/l4t-ubuntu-noble-installation-guide",
+        "download": "https://www.dropbox.com/scl/fi/1sg6d37glvaose038svle/ubuntu-noble.7z?rlkey=5ntwutu2orenxzhoe8xrlabmh&dl=1",
         "pack_ver": "24.04-NOBLE"
     }
 }
