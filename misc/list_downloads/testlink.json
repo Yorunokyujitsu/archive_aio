@@ -1,5 +1,22 @@
 {
     "Installer": {
+        "description": [
+            "◆ ASAP Installer",
+            "   : Easy One-Click Installer\n",
+            "◇ Auther\n   : Yorunokyujitsu\n",
+            "◇ Updated\n   : 1.0.3.8 > 2.0.0\n",
+            "◇ Support",
+            "   : All in one packages, Horizon OS,",
+            "     L4T (android, ubuntu, lakka), Emulator\n",
+            "◇ Release Note",
+            "   : 1. Main UI full changed",
+            "     2. Check change logs by clicking the version",
+            "     3. Separate the all-in-one package and other OS into groups",
+            "     4. Display drive capacity information",
+            "     5. Added the ability to format SD cards to FAT32",
+            "     6. Installation can be selected for SD or PC using the drive switch button",
+            "     7. Added information and homepage buttons for each package"
+        ],
         "download": "https://www.dropbox.com/scl/fi/ykq372xw7zjnlc2mbudai/ASAP.exe?rlkey=m63quc1oc7zjfoiltjpxtnu8e&dl=1",
         "pack_ver": "2.0.1"
     },
