@@ -10,6 +10,7 @@
             "     L4T (android, ubuntu, lakka), Emulator\n",
             "◇ Release Note",
             "   : 1. Main UI full changed",
+            "---------------------------------------------------------------------------------------------------------",
             "     2. Check change logs by clicking the version",
             "     3. Separate the all-in-one package and other OS into groups",
             "     4. Display drive capacity information",
