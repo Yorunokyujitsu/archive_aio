@@ -585,7 +585,10 @@
             "  for the console format.             ",
             "======================================"
         ],
-        "url": "https://www.lakka.tv",
+        "url": [
+            "https://www.lakka.tv",
+            "https://wiki.switchroot.org/wiki/linux/l4t-lakka-install-update-guide"
+        ],
         "download": "https://www.dropbox.com/scl/fi/cy7e6q2qxsu4em6q3uo9t/Lakka.7z?rlkey=93ddgbze46lakr3fwcflhrpgu&dl=1",
         "pack_ver": "AARCH65-5.0"
     },
