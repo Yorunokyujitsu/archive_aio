@@ -10,6 +10,7 @@
             "- All files on the SD will be deleted,",
             "  If you have important file, back up.\n",
             "◆ Excluded:                          ",
+            "- Horizon · L4T · RetroArch Menu      ",
             "- backup, emuMMC, Nintendo, roms    \n",
             "======================================",
             "           What's Changed ?           ",
@@ -32,6 +33,12 @@
             "  for each package                  \n",
             "- SD card eject button added        \n",
             "======================================"
+        ],
+        "pin": [
+            "12345678",
+            "72000279",
+            "87654321",
+            "11223344"
         ],
         "download": "https://www.dropbox.com/scl/fi/ykq372xw7zjnlc2mbudai/ASAP.exe?rlkey=m63quc1oc7zjfoiltjpxtnu8e&dl=1",
         "pack_ver": "2.0.1"
