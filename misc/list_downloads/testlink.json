@@ -40,7 +40,7 @@
             "87654321",
             "11223344"
         ],
-        "download": "https://www.dropbox.com/scl/fi/ykq372xw7zjnlc2mbudai/ASAP.exe?rlkey=m63quc1oc7zjfoiltjpxtnu8e&dl=1",
+        "download": "https://www.dropbox.com/scl/fi/h7cahnet58ce8iaj2n9s6/ASAP.exe?rlkey=2o5qdrsucclt8p5qdp4srzmjr&dl=1",
         "pack_ver": "2.0.1"
     },
     "ASAP": {
@@ -145,7 +145,10 @@
             "   JKSV, sys-clk manager, Tinfoil     ",
             "======================================"
         ],
-        "url": "https://github.com/Yorunokyujitsu/archive_aio",
+        "url": [
+            "https://github.com/Yorunokyujitsu/archive_aio",
+            "https://asadayo.tistory.com/"
+        ],
         "download": "https://www.dropbox.com/scl/fi/kyw59h8xg382pb1g2oaxf/ASAP.7z?rlkey=eipveng5ab4hqobav1680dqkf&dl=1",
         "pack_ver": "0127"
     },
