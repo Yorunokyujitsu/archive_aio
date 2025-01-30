@@ -34,12 +34,6 @@
             "- SD card eject button added        \n",
             "======================================"
         ],
-        "pin": [
-            "12345678",
-            "72000279",
-            "87654321",
-            "11223344"
-        ],
         "download": "https://github.com/Yorunokyujitsu/archive_aio/releases/latest/download/ASAP.exe",
         "pack_ver": "2.0.0"
     },
