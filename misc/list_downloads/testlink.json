@@ -40,13 +40,13 @@
             "87654321",
             "11223344"
         ],
-        "download": "https://www.dropbox.com/scl/fi/h7cahnet58ce8iaj2n9s6/ASAP.exe?rlkey=2o5qdrsucclt8p5qdp4srzmjr&dl=1",
-        "pack_ver": "2.0.1"
+        "download": "https://github.com/Yorunokyujitsu/archive_aio/releases/latest/download/ASAP.exe",
+        "pack_ver": "2.0.0"
     },
     "ASAP": {
         "changelog": [
             "==============================",
-            "               ASAP-0129 변경 내역",
+            "               ASAP-0130 변경 내역",
             "------------------------------------------------------",
             "◆ 공지사항:",
             "   Sphaira의 기본 경로가 변경되었습니다.",
@@ -150,7 +150,7 @@
             "https://asadayo.tistory.com/"
         ],
         "download": "https://www.dropbox.com/scl/fi/kyw59h8xg382pb1g2oaxf/ASAP.7z?rlkey=eipveng5ab4hqobav1680dqkf&dl=1",
-        "pack_ver": "0127"
+        "pack_ver": "0130"
     },
     "Hekate_Atmosphere": {
         "changelog": [
@@ -335,7 +335,7 @@
             "======================================"
         ],
         "url": "https://github.com/CatcherITGF/NX-Venom",
-        "download": "https://www.dropbox.com/scl/fi/8qeta8lu1snzk1tsp3fkp/NXVenom.7z?rlkey=uphesze8n6aay9l9694himy38&dl=1",
+        "download": "https://github.com/CatcherITGF/NX-Venom/releases/latest/download/NXVenom.zip",
         "pack_ver": "5.3.1"
     },
     "HATS": {
@@ -396,7 +396,7 @@
             "======================================"
         ],
         "url": "https://www.sthetix.info/hats",
-        "download": "https://www.dropbox.com/scl/fi/41tw48yhrcxidqi4yzp8b/HATS.7z?rlkey=jo8xkoqhz4nkdh7km2prwpjk4&dl=1",
+        "download": "https://www.mediafire.com/file_premium/rg6pbf52fvgp4fo/HATS-1.8.0-V1.3.zip",
         "pack_ver": "1.8.0-v3"
     },
     "Kefir": {
@@ -456,7 +456,7 @@
             "======================================"
         ],
         "url": "https://github.com/rashevskyv/kefir",
-        "download": "https://www.dropbox.com/scl/fi/lfygee6rpgpj7jkithchq/Kefir.7z?rlkey=irgt68monudd0b1ty1zp99xpw&dl=1",
+        "download": "https://github.com/rashevskyv/kefir/releases/latest/download/kefir758.zip",
         "pack_ver": "758"
     },
     "DeepSea": {
@@ -512,7 +512,7 @@
             "======================================"
         ],
         "url": "https://github.com/Team-Neptune/DeepSea",
-        "download": "https://www.dropbox.com/scl/fi/zfsh9tt3wajdygp0gvfh6/DeepSea.7z?rlkey=gii7df9whu38xpomqyus6ik0i&dl=1",
+        "download": "https://github.com/Team-Neptune/DeepSea/releases/latest/download/deepsea-advanced_v4.11.0.zip",
         "pack_ver": "4.11.0"
     },
     "Horizon": {
