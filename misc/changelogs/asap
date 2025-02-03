@@ -1,0 +1,73 @@
+==============================
+               ASAP-0203 변경 내역
+------------------------------------------------------
+◆ 공지사항:
+   Sphaira의 기본 경로가 변경되었습니다.
+   기존 스페라의 바로가기를 설치했다면,
+   제거 후, 다시 설치하십시오.
+
+◇ 8GB RAM:
+   실제 램이 8GB인 기기에서만 작동합니다.
+
+◇ Tinfoil Hint = Bibidi Babidi Boo
+------------------------------------------------------
+◆ Custom Firmware & Bootloader
+
+ - Atmosphere
+   신규 (4e99a5e) 커밋으로 리빌드.
+
+ - Hekate & Nyx
+   타이머 2025년 변경.
+   오탈자 수정.
+------------------------------------------------------
+◆ Patches
+
+ - sys-patch
+   일부 표기 버그 수정.
+------------------------------------------------------
+◆ System modules
+
+ - EOS (loader.kip): 1.5.0 > 1.5.1
+
+ - sys-con
+   신규 (cae32ab) 커밋으로 리빌드.
+------------------------------------------------------
+◆ Overlays
+
+ - Ultrahand
+   libultrahand 수정.
+
+ - FPSLocker, NX-FanControl, ReverseNX-RT,
+   Status-Monitor, EdiZon
+   수정된 libultrahand 적용.
+
+ - sys-clk-oc: 1.1.1 > 1.1.4
+   일부 GUI 변경.
+   프로파일 ReverseNX 동기화 표시.
+   EMC-GPU-DVFS 구현.
+   GPU 자동 부스트는 4개 코어를 모두 검사.
+------------------------------------------------------
+◆ Ultrahand Packages
+
+ - Extra Setting+
+   일부 문구 및 설정 값 변경.
+
+ - Quick Guide+
+   일부 문구 수정.
+
+ - OC Toolkit            
+   Tskin 팬 커브 계수 옵션 추가.
+   GPU UV1 전압 고정.
+   GPU UV3 최대 1536 Mhz 잠금 해제.
+   GPU 전압 범위 (480-960mV) 추가.
+   Vmin RAM OC (GPU Vmin Override) 추가.
+------------------------------------------------------
+◆ Homebrews
+
+ - DBI: 749 > 750
+   일부 사소한 버그 수정.
+   티켓 무작위 인증서 추가.
+
+ - NxDumpTool: Nightly 2.0.0
+   신규 빌드 업데이트.
+==============================
