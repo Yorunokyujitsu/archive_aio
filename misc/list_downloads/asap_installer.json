@@ -1,6 +1,6 @@
 {
     "Installer": {
-        "changelog": [
+        "changelog_txt": [
             "======================================",
             "                Notice                ",
             "--------------------------------------\n",
@@ -10,7 +10,7 @@
             "- All files on the SD will be deleted,",
             "  If you have important file, back up.\n",
             "◆ Excluded:                          ",
-            "- Horizon · L4T · RetroArch Menu      ",
+            "- Horizon · L4T · RetroArch items     ",
             "- backup, emuMMC, Nintendo, roms    \n",
             "======================================",
             "           What's Changed ?           ",
@@ -38,14 +38,80 @@
         "pack_ver": "2.0.0"
     },
     "ASAP": {
-        "changelog": [
+        "description": [
+            "======================================",
+            "◆ ASAP                               ",
+            "  : Asa's Switch All-in-one Package.  ",
+            "    As Soon As Possible.              ",
+            "--------------------------------------",
+            "◇ Auther                             ",
+            "  : Asa, Yorunokyujitsu               ",
+            "--------------------------------------",
+            "◇ Support                            ",
+            "  : HOS 19.0.1                        ",
+            "--------------------------------------",
+            "◇ Volume                             ",
+            "  : Lite = 77 MB                      ",
+            "    Normal · 8GB RAM = 133 MB       \n",
+            "◇ Notice - 8GB RAM type              ",
+            "  : Only works on 8GB Ram device      ",
+            "--------------------------------------",
+            "◇ Contents (Lite)                  \n",
+            " - Bootloader · Custom Firmware       ",
+            "   Hekate · Atmosphère              \n",
+            " - Payloads                           ",
+            "   ATLAS, fusee                     \n",
+            " - Patches                            ",
+            "   Built-in                         \n",
+            " - Homebrew loader · menu             ",
+            "   hbl · Sphaira                    \n",
+            " - Tesla Menu · Packages              ",
+            "   Not included.                    \n",
+            " - Sysmodules · Overlays              ",
+            "   Not included.                    \n",
+            " - Homebrews                          ",
+            "   ASAP-Updater, Daybreak, Haze,      ",
+            "   Reboot_to_payload                  ",
+            "--------------------------------------",
+            "◇ Contents (Normal · 8GB RAM)      \n",
+            " - Bootloader · Custom Firmware       ",
+            "   Hekate · Atmosphère              \n",
+            " - Payloads                           ",
+            "   ATLAS, fusee                     \n",
+            " - Patches                            ",
+            "   Built-in, sys-patch              \n",
+            " - Homebrew loader · menu             ",
+            "   hbl · Sphaira                    \n",
+            " - Tesla Menu · Packages              ",
+            "   Ultrahand                          ",
+            "   Extra Setting+, System Clock+,     ",
+            "   Launcher+, Backlight+, Volume+,    ",
+            "   Quick Guide+, UltraCam+,           ",
+            "   Memory Config, OC Toolkit(SC·EOS) \n",
+            " - Sysmodules                         ",
+            "   EOS, MissionControl, NX-FanControl,",
+            "   ovlloader+, SaltyNX, sys-con     \n",
+            " - Overlays                           ",
+            "   EdiZon, emuiibo, FPSLocker,        ",
+            "   ReverseNX-RT, Status-Monitor,      ",
+            "   sys-clk-oc                       \n",
+            " - Homebrews                          ",
+            "   ASAP-Updater, AmiiboGenerator,     ",
+            "   Daybreak, DBI, Haze, Linkalho,     ",
+            "   JKSV, Reboot_to_payload,           ",
+            "   sys-clk manager, Tinfoil           ",
+            "======================================"
+        ],
+        "changelog_txt": [
             "==============================",
-            "               ASAP-0130 변경 내역",
+            "                    릴리즈 노트",
             "------------------------------------------------------",
             "◆ 공지사항:",
             "   Sphaira의 기본 경로가 변경되었습니다.",
             "   기존 스페라의 바로가기를 설치했다면,",
             "   제거 후, 다시 설치하십시오.\n",
+            "◇ 8GB RAM:",
+            "   실제 램이 8GB인 기기에서만 작동합니다.\n",
             "◇ Tinfoil Hint = Bibidi Babidi Boo",
             "------------------------------------------------------",
             "◆ Custom Firmware & Bootloader\n",
@@ -53,6 +119,7 @@
             "   신규 (4e99a5e) 커밋으로 리빌드.\n",
             " - Hekate & Nyx",
             "   타이머 2025년 변경.",
+            "   오탈자 수정.",
             "------------------------------------------------------",
             "◆ Patches\n",
             " - sys-patch",
@@ -95,126 +162,14 @@
             "   신규 빌드 업데이트.",
             "=============================="
         ],
-        "description": [
-            "======================================",
-            "◆ ASAP                               ",
-            "  : Asa's Switch All-in-one Package.  ",
-            "    As Soon As Possible.              ",
-            "--------------------------------------",
-            "◇ Auther                             ",
-            "  : Asa, Yorunokyujitsu               ",
-            "--------------------------------------",
-            "◇ Support                            ",
-            "  : HOS 19.0.1                        ",
-            "--------------------------------------",
-            "◇ Volume                             ",
-            "  : Lite = 77 MB                      ",
-            "    Normal · 8GB RAM = 133 MB         ",
-            "--------------------------------------",
-            "◇ Contents                         \n",
-            " - Bootloader · Custom Firmware       ",
-            "   Hekate · Atmosphère              \n",
-            " - Payloads                           ",
-            "   ATLAS, fusee                     \n",
-            " - Patches                            ",
-            "   Built-in, sys-patch              \n",
-            " - Homebrew loader · menu             ",
-            "   hbl · Sphaira                    \n",
-            " - Tesla Menu · Packages              ",
-            "   Ultrahand                          ",
-            "   Extra Setting+, System Clock+,     ",
-            "   Launcher+, Backlight+, Volume+,    ",            
-            "   Quick Guide+, UltraCam+,           ",
-            "   Memory Config, OC Toolkit(SC·EOS) \n",
-            " - Sysmodules                         ",
-            "   EOS, MissionControl, NX-FanControl,",
-            "   ovlloader+, SaltyNX, sys-con     \n",
-            " - Overlays                           ",
-            "   EdiZon, emuiibo, FPSLocker,        ",
-            "   ReverseNX-RT, Status-Monitor,      ",
-            "   sys-clk-oc                       \n",
-            " - Homebrews                          ",
-            "   ASAP-Updater, AmiiboGenerator,     ",
-            "   Daybreak, DBI, Haze, Linkalho,     ",
-            "   JKSV, sys-clk manager, Tinfoil     ",
-            "======================================"
-        ],
-        "url": [
-            "https://github.com/Yorunokyujitsu/archive_aio",
-            "https://asadayo.tistory.com/"
-        ],
+        "changelog_url": "",
+        "changelog_api" : "https://raw.githubusercontent.com/yorunokyujitsu/archive_aio/main/misc/changelogs/asap",
+        "github_api" : "https://api.github.com/repos/yorunokyujitsu/archive_aio/releases/tags/Nightly",
+        "url": "https://asadayo.tistory.com",
         "download": "https://www.dropbox.com/scl/fi/kyw59h8xg382pb1g2oaxf/ASAP.7z?rlkey=eipveng5ab4hqobav1680dqkf&dl=1",
-        "pack_ver": "0130"
+        "pack_ver": ""
     },
-    "Hekate_Atmosphere": {
-        "changelog": [
-            "======================================",
-            "   What's Changed ? (Hekate & Nyx)    ",
-            "--------------------------------------\n",
-            "◆ Version: 6.2.1&1.6.3 > 6.2.2&1.6.4\n",
-            "- HOS 19.0.0 support.               \n",
-            "- L4T: Update ARC to v6               ",
-            "  Added latency decoupling via        ",
-            "  ram_oc_opt.                       \n",
-            "- Fixed an issue on Oled skus where   ",
-            "  they couldn't automatically reboot  ",
-            "  to OFW if stock failed.           \n",
-            "- Easter Egg got updated to v2.5.3    ",
-            "  Reduced power draw even more while  ",
-            "  idle every frame.                 \n",
-            "- Flash Android button will now have  ", 
-            "  the version that was selected in    ",
-            "  partition scheme.                 \n",
-            "- GPT partition in MBR summary is now ",
-            "  purple in order to not be confused  ",
-            "  with Android partitions.          \n",
-            "- Battery info can now show up to 6 PD",
-            "  profiles.                         \n",
-            "======================================",
-            "    What's Changed ? (Atmosphère)     ",
-            "--------------------------------------\n",
-            "◆ Version: 1.7.1 > 1.8.0           \n",
-            "- Basic support was added for 19.0.0.\n",
-            "  The console should boot and atmo    ",
-            "  should be fully functional.       \n",
-            "  However, not all modules have been  ",
-            "  fully updated to reflect the latest ",
-            "  changes.                          \n",
-            "  There shouldn't be anything user    ",
-            "  visible resulting from this, but it ",
-            "  will be addressed in a future atmo  ",
-            "  update.                           \n",
-            "  There is still one action item from ",
-            "  18.0.0 to be addressed, as well.  \n",
-            "- exosphère was updated to reflect the",
-            "  latest official secure monitor      ",
-            "  behavior.                         \n",
-            "- mesosphère was updated to reflect   ",
-            "  the latest official kernel behavior.\n",
-            "- loader was updated to reflect the   ",
-            "  latest official behavior.         \n",
-            "- pm was updated to reflect the latest",
-            "  official behavior.                \n",
-            "- ro was updated to reflect the latest",
-            "  official behavior.                \n",
-            "- creport's file acces patterns were  ",
-            "  optimized, greatly improving        ",
-            "  performance when generating a crash ",
-            "  report.                           \n",
-            "- Atmosphère now uses relr relocations",
-            "  where possible.                   \n",
-            "  This reduces the filesize of a      ",
-            "  number of atmosphère's modules.   \n",
-            "- A number of minor issues were fixed ",
-            "  and improvements were made,         ",
-            "  including.                        \n",
-            "  Support was fixed for running Atmo  ",
-            "  on newer units with specific Hynix, ",
-            "  Micron DRAM chips.                \n",
-            "- General system stability improvement",
-            "  to enhance the user's experience. \n",
-            "======================================"
-        ],
+    "Hekate & Atmosphere": {
         "description": [
             "======================================",
             "◆ Hekate & Nyx                       ",
@@ -247,45 +202,24 @@
             "   Daybreak, Haze, Reboot to payload  ",
             "======================================"
         ],
+        "changelog_txt": "",
+        "changelog_url": "",
+        "changelog_api" : [
+            "https://api.github.com/repos/CTCaer/hekate/releases/latest",
+            "https://api.github.com/repos/Atmosphere-NX/Atmosphere/releases/latest"
+        ],
+        "github_api" : [
+            "https://api.github.com/repos/CTCaer/hekate/releases/latest",
+            "https://api.github.com/repos/Atmosphere-NX/Atmosphere/releases/latest"
+        ],
         "url": [
             "https://github.com/CTCaer/hekate",
             "https://github.com/Atmosphere-NX/Atmosphere"
         ],
         "download": "https://www.dropbox.com/scl/fi/u32ap4wgw9140a22yfepl/Hekate_Atmosphere.7z?rlkey=ib1no7rpxvsta0lgygbxjy86b&dl=1",
-        "pack_ver": "6.2.2 - 1.8.0"
+        "pack_ver": ""
     },
     "NX-Venom": {
-        "changelog": [
-            "======================================",
-            "           What's Changed ?           ",
-            "--------------------------------------\n",
-            "◆ Version: 5.3.0 > 5.3.1           \n",
-            "- Hotfixes for the release 5.3.0.   \n",
-            "- Updated loader.kip.                 ",
-            "  Enable GPU high freqs for UV3.    \n",
-            "- Updated AMS config.                 ",
-            "  Fix tskin value.                  \n",
-            "- Updated System Tweaks.              ",
-            "  Fan Tuning - Fix tskin value.     \n",
-            "- Updated SC Wizard.                  ",
-            "  Expanded GPU Volt Limit range.      ",
-            "  (800-960)                           ",
-            "  Added warning colors and labels for ",
-            "  GPU Volt Limit.                     ",
-            "  Added GPU hi-freqs to Kip Management",
-            "  , help for GPU max freq option.   \n",
-            "- To turn on the frequencies 1344-1536",
-            "  , you need.                       \n",
-            "  1. Set UV Level to 3.               ",
-            "  2. Set GPU Max Freq to 1305+.       ",
-            "  3. Set voltages in Custom Table.    ",
-            "  4. Rise Volt Limit.                 ",
-            "  5. Reboot.                        \n",
-            "- I remember that GPU volts above     ",
-            "  800mv are not safe.                 ",
-            "  Use it at your own risk.          \n",
-            "======================================"
-        ],
         "description": [
             "======================================",
             "◆ NX-Venom                           ",
@@ -328,24 +262,15 @@
             "   ReverseNX-Tool, sys-clk manager    ",
             "======================================"
         ],
+        "changelog_txt": "",
+        "changelog_url": "",
+        "changelog_api" : "https://api.github.com/repos/CatcherITGF/NX-Venom/releases/latest",
+        "github_api" : "https://api.github.com/repos/CatcherITGF/NX-Venom/releases/latest",
         "url": "https://github.com/CatcherITGF/NX-Venom",
         "download": "https://github.com/CatcherITGF/NX-Venom/releases/latest/download/NXVenom.zip",
-        "pack_ver": "5.3.1"
+        "pack_ver": ""
     },
     "HATS": {
-        "changelog": [
-            "======================================",
-            "           What's Changed ?           ",
-            "--------------------------------------\n",
-            "◆ Version: 1.8.0-v2 > 1.8.0-v1.3   \n",
-            "- Using Hekate+AMS-package3-sigpatches",
-            "  -1.8.0P2-cfw-19.0.0_V6.           \n",
-            "- Updated sys-patch to 1.5.5.       \n",
-            "- Updated Tinfoil to 19.0 NRO version ",
-            "  and NSP version. (located inside the",
-            "  Switch/Tinfoil/NSP)               \n",
-            "======================================"
-        ],
         "description": [
             "======================================",
             "◆ HATS                               ",
@@ -389,26 +314,27 @@
             "   tinwoo, Tinfoil                    ",
             "======================================"
         ],
+        "changelog_txt": [
+            "======================================",
+            "           What's Changed ?           ",
+            "--------------------------------------\n",
+            "◆ Version: 1.8.0-v2 > 1.8.0-v1.3   \n",
+            "- Using Hekate+AMS-package3-sigpatches",
+            "  -1.8.0P2-cfw-19.0.0_V6.           \n",
+            "- Updated sys-patch to 1.5.5.       \n",
+            "- Updated Tinfoil to 19.0 NRO version ",
+            "  and NSP version. (located inside the",
+            "  Switch/Tinfoil/NSP)               \n",
+            "======================================"
+        ],
+        "changelog_url": "",
+        "changelog_api" : "https://raw.githubusercontent.com/yorunokyujitsu/archive_aio/main/misc/changelogs/hats",
+        "github_api" : "",
         "url": "https://www.sthetix.info/hats",
         "download": "https://www.mediafire.com/file_premium/rg6pbf52fvgp4fo/HATS-1.8.0-V1.3.zip",
         "pack_ver": "1.8.0-v3"
     },
     "Kefir": {
-        "changelog": [
-            "======================================",
-            "           What's Changed ?           ",
-            "--------------------------------------\n",
-            "◆ Version: 756 > 758               \n",
-            "- Semi-Stock: fixed an issue that     ",
-            "  caused the online mode not to work.\n",
-            "- DBI: reverted to the default English",
-            "  version. (though not newer, it still",
-            "  works stably; currently, the Russian",
-            "  version only is being updated, which",
-            "  can be downloaded via Uberhand >    ",
-            "  packages > settings)              \n",
-            "======================================"
-        ],
         "description": [
             "======================================",
             "◆ Kefir                              ",
@@ -449,24 +375,15 @@
             "   NxThemesInstaller                  ",
             "======================================"
         ],
+        "changelog_txt": "",
+        "changelog_url": "",
+        "changelog_api" : "https://api.github.com/repos/rashevskyv/kefir/releases/latest",
+        "github_api" : "https://api.github.com/repos/rashevskyv/kefir/releases/latest",
         "url": "https://github.com/rashevskyv/kefir",
         "download": "https://github.com/rashevskyv/kefir/releases/latest/download/kefir758.zip",
-        "pack_ver": "758"
+        "pack_ver": ""
     },
     "DeepSea": {
-        "changelog": [
-            "======================================",
-            "           What's Changed ?           ",
-            "--------------------------------------\n",
-            "◆ Version: 4.10.0 > 4.11.0         \n",
-            "◆ Developer comments:                ",
-            "  Releasing this pre-release build    ",
-            "  that should have a working Atmo     ",
-            "  (1.7.1) and Hekate (6.2.1) build for",
-            "  the latest firmware version as of   ",
-            "  writing this (18.1.0).            \n",            
-            "======================================"
-        ],
         "description": [
             "======================================",
             "◆ DeepSea                            ",
@@ -477,10 +394,10 @@
             "  : Team-Neptune                      ",
             "--------------------------------------",
             "◇ Support                            ",
-            "  : HOS 18.1.0                        ",
+            "  : HOS 19.0.1                        ",
             "--------------------------------------",
             "◇ Volume                             ",
-            "  : 105 MB                            ",
+            "  : 104 MB                            ",
             "--------------------------------------",
             "◆ Contents                         \n",
             " - Bootloader · Custom Firmware       ",
@@ -505,9 +422,13 @@
             "   sys-clk manager                    ",
             "======================================"
         ],
+        "changelog_txt": "",
+        "changelog_url": "",
+        "changelog_api" : "https://api.github.com/repos/Team-Neptune/DeepSea/releases",
+        "github_api" : "https://api.github.com/repos/Team-Neptune/DeepSea/releases",
         "url": "https://github.com/Team-Neptune/DeepSea",
-        "download": "https://github.com/Team-Neptune/DeepSea/releases/latest/download/deepsea-advanced_v4.11.0.zip",
-        "pack_ver": "4.11.0"
+        "download": "https://github.com/Team-Neptune/DeepSea/releases/download/v4.13.0/deepsea-advanced_v4.13.0.zip",
+        "pack_ver": ""
     },
     "Horizon": {
         "description": [
@@ -519,7 +440,8 @@
             "  : 322 MB                            ",
             "--------------------------------------",
             "◇ Released",
-            " - 19.0.1 (Rebootless)  <<  Current\n - 19.0.1\n - 19.0.0\n",
+            " - 19.0.1 (Rebootless)  <<  Current",
+            " - 19.0.1\n - 19.0.0\n",
             " - 18.1.0\n - 18.0.1\n - 18.0.0\n\n - 17.0.1 (Rebootless)\n - 17.0.1\n - 17.0.0 (Rebootless)\n - 17.0.0\n",
             " - 16.1.0\n - 16.0.3 (Rebootless 2)\n - 16.0.3 (Rebootless 1)\n - 16.0.3\n - 16.0.2\n - 16.0.1\n - 16.0.0\n",
             " - 15.0.1 (Rebootless)\n - 15.0.1\n - 15.0.0\n",
@@ -531,6 +453,27 @@
             " - 3.0.2\n - 3.0.1\n - 3.0.0\n\n - 2.3.0\n - 2.2.0\n - 2.1.0\n - 2.0.0\n\n - 1.0.0\n - 1.0.0-7 (Pre-Release)",
             "======================================"
         ],
+        "changelog_txt": [
+            "======================================",
+            "             What's New ?             ",
+            "--------------------------------------\n",
+            "◆ Version: 19.0.1 > 19.0.1 Rebootless\n",
+            "--------------------------------------\n",
+            "◇ Date (YMD): 2025.01.07           \n",
+            "--------------------------------------\n",
+            "- The update reshuffled the Switch's  ",
+            "  'bad words list' to reduce false    ",
+            "  positives.                        \n",
+            "- New words were added to the Russian ",
+            "  list.                             \n",
+            "- The update also updated the non     ",
+            "  system version titles NgWord and    ",
+            "  NgWord2.                          \n",
+            "======================================"
+        ],
+        "changelog_url": "",
+        "changelog_api" : "https://raw.githubusercontent.com/yorunokyujitsu/archive_aio/main/misc/changelogs/horizon",
+        "github_api" : "",
         "url": "https://darthsternie.net/switch-firmwares",
         "download": "https://www.dropbox.com/s/zy9r3her9c5pcl9/Firmware.7z?dl=1",
         "pack_ver": "19.0.1 Rebootless"
@@ -561,9 +504,13 @@
             "  for the console format.             ",
             "======================================"
         ],
+        "changelog_txt": "",
+        "changelog_url": "https://github.com/libretro/RetroArch/blob/master/CHANGES.md",
+        "changelog_api": "https://api.github.com/repos/libretro/RetroArch/releases/latest",
+        "github_api" : "https://api.github.com/repos/libretro/RetroArch/releases/latest",
         "url": "https://www.retroarch.com",
         "download": "https://www.dropbox.com/scl/fi/e7cv44jde7992orbu62om/RetroArch.7z?rlkey=rdwyc034u0mskk5tod6suaeur&dl=1",
-        "pack_ver": "1.20.0"
+        "pack_ver": ""
     },
     "Lakka": {
         "description": [
@@ -589,14 +536,15 @@
             "  for the console format.             ",
             "======================================"
         ],
-        "url": [
-            "https://www.lakka.tv",
-            "https://wiki.switchroot.org/wiki/linux/l4t-lakka-install-update-guide"
-        ],
+        "changelog_txt": "",
+        "changelog_url": "https://www.lakka.tv/articles/2024/04/13/lakka-5.0",
+        "changelog_api" : "https://raw.githubusercontent.com/yorunokyujitsu/archive_aio/main/misc/changelogs/lakka",
+        "github_api" : "",
+        "url": "https://www.lakka.tv",
         "download": "https://www.dropbox.com/scl/fi/cy7e6q2qxsu4em6q3uo9t/Lakka.7z?rlkey=93ddgbze46lakr3fwcflhrpgu&dl=1",
         "pack_ver": "AARCH65-5.0"
     },
-    "Android_TV": {
+    "Android TV": {
         "description": [
             "======================================",
             "◆ Lineage OS                         ",
@@ -623,11 +571,15 @@
             "  partition.                          ",
             "======================================"
         ],
+        "changelog_txt": "",
+        "changelog_url": "https://download.lineageos.org/devices/nx/changes",
+        "changelog_api" : "https://raw.githubusercontent.com/yorunokyujitsu/archive_aio/main/misc/changelogs/lineage_tv",
+        "github_api" : "",
         "url": "https://wiki.switchroot.org/wiki/android/android-14-15",
         "download": "https://www.dropbox.com/s/1bkmdz3jtevujfg/Android_tv.7z?dl=1",
-        "pack_ver": "21.0-250114"
+        "pack_ver": "22.1-250128"
     },
-    "Android_Tablet": {
+    "Android Tablet": {
         "description": [
             "======================================",
             "◆ Lineage OS                         ",
@@ -654,11 +606,15 @@
             "  partition.                          ",
             "======================================"
         ],
+        "changelog_txt": "",
+        "changelog_url": "https://download.lineageos.org/devices/nx_tab/changes",
+        "changelog_api" : "https://raw.githubusercontent.com/yorunokyujitsu/archive_aio/main/misc/changelogs/lineage_tab",
+        "github_api" : "",
         "url": "https://wiki.switchroot.org/wiki/android/android-14-15",
         "download": "https://www.dropbox.com/s/e79okz877pywt8h/Android_tab.7z?dl=1",
-        "pack_ver": "22.1-250120"
+        "pack_ver": "22.1-250202"
     },
-    "Ubuntu_Bionic": {
+    "Ubuntu Bionic": {
         "description": [
             "======================================",
             "◆ Ubuntu OS                          ",
@@ -684,11 +640,15 @@
             "  partition.                          ",
             "======================================"
         ],
+        "changelog_txt": "",
+        "changelog_url": "https://launchpad.net/ubuntu/bionic/+source/linux/+changelog",
+        "changelog_api" : "https://raw.githubusercontent.com/yorunokyujitsu/archive_aio/main/misc/changelogs/ubuntu_bionic",
+        "github_api" : "",
         "url": "https://wiki.switchroot.org/wiki/linux/l4t-ubuntu-bionic-installation-guide",
         "download": "https://www.dropbox.com/scl/fi/uzvg4rc4l1mfaouv37mu9/ubuntu-bionic.7z?rlkey=y2w8w59ut29urmzg5yf1lplhx&dl=1",
         "pack_ver": "18.04-BIONIC"
     },
-    "Ubuntu_Jammy": {
+    "Ubuntu Jammy": {
         "description": [
             "======================================",
             "◆ Ubuntu OS                          ",
@@ -714,11 +674,15 @@
             "  partition.                          ",
             "======================================"
         ],
+        "changelog_txt": "",
+        "changelog_url": "https://launchpad.net/ubuntu/jammy/+source/linux/+changelog",
+        "changelog_api" : "https://raw.githubusercontent.com/yorunokyujitsu/archive_aio/main/misc/changelogs/ubuntu_jammy",
+        "github_api" : "",
         "url": "https://wiki.switchroot.org/wiki/linux/l4t-ubuntu-jammy-installation-guide",
         "download": "https://www.dropbox.com/scl/fi/vv6n1wehxawgnk9hohq6k/ubuntu-jammy.7z?rlkey=kfi0ityli1ie667nqz2ol2jxb&dl=1",
         "pack_ver": "22.04-JAMMY"
     },
-    "Ubuntu_Noble": {
+    "Ubuntu Noble": {
         "description": [
             "======================================",
             "◆ Ubuntu OS                          ",
@@ -744,6 +708,10 @@
             "  partition.                          ",
             "======================================"
         ],
+        "changelog_txt": "",
+        "changelog_url": "https://launchpad.net/ubuntu/noble/+source/linux/+changelog",
+        "changelog_api" : "https://raw.githubusercontent.com/yorunokyujitsu/archive_aio/main/misc/changelogs/ubuntu_noble",
+        "github_api" : "",
         "url": "https://wiki.switchroot.org/wiki/linux/l4t-ubuntu-noble-installation-guide",
         "download": "https://www.dropbox.com/scl/fi/1sg6d37glvaose038svle/ubuntu-noble.7z?rlkey=5ntwutu2orenxzhoe8xrlabmh&dl=1",
         "pack_ver": "24.04-NOBLE"
