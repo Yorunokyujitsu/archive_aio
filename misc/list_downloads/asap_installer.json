@@ -163,8 +163,8 @@
             "=============================="
         ],
         "changelog_url": "",
-        "changelog_api" : "https://raw.githubusercontent.com/yorunokyujitsu/archive_aio/main/misc/changelogs/asap",
-        "github_api" : "https://api.github.com/repos/yorunokyujitsu/archive_aio/releases/tags/Nightly",
+        "_changelog_api": "https://raw.githubusercontent.com/yorunokyujitsu/archive_aio/main/misc/changelogs/asap",
+        "github_api": "https://api.github.com/repos/yorunokyujitsu/archive_aio/releases/tags/Nightly",
         "url": "https://asadayo.tistory.com",
         "download": "https://www.dropbox.com/scl/fi/kyw59h8xg382pb1g2oaxf/ASAP.7z?rlkey=eipveng5ab4hqobav1680dqkf&dl=1",
         "pack_ver": ""
@@ -204,11 +204,11 @@
         ],
         "changelog_txt": "",
         "changelog_url": "",
-        "changelog_api" : [
+        "changelog_api": [
             "https://api.github.com/repos/CTCaer/hekate/releases/latest",
             "https://api.github.com/repos/Atmosphere-NX/Atmosphere/releases/latest"
         ],
-        "github_api" : [
+        "github_api": [
             "https://api.github.com/repos/CTCaer/hekate/releases/latest",
             "https://api.github.com/repos/Atmosphere-NX/Atmosphere/releases/latest"
         ],
@@ -264,8 +264,8 @@
         ],
         "changelog_txt": "",
         "changelog_url": "",
-        "changelog_api" : "https://api.github.com/repos/CatcherITGF/NX-Venom/releases/latest",
-        "github_api" : "https://api.github.com/repos/CatcherITGF/NX-Venom/releases/latest",
+        "changelog_api": "https://api.github.com/repos/CatcherITGF/NX-Venom/releases/latest",
+        "github_api": "https://api.github.com/repos/CatcherITGF/NX-Venom/releases/latest",
         "url": "https://github.com/CatcherITGF/NX-Venom",
         "download": "https://github.com/CatcherITGF/NX-Venom/releases/latest/download/NXVenom.zip",
         "pack_ver": ""
@@ -328,8 +328,8 @@
             "======================================"
         ],
         "changelog_url": "",
-        "changelog_api" : "https://raw.githubusercontent.com/yorunokyujitsu/archive_aio/main/misc/changelogs/hats",
-        "github_api" : "",
+        "changelog_api": "",
+        "github_api": "",
         "url": "https://www.sthetix.info/hats",
         "download": "https://www.mediafire.com/file_premium/rg6pbf52fvgp4fo/HATS-1.8.0-V1.3.zip",
         "pack_ver": "1.8.0-v3"
@@ -377,8 +377,8 @@
         ],
         "changelog_txt": "",
         "changelog_url": "",
-        "changelog_api" : "https://api.github.com/repos/rashevskyv/kefir/releases/latest",
-        "github_api" : "https://api.github.com/repos/rashevskyv/kefir/releases/latest",
+        "changelog_api": "https://api.github.com/repos/rashevskyv/kefir/releases/latest",
+        "github_api": "https://api.github.com/repos/rashevskyv/kefir/releases/latest",
         "url": "https://github.com/rashevskyv/kefir",
         "download": "https://github.com/rashevskyv/kefir/releases/latest/download/kefir758.zip",
         "pack_ver": ""
@@ -424,8 +424,8 @@
         ],
         "changelog_txt": "",
         "changelog_url": "",
-        "changelog_api" : "https://api.github.com/repos/Team-Neptune/DeepSea/releases",
-        "github_api" : "https://api.github.com/repos/Team-Neptune/DeepSea/releases",
+        "changelog_api": "https://api.github.com/repos/Team-Neptune/DeepSea/releases",
+        "github_api": "https://api.github.com/repos/Team-Neptune/DeepSea/releases",
         "url": "https://github.com/Team-Neptune/DeepSea",
         "download": "https://github.com/Team-Neptune/DeepSea/releases/download/v4.13.0/deepsea-advanced_v4.13.0.zip",
         "pack_ver": ""
@@ -472,8 +472,8 @@
             "======================================"
         ],
         "changelog_url": "",
-        "changelog_api" : "https://raw.githubusercontent.com/yorunokyujitsu/archive_aio/main/misc/changelogs/horizon",
-        "github_api" : "",
+        "changelog_api": "",
+        "github_api": "",
         "url": "https://darthsternie.net/switch-firmwares",
         "download": "https://www.dropbox.com/s/zy9r3her9c5pcl9/Firmware.7z?dl=1",
         "pack_ver": "19.0.1 Rebootless"
@@ -506,8 +506,8 @@
         ],
         "changelog_txt": "",
         "changelog_url": "https://github.com/libretro/RetroArch/blob/master/CHANGES.md",
-        "changelog_api": "https://api.github.com/repos/libretro/RetroArch/releases/latest",
-        "github_api" : "https://api.github.com/repos/libretro/RetroArch/releases/latest",
+        "changelog_api": "",
+        "github_api": "https://api.github.com/repos/libretro/RetroArch/releases/latest",
         "url": "https://www.retroarch.com",
         "download": "https://www.dropbox.com/scl/fi/e7cv44jde7992orbu62om/RetroArch.7z?rlkey=rdwyc034u0mskk5tod6suaeur&dl=1",
         "pack_ver": ""
@@ -538,8 +538,8 @@
         ],
         "changelog_txt": "",
         "changelog_url": "https://www.lakka.tv/articles/2024/04/13/lakka-5.0",
-        "changelog_api" : "https://raw.githubusercontent.com/yorunokyujitsu/archive_aio/main/misc/changelogs/lakka",
-        "github_api" : "",
+        "changelog_api": "",
+        "github_api": "",
         "url": "https://www.lakka.tv",
         "download": "https://www.dropbox.com/scl/fi/cy7e6q2qxsu4em6q3uo9t/Lakka.7z?rlkey=93ddgbze46lakr3fwcflhrpgu&dl=1",
         "pack_ver": "AARCH65-5.0"
@@ -573,8 +573,8 @@
         ],
         "changelog_txt": "",
         "changelog_url": "https://download.lineageos.org/devices/nx/changes",
-        "changelog_api" : "https://raw.githubusercontent.com/yorunokyujitsu/archive_aio/main/misc/changelogs/lineage_tv",
-        "github_api" : "",
+        "changelog_api": "",
+        "github_api": "",
         "url": "https://wiki.switchroot.org/wiki/android/android-14-15",
         "download": "https://www.dropbox.com/s/1bkmdz3jtevujfg/Android_tv.7z?dl=1",
         "pack_ver": "22.1-250128"
@@ -608,8 +608,8 @@
         ],
         "changelog_txt": "",
         "changelog_url": "https://download.lineageos.org/devices/nx_tab/changes",
-        "changelog_api" : "https://raw.githubusercontent.com/yorunokyujitsu/archive_aio/main/misc/changelogs/lineage_tab",
-        "github_api" : "",
+        "changelog_api": "",
+        "github_api": "",
         "url": "https://wiki.switchroot.org/wiki/android/android-14-15",
         "download": "https://www.dropbox.com/s/e79okz877pywt8h/Android_tab.7z?dl=1",
         "pack_ver": "22.1-250202"
@@ -642,8 +642,8 @@
         ],
         "changelog_txt": "",
         "changelog_url": "https://launchpad.net/ubuntu/bionic/+source/linux/+changelog",
-        "changelog_api" : "https://raw.githubusercontent.com/yorunokyujitsu/archive_aio/main/misc/changelogs/ubuntu_bionic",
-        "github_api" : "",
+        "changelog_api": "",
+        "github_api": "",
         "url": "https://wiki.switchroot.org/wiki/linux/l4t-ubuntu-bionic-installation-guide",
         "download": "https://www.dropbox.com/scl/fi/uzvg4rc4l1mfaouv37mu9/ubuntu-bionic.7z?rlkey=y2w8w59ut29urmzg5yf1lplhx&dl=1",
         "pack_ver": "18.04-BIONIC"
@@ -676,8 +676,8 @@
         ],
         "changelog_txt": "",
         "changelog_url": "https://launchpad.net/ubuntu/jammy/+source/linux/+changelog",
-        "changelog_api" : "https://raw.githubusercontent.com/yorunokyujitsu/archive_aio/main/misc/changelogs/ubuntu_jammy",
-        "github_api" : "",
+        "changelog_api": "",
+        "github_api": "",
         "url": "https://wiki.switchroot.org/wiki/linux/l4t-ubuntu-jammy-installation-guide",
         "download": "https://www.dropbox.com/scl/fi/vv6n1wehxawgnk9hohq6k/ubuntu-jammy.7z?rlkey=kfi0ityli1ie667nqz2ol2jxb&dl=1",
         "pack_ver": "22.04-JAMMY"
@@ -710,8 +710,8 @@
         ],
         "changelog_txt": "",
         "changelog_url": "https://launchpad.net/ubuntu/noble/+source/linux/+changelog",
-        "changelog_api" : "https://raw.githubusercontent.com/yorunokyujitsu/archive_aio/main/misc/changelogs/ubuntu_noble",
-        "github_api" : "",
+        "changelog_api": "",
+        "github_api": "",
         "url": "https://wiki.switchroot.org/wiki/linux/l4t-ubuntu-noble-installation-guide",
         "download": "https://www.dropbox.com/scl/fi/1sg6d37glvaose038svle/ubuntu-noble.7z?rlkey=5ntwutu2orenxzhoe8xrlabmh&dl=1",
         "pack_ver": "24.04-NOBLE"
