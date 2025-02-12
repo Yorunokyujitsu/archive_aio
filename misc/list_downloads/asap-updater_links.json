@@ -1,10 +1,10 @@
 {
     "cfws": {
         "ASAP": {
-            "ver.1230 : 안정": "https://www.dropbox.com/scl/fi/anra3x6dz41dlbhcl7uw2/ASAP.zip?rlkey=b31q03n6zv7lluxwlbigslle4&dl=1"
+            "ver.1230 : 안정": "https://www.dropbox.com/scl/fi/qr75jywu7irkf9synlw0v/ASAP.zip?rlkey=f1zn8xqddyw8y6ghjqepndhez&dl=1"
         },
         "AIO": {
-            "[ NX-Venom : 5.2.0 ] 19.0.1｜1.8.0｜6.2.2": "https://www.dropbox.com/scl/fi/s5fr5ocehtw9n25okq1po/NX-Venom.zip?rlkey=vzv5jf6y5g8utolp4mw993czc&dl=1",
+            "[ NX-Venom : 5.3.1 ] 19.0.1｜1.8.0｜6.2.2": "https://www.dropbox.com/scl/fi/s5fr5ocehtw9n25okq1po/NX-Venom.zip?rlkey=vzv5jf6y5g8utolp4mw993czc&dl=1",
             "[ Kefir : 758 ] 19.0.1｜1.8.0｜6.2.2": "https://www.dropbox.com/scl/fi/z9oszjpb6kmlgr5xen6ct/Kefir.zip?rlkey=uyv5who08ey5oddfu8lik6seu&dl=1",
             "[ HATS : 1.8.0-v1.3 ] 19.0.1｜1.8.0｜6.2.2": "https://www.dropbox.com/scl/fi/n8j73wy67phus5tc617j2/HATS.zip?rlkey=rroehklcouv9cka5b98edjo3n&dl=1"
         }
@@ -13,7 +13,7 @@
         "[ Hekate 6.2.2 & Nyx 1.6.4 ]": "https://github.com/CTCaer/hekate/releases/download/v6.2.2/hekate_ctcaer_6.2.2_Nyx_1.6.4.zip"
     },
     "HorizonOS": {
-        "[ HOS ] 19.0.1": "https://www.dropbox.com/scl/fi/fwgwne65ujvqzkhevnwf0/19.0.1_Firmware.zip?rlkey=5o6t5eowl2tni4gm3t3eqf950&dl=1",
+        "[ HOS ] 19.0.1 Rebootless": "https://www.dropbox.com/s/2fg0wudljlr3tl0/19.0.1_Firmware_Rebootless.zip?dl=1",
         "[ HOS ] 19.0.0": "https://www.dropbox.com/scl/fi/jyp361pb8bq4a8q2z5f51/19.0.0_Firmware.zip?rlkey=dnsjgucj3fc9j58nkj95m46t0&dl=1",
         "[ HOS ] 18.1.0 Rebootless": "https://www.dropbox.com/scl/fi/czovjge06vbyqehnwt38l/18.1.0_Firmware_Rebootless.zip?rlkey=sm9v9ci0ovjdxrpgabqc17ff8&dl=1",
         "[ HOS ] 18.0.1": "https://www.dropbox.com/scl/fi/o7zs9ly06mx7nkfcqm69n/18.0.1_Firmware.zip?rlkey=7ndlrbeadtrbf40bfymimfqfb&dl=1",
@@ -128,7 +128,7 @@
             "[ NxThemesinstaller : 2.7.1 ] - 테마 관리": "https://www.dropbox.com/scl/fi/8ab70zzs371jnk59dwnwx/NxThemesinstaller.zip?rlkey=quky56sxm8zhoek48s1tctn44&dl=1",
             "[ PPSSPP : 1.17.1 ] - PSP 에뮬레이터": "https://www.dropbox.com/scl/fi/764imgke428hj1o4t9iex/PPSSPP.zip?rlkey=rnzxl2srehpk691fr4729r2je&dl=1",
             "[ Reboot to Payload : 1.0.0 ] - Erista 기기 재부팅": "https://www.dropbox.com/scl/fi/5jn5mf9s9cthyegh20x7u/Reboot2payload.zip?rlkey=8r2wuo5k44jnu0hcmnq97nack&dl=1",
-            "[ RetroArch : 1.19.1 ] - 종합 콘솔 에뮬레이터": "https://www.dropbox.com/scl/fi/xmfxtzrzka4beqqgdhw4a/RetroArch.zip?rlkey=3pg9hch3pm4d99sxotojxdxw7&dl=1",
+            "[ RetroArch : 1.20.0 ] - 종합 콘솔 에뮬레이터": "https://www.dropbox.com/scl/fi/xmfxtzrzka4beqqgdhw4a/RetroArch.zip?rlkey=3pg9hch3pm4d99sxotojxdxw7&dl=1",
             "[ SimpleModDownloader : 2.1.0 ] - 모드/관리 툴 다운로더": "https://www.dropbox.com/scl/fi/wwxjy78eafl30zlx5b090/SimpleModDownloader.zip?rlkey=61njaa0mmknqawq8nao0n25jc&dl=1",
             "[ SysDVR : 6.1.1/1.0.11 ] - USB 스트리밍 홈브류/오버레이": "https://www.dropbox.com/scl/fi/hld9y8ra4tbb1xquzejzw/SysDVR.zip?rlkey=p0qa4mbmwg9jt9zreu5jld3lh&dl=1",
             "[ Tinfoil : 19.0 [v1] ] - 설치 버전 파일 탐색/설치": "https://www.dropbox.com/scl/fi/zfr3s1ci29oeyct5rsqdr/Tinfoil_self_installer.zip?rlkey=04iin9nvc7rkr5pgqrhci4md2&dl=1",
@@ -150,8 +150,8 @@
     },        
     "extra": {
         "android": {
-            "[ Lineage OS ] 21.0 (250107)｜Android 14｜TV": "https://www.dropbox.com/scl/fi/t3k05bsgqp3ffoyetd23v/Android14_tv.zip?rlkey=bkyzomuyr8ww9mwzr6334a1au&dl=1",
-            "[ Lineage OS ] 21.0 (240105)｜Android 14｜Tablet": "https://www.dropbox.com/scl/fi/v55tu5qstqq5cv3iahgem/Android14_tab.zip?rlkey=kv0cb1d2hmm9sacgobp1ic91y&dl=1"
+            "[ Lineage OS ] 21.0 (250114)｜Android 14｜TV": "https://www.dropbox.com/scl/fi/t3k05bsgqp3ffoyetd23v/Android14_tv.zip?rlkey=bkyzomuyr8ww9mwzr6334a1au&dl=1",
+            "[ Lineage OS ] 21.0 (240112)｜Android 14｜Tablet": "https://www.dropbox.com/scl/fi/v55tu5qstqq5cv3iahgem/Android14_tab.zip?rlkey=kv0cb1d2hmm9sacgobp1ic91y&dl=1"
         },
         "ubuntu": {
             "[ Ubuntu Noble ] 24.04 LTS": "https://www.dropbox.com/scl/fi/aabai016zos6q24xrcs8n/ubuntu-noble.zip?rlkey=ln0mfn6vtht35spc8hyvdt934&dl=1",
